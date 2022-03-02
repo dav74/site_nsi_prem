@@ -6,6 +6,8 @@ markdown_extensions:
   - pymdownx.highlight:
       use_pygments: true
   - pymdownx.superfences
+extra_css:
+  - stylesheets/extra.css
 nav:
   - 'Partie 1':
     - 'C1 : Python les base':

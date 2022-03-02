@@ -1,1 +1,1 @@
-# PREMIÈRE NSI{:.center}
+# PREMIÈRE NSI
