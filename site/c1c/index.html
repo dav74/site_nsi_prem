@@ -1,0 +1,3870 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.3">
+    
+    
+      
+        <title>Cours - NSI première</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e8d9bf0c.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-programmer-un-ordinateur-cest-quoi" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href=".." title="NSI première" class="md-header__button md-logo" aria-label="NSI première" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            NSI première
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cours
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Effacer" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="NSI première" class="md-nav__button md-logo" aria-label="NSI première" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    NSI première
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Partie 1
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Partie 1" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Partie 1
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_1" type="checkbox" id="__nav_1_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_1">
+          C1 : Python les base
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C1 : Python les base" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          C1 : Python les base
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Cours
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Cours
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-programmer-un-ordinateur-cest-quoi" class="md-nav__link">
+    1) Programmer un ordinateur, c'est quoi ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-notion-de-variable" class="md-nav__link">
+    2) Notion de variable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-un-peu-de-calculs" class="md-nav__link">
+    3) un peu de calculs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-chaines-de-caracteres" class="md-nav__link">
+    4)  chaînes de caractères
+  </a>
+  
+    <nav class="md-nav" aria-label="4)  chaînes de caractères">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-notion-de-chaine-de-caracteres" class="md-nav__link">
+    a) notion de chaîne de caractères
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-le-signe-et-les-chaines-de-caracteres" class="md-nav__link">
+    b)  le signe + et les chaînes de caractères
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-les-fonctions" class="md-nav__link">
+    5) les  fonctions
+  </a>
+  
+    <nav class="md-nav" aria-label="5) les  fonctions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-notion-de-fonction" class="md-nav__link">
+    a) notion de fonction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-les-fonctions-natives-de-python" class="md-nav__link">
+    b) les fonctions natives de python
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-les-modules-en-python" class="md-nav__link">
+    c) les modules en Python
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-les-fonctions-et-le-mot-cle-return" class="md-nav__link">
+    d) les fonctions et le mot clé return
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-variables-locales-et-variables-globales" class="md-nav__link">
+    7) Variables locales et variables globales
+  </a>
+  
+    <nav class="md-nav" aria-label="7) Variables locales et variables globales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-variables-et-fonctions" class="md-nav__link">
+    a) variables et fonctions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-les-effets-de-bord" class="md-nav__link">
+    b) les effets de bord
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-les-expressions-et-les-booleens" class="md-nav__link">
+    8) les expressions et les booléens
+  </a>
+  
+    <nav class="md-nav" aria-label="8) les expressions et les booléens">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-introduction" class="md-nav__link">
+    a) introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-le-or-le-and-et-le-not" class="md-nav__link">
+    b) le "or", le "and" et le "not"
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-les-conditions" class="md-nav__link">
+    9) les conditions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-la-boucle-while" class="md-nav__link">
+    10) la boucle while
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c1a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c1r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_2" type="checkbox" id="__nav_1_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_2">
+          C2 : Python les séquences
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C2 : Python les séquences" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          C2 : Python les séquences
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c2c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c2a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c2r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_3" type="checkbox" id="__nav_1_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_3">
+          C3 : Python les dictionnaires
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C3 : Python les dictionnaires" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          C3 : Python les dictionnaires
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c3c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c3a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c3r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pr1/" class="md-nav__link">
+        Projet 1 : Répertoire téléphonique
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Partie 2
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Partie 2" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Partie 2
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1">
+          C4 : écriture d'un entier positif
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C4 : écriture d'un entier positif" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          C4 : écriture d'un entier positif
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c4c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c4a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c4r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          C5 : représentation d'un texte en machine
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C5 : représentation d'un texte en machine" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          C5 : représentation d'un texte en machine
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c5c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c5a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c5r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          C6 : représentation binaire d'un entier relatif
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C6 : représentation binaire d'un entier relatif" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          C6 : représentation binaire d'un entier relatif
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c6c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c6a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c6r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          C7 : notion de nombre flottant
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C7 : notion de nombre flottant" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          C7 : notion de nombre flottant
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c7c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c7a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c7r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Partie 3
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Partie 3" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Partie 3
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1">
+          C8 : modèle d'architecture de von Neumann
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C8 : modèle d'architecture de von Neumann" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          C8 : modèle d'architecture de von Neumann
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c8c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c8a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c8r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2">
+          C9 : simulation CPU
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C9 : simulation CPU" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          C9 : simulation CPU
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c9a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pr2/" class="md-nav__link">
+        Projet 2 : générateur de QCM
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Partie 4
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Partie 4" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Partie 4
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1" type="checkbox" id="__nav_6_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_1">
+          C10 : introduction à l'algorithmique
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C10 : introduction à l'algorithmique" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_1">
+          <span class="md-nav__icon md-icon"></span>
+          C10 : introduction à l'algorithmique
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c10c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c10a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c10r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_2">
+          C11 : tri par insertion, tri par sélection
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C11 : tri par insertion, tri par sélection" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          C11 : tri par insertion, tri par sélection
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c11c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c11a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c11r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_3">
+          C12 : les invariants de boucle
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C12 : les invariants de boucle" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          C12 : les invariants de boucle
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c12c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c12a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c12r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Partie 5
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Partie 5" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Partie 5
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1" type="checkbox" id="__nav_7_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7_1">
+          C13 : introduction aux systèmes d'exploitation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C13 : introduction aux systèmes d'exploitation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_1">
+          <span class="md-nav__icon md-icon"></span>
+          C13 : introduction aux systèmes d'exploitation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c13c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c13a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c13r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_2" type="checkbox" id="__nav_7_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7_2">
+          C14 : lignes de commandes Linux
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C14 : lignes de commandes Linux" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_2">
+          <span class="md-nav__icon md-icon"></span>
+          C14 : lignes de commandes Linux
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c14c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c14a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c14r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_3" type="checkbox" id="__nav_7_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7_3">
+          C15 : langages de programmation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C15 : langages de programmation" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_3">
+          <span class="md-nav__icon md-icon"></span>
+          C15 : langages de programmation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c15c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c15a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c15r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pr3/" class="md-nav__link">
+        Projet 3 : jeu du pendu
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Partie 6
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Partie 6" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Partie 6
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_1" type="checkbox" id="__nav_9_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9_1">
+          C16 : introduction réseau
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C16 : introduction réseau" data-md-level="2">
+        <label class="md-nav__title" for="__nav_9_1">
+          <span class="md-nav__icon md-icon"></span>
+          C16 : introduction réseau
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c16c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c16a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c16r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_2" type="checkbox" id="__nav_9_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9_2">
+          C17 : les protocoles TCP et IP
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C17 : les protocoles TCP et IP" data-md-level="2">
+        <label class="md-nav__title" for="__nav_9_2">
+          <span class="md-nav__icon md-icon"></span>
+          C17 : les protocoles TCP et IP
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c17c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c17a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c17r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_3" type="checkbox" id="__nav_9_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9_3">
+          C18 : le modèle TCP/IP
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C18 : le modèle TCP/IP" data-md-level="2">
+        <label class="md-nav__title" for="__nav_9_3">
+          <span class="md-nav__icon md-icon"></span>
+          C18 : le modèle TCP/IP
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c18c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c18a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c18r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_4" type="checkbox" id="__nav_9_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9_4">
+          C19 : simulation réseau (I)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C19 : simulation réseau (I)" data-md-level="2">
+        <label class="md-nav__title" for="__nav_9_4">
+          <span class="md-nav__icon md-icon"></span>
+          C19 : simulation réseau (I)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c19a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_5" type="checkbox" id="__nav_9_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9_5">
+          C20 : le protocole du bit alterné
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C20 : le protocole du bit alterné" data-md-level="2">
+        <label class="md-nav__title" for="__nav_9_5">
+          <span class="md-nav__icon md-icon"></span>
+          C20 : le protocole du bit alterné
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c20c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c20a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c20r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          Partie 7
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Partie 7" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Partie 7
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_1" type="checkbox" id="__nav_10_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10_1">
+          C21 : introduction au web
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C21 : introduction au web" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_1">
+          <span class="md-nav__icon md-icon"></span>
+          C21 : introduction au web
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c21c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c21a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c21r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2" type="checkbox" id="__nav_10_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10_2">
+          C22 : les URL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C22 : les URL" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_2">
+          <span class="md-nav__icon md-icon"></span>
+          C22 : les URL
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c22c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c22a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c22r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_3" type="checkbox" id="__nav_10_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10_3">
+          C23 : HTML et CSS : les bases
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C23 : HTML et CSS : les bases" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_3">
+          <span class="md-nav__icon md-icon"></span>
+          C23 : HTML et CSS : les bases
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c23c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c23a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c23r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_4" type="checkbox" id="__nav_10_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10_4">
+          C24 : interaction avec l'utilisateur dans une page web
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C24 : interaction avec l'utilisateur dans une page web" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_4">
+          <span class="md-nav__icon md-icon"></span>
+          C24 : interaction avec l'utilisateur dans une page web
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c24c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c24a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c24r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_5" type="checkbox" id="__nav_10_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10_5">
+          C25 : modèle client/serveur
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C25 : modèle client/serveur" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_5">
+          <span class="md-nav__icon md-icon"></span>
+          C25 : modèle client/serveur
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c25c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c25a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c25r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_6" type="checkbox" id="__nav_10_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10_6">
+          C26 : protocole HTTP
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C26 : protocole HTTP" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_6">
+          <span class="md-nav__icon md-icon"></span>
+          C26 : protocole HTTP
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c26c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c26a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c26r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_7" type="checkbox" id="__nav_10_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10_7">
+          C27 : simulation réseau (II)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C27 : simulation réseau (II)" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_7">
+          <span class="md-nav__icon md-icon"></span>
+          C27 : simulation réseau (II)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c27a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_8" type="checkbox" id="__nav_10_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10_8">
+          C28 : formulaire d'une page web
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C28 : formulaire d'une page web" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_8">
+          <span class="md-nav__icon md-icon"></span>
+          C28 : formulaire d'une page web
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c28c.md" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c28a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c28r.md" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pr4/" class="md-nav__link">
+        Projet 4 : répertoire téléphonique version web
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12">
+          Partie 8
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Partie 8" data-md-level="1">
+        <label class="md-nav__title" for="__nav_12">
+          <span class="md-nav__icon md-icon"></span>
+          Partie 8
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_1" type="checkbox" id="__nav_12_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12_1">
+          C29 : traitement de données en tables
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C29 : traitement de données en tables" data-md-level="2">
+        <label class="md-nav__title" for="__nav_12_1">
+          <span class="md-nav__icon md-icon"></span>
+          C29 : traitement de données en tables
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c29c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c29a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c29r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13">
+          Partie 9
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Partie 9" data-md-level="1">
+        <label class="md-nav__title" for="__nav_13">
+          <span class="md-nav__icon md-icon"></span>
+          Partie 9
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_1" type="checkbox" id="__nav_13_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_1">
+          C30 : recherche dichotomique
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C30 : recherche dichotomique" data-md-level="2">
+        <label class="md-nav__title" for="__nav_13_1">
+          <span class="md-nav__icon md-icon"></span>
+          C30 : recherche dichotomique
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c30c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c30a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c30r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_2" type="checkbox" id="__nav_13_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_2">
+          C31 : algorithmes gloutons
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C31 : algorithmes gloutons" data-md-level="2">
+        <label class="md-nav__title" for="__nav_13_2">
+          <span class="md-nav__icon md-icon"></span>
+          C31 : algorithmes gloutons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c31c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c31a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c31r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13_3" type="checkbox" id="__nav_13_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13_3">
+          C32 : algorithme des k plus proches voisins
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C32 : algorithme des k plus proches voisins" data-md-level="2">
+        <label class="md-nav__title" for="__nav_13_3">
+          <span class="md-nav__icon md-icon"></span>
+          C32 : algorithme des k plus proches voisins
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c32c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c32a/" class="md-nav__link">
+        Activité
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c32r/" class="md-nav__link">
+        Révision
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pr5/" class="md-nav__link">
+        Projet 5 : les survivants du Titanic
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15">
+          Partie 10
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Partie 10" data-md-level="1">
+        <label class="md-nav__title" for="__nav_15">
+          <span class="md-nav__icon md-icon"></span>
+          Partie 10
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15_1" type="checkbox" id="__nav_15_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15_1">
+          C33: interface Homme - Machine
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="C33: interface Homme - Machine" data-md-level="2">
+        <label class="md-nav__title" for="__nav_15_1">
+          <span class="md-nav__icon md-icon"></span>
+          C33: interface Homme - Machine
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c33c/" class="md-nav__link">
+        Cours
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-programmer-un-ordinateur-cest-quoi" class="md-nav__link">
+    1) Programmer un ordinateur, c'est quoi ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-notion-de-variable" class="md-nav__link">
+    2) Notion de variable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-un-peu-de-calculs" class="md-nav__link">
+    3) un peu de calculs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-chaines-de-caracteres" class="md-nav__link">
+    4)  chaînes de caractères
+  </a>
+  
+    <nav class="md-nav" aria-label="4)  chaînes de caractères">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-notion-de-chaine-de-caracteres" class="md-nav__link">
+    a) notion de chaîne de caractères
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-le-signe-et-les-chaines-de-caracteres" class="md-nav__link">
+    b)  le signe + et les chaînes de caractères
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-les-fonctions" class="md-nav__link">
+    5) les  fonctions
+  </a>
+  
+    <nav class="md-nav" aria-label="5) les  fonctions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-notion-de-fonction" class="md-nav__link">
+    a) notion de fonction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-les-fonctions-natives-de-python" class="md-nav__link">
+    b) les fonctions natives de python
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-les-modules-en-python" class="md-nav__link">
+    c) les modules en Python
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-les-fonctions-et-le-mot-cle-return" class="md-nav__link">
+    d) les fonctions et le mot clé return
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-variables-locales-et-variables-globales" class="md-nav__link">
+    7) Variables locales et variables globales
+  </a>
+  
+    <nav class="md-nav" aria-label="7) Variables locales et variables globales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-variables-et-fonctions" class="md-nav__link">
+    a) variables et fonctions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-les-effets-de-bord" class="md-nav__link">
+    b) les effets de bord
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-les-expressions-et-les-booleens" class="md-nav__link">
+    8) les expressions et les booléens
+  </a>
+  
+    <nav class="md-nav" aria-label="8) les expressions et les booléens">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-introduction" class="md-nav__link">
+    a) introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-le-or-le-and-et-le-not" class="md-nav__link">
+    b) le "or", le "and" et le "not"
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-les-conditions" class="md-nav__link">
+    9) les conditions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-la-boucle-while" class="md-nav__link">
+    10) la boucle while
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+  <h1>Cours</h1>
+
+<h2 id="1-programmer-un-ordinateur-cest-quoi">1) Programmer un ordinateur, c'est quoi ?</h2>
+<p>Programmer un ordinateur, c'est quoi ?
+Programmer, c'est créer des programmes (suite d'instructions données à l'ordinateur) ! Un ordinateur sans programme ne sait rien faire. Il existe différents langages qui permettent de programmer un ordinateur, mais le seul directement utilisable par le processeur est le langage machine (suite de 1 et de 0). Aujourd'hui (presque) plus personne ne programme en langage machine (trop compliqué).</p>
+<p>Les informaticiens utilisent des instructions (mots souvent en anglais) en lieu et place de la suite de 0 et de 1. Ces instructions, une fois écrites par le programmeur, sont "traduites" en langage machine. Un programme spécialisé assure cette traduction. Ce système de traduction s'appellera interpréteur ou bien compilateur, suivant la méthode utilisée pour effectuer la traduction.</p>
+<p>Il existe 2 grandes familles de langages de programmation :</p>
+<ul>
+<li>
+<p>Les langages de bas niveau sont très complexes à utiliser, car très éloignés du langage naturel, on dit que ce sont des langages « proches de la machine », en contrepartie ils permettent de faire des programmes très rapides à l'exécution. L'assembleur est le langage de bas niveau. Certains "morceaux" de programmes sont écrits en assembleur encore aujourd'hui.</p>
+</li>
+<li>
+<p>Les langages de haut niveau sont eux plus "faciles" à utiliser, car plus proches du langage naturel (exemple : si a=3 alors b=c). Exemples de langages de haut niveau : C, C++ , Java, Python...</p>
+</li>
+</ul>
+<p>En NSI, notre langage de prédilection sera Python.</p>
+<h2 id="2-notion-de-variable">2) Notion de variable</h2>
+<p>Définition du mot ordinateur d'après "Le Petit Larousse" :</p>
+<p>"Machine automatique de traitement de l'information, obéissant à des programmes formés par des suites d'opérations arithmétiques et logiques."</p>
+<p>Qui dit "traitement de l'information", dit donc données à manipuler. Un programme "passe" donc son temps à traiter des données. Pour pouvoir traiter ces données, l'ordinateur doit les ranger dans sa mémoire (RAM - Random Access Memory). La RAM se compose de cases dans lesquelles nous allons ranger ces données (une donnée dans une case). Chaque case a une adresse (ce qui permet au processeur de savoir où sont rangées les données).</p>
+<p>Alors, qu'est-ce qu'une variable ?</p>
+<p>Eh bien, c'est une petite information (une donnée) temporaire que l'on stocke dans une case de la RAM. On dit qu'elle est "variable", car c'est une valeur qui peut changer pendant le déroulement du programme.</p>
+<p>Une variable est constituée de 2 choses :</p>
+<ul>
+<li>
+<p>une valeur présente en mémoire (par exemple le nombre entier 5)</p>
+</li>
+<li>
+<p>un nom</p>
+</li>
+</ul>
+<p>On dira donc qu'une variable est l'association d'un nom et d'une valeur</p>
+<p><div class="highlight"><pre><span></span><code>i = 12
+</code></pre></div>
+Grâce à cette ligne, nous avons défini une variable qui porte le nom i. Ce nom i est associé à la valeur 12.</p>
+<p>Il est aussi possible d'associer un nom à un nombre à virgule  :</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">i</span> <span class="o">=</span> <span class="mf">5.2</span>
+</code></pre></div>
+J'attire votre  attention que nous utilisons un point à la place d'une virgule (convention anglo-saxonne).</p>
+<p>Un nom peut donc être associé à plusieurs types d'entités (pour l'instant nous n'en avons vu que deux, mais nous en verrons d'autres plus loin) : les nombres entiers ("integer" en anglais, abrégé en "int") et les nombres à virgule ("float" en anglais). Il est possible de connaitre le type de l'entité à l'aide de l'instruction "type".</p>
+<p><div class="highlight"><pre><span></span><code>a = 5
+b = 5.4
+</code></pre></div>
+un <em>type(a)</em> donnera comme résultat <em>int</em> alors qu'un <em>type(b)</em> donnera <em>float</em></p>
+<h2 id="3-un-peu-de-calculs">3) un peu de calculs</h2>
+<p>Un ordinateur est bien évidemment capable d'effectuer des opérations mathématiques (arithmétiques).</p>
+<p>Les signes utilisés sont classiques : +, - , * (multiplication), / (division), // (division euclidienne) ou encore % (modulo : reste d'une division euclidienne).</p>
+<p>Il est tout à fait possible d'effectuer des opérations directement avec des nombres, mais il est aussi possible d'utiliser des variables.</p>
+<div class="highlight"><pre><span></span><code>a = 5
+b = 16
+c = 3.14 / 2
+d = b / a
+e = b // a
+f = b % a
+g = a + b
+h = a
+</code></pre></div>
+<p>Considérons maintenant le programme suivant :</p>
+<p><div class="highlight"><pre><span></span><code>a = 11
+a = a + 1
+</code></pre></div>
+D'après  vous, quelle est la valeur de la variable <em>a</em> après l'exécution du programme ci-dessus ?</p>
+<p>La réponse est 12.</p>
+<p>Détaillons ce qui se passe dans ce programme :</p>
+<p>Nous créons une variable : le nom a est associé à l'entier 11. La suite est un peu plus complexe, mais très importante à comprendre. Il va falloir lire la ligne a = a + 1 de droite à gauche, décortiquons cette ligne :</p>
+<ul>
+<li>a + 1 : nous prenons la valeur actuelle associée au nom a (c'est-à-dire 11) et nous ajoutons 1 à 11, à droite de l'égalité nous avons donc maintenant la valeur 12</li>
+<li>nous associons la valeur qui vient d'être calculée au nom a</li>
+</ul>
+<p>Donc la valeur de a est bien 12</p>
+<p>Ce raisonnement peut être généralisé pour éviter des erreurs parfois difficiles à corriger : dans une égalité, commencer toujours par évaluer l'expression se trouvant à droite du signe égal.</p>
+<p>L'opération 
+<div class="highlight"><pre><span></span><code>a = a + 1
+</code></pre></div>
+se nomme une incrémentation.</p>
+<h2 id="4-chaines-de-caracteres">4)  chaînes de caractères</h2>
+<h3 id="a-notion-de-chaine-de-caracteres">a) notion de chaîne de caractères</h3>
+<p>On peut aussi associer des noms à des suites de caractères que l'on appelle "chaîne de caractères".</p>
+<div class="highlight"><pre><span></span><code>ma_chaine = &quot;Bonjour le monde !&quot;
+</code></pre></div>
+<p>Le contenu de la variable <em>ma_chaine</em> est de type <em>string</em> et donc un <em>type(ma_chaine)</em> donnera un <em>str</em> (abréviation de string en Python)</p>
+<h3 id="b-le-signe-et-les-chaines-de-caracteres">b)  le signe + et les chaînes de caractères</h3>
+<p>L'utilisation du signe + ne se limite pas à l'addition. Il est aussi utilisé pour la concaténation.</p>
+<p>D'après Wikipédia :</p>
+<p>« Le terme concaténation (substantif féminin), du latin cum («avec») et catena(«chaîne, liaison»), désigne l'action de mettre bout à bout au moins deux chaînes. »</p>
+<p>Si on considère le programme suivant :</p>
+<p><div class="highlight"><pre><span></span><code>a = &quot;Hello&quot;
+b = &quot;World&quot;
+mon_expression = a + b
+</code></pre></div>
+après l'exécution de ce programme, la variable <em>mon_expression</em> aura pour valeur  <em>HelloWorld</em></p>
+<p>Il est aussi possible de concaténer une chaîne de caractères et une ou plusieurs variables :</p>
+<p><div class="highlight"><pre><span></span><code>ma_chaine_1 = &quot;Bonjour &quot;
+ma_chaine_2 = &quot;le &quot;
+res = ma_chaine_1 + ma_chaine_2 + &quot;monde!&quot;
+</code></pre></div>
+Après l'exécution de ce programme, la variable  <em>res</em>  aura pour valeur <em>Bonjour le  monde!</em></p>
+<p>Les 2 noms ma_chaine_1 et ma_chaine_2 sont associés à 2 chaînes de caractères, nous avons donc bien ici une concaténation.</p>
+<p>Que se passe-t-il si nous avons ce cas de figure :</p>
+<p><div class="highlight"><pre><span></span><code>a = &quot;Nombre de pommes : &quot;
+b = 4 
+c = a + b
+</code></pre></div>
+a est de type <em>str</em> alors que b est de type <em>int</em>. Le signe plus représente une addition ou une concaténation ? Ni l'un, ni l'autre, puisque Python vous renverra une erreur : il ne peut pas concaténer un entier et une chaîne de caractère.</p>
+<p>La solution : transformer le nombre 4 en caractère 4 à l'aide du mot clé <em>str</em>:</p>
+<p><div class="highlight"><pre><span></span><code>a = &quot;Nombre de pommes : &quot;
+b = 4 
+c = a + str(b)
+</code></pre></div>
+nous avons maintenant une concaténation, car <em>str(4)</em> est de type string.</p>
+<p>Autre solution pour faire cohabiter des variables de type <em>int</em> ou <em>float</em> avec des variables de type <em>str</em> : les <em>fstring</em> (attention les <em>fstring</em> sont uniquement disponible à partir de Python 3.5)</p>
+<p>Il est possible d'écrire :</p>
+<p><div class="highlight"><pre><span></span><code>a = &quot;Nombre de pommes :&quot;
+b = 4 
+c = f&quot;{a} {b}&quot;
+</code></pre></div>
+après l'exécution du programme ci-dessus, la variable <em>c</em> aura pour valeur "Nombre de pommes : 4"</p>
+<p>Dans la chaîne de caractère, <em>{a}</em> sera remplacé par la valeur de la variable <em>a</em>, c'est à dire <em>Nombre de pommes :</em>. Même chose avec <em>{b}</em> qui sera remplacé par la valeur de b, c'est à dire 4.</p>
+<p>autre exemple d'utilisation des fstring :</p>
+<div class="highlight"><pre><span></span><code>num_train = 4232
+dest = &quot;Paris&quot; 
+c = f&quot;Le train n°{num_train} à destination de {dest} entre en gare&quot; 
+</code></pre></div>
+<p>après l'exécution du programme ci-dessus, la variable <em>c</em> aura pour valeur "Le train n°4232 à destination de Paris entre en gare"</p>
+<p>Notez la présence du "f" juste avant le guillemet et des accolades qui encadrent le nom de la variable. Il est nécessaire d'ajouter ce "f" pour avoir une fstring.</p>
+<h2 id="5-les-fonctions">5) les  fonctions</h2>
+<h3 id="a-notion-de-fonction">a) notion de fonction</h3>
+<p>Les fonctions permettent de décomposer un programme complexe en une série de sous-programmes plus simples. De plus, les fonctions sont réutilisables : si nous disposons d'une fonction capable de calculer une racine carrée, par exemple, nous pouvons l'utiliser un peu partout dans notre programme sans avoir à la réécrire à chaque fois (on parle de factorisation du code)</p>
+<p>La notion de fonction en informatique est comparable à la notion de fonction en mathématiques.</p>
+<p><img alt="" src="../img/c1c_1.png" /></p>
+<p>Si nous avons y = 3x+2, pour une valeur donnée de x, nous aurons une valeur de y.</p>
+<p>Exemple : x=4 donc y= 14 (y = 3.4+2=14, attention ici le point correspond au signe "multiplié").</p>
+<p>La fonction en informatique est basée sur la même idée :</p>
+<p><img alt="" src="../img/c1c_2.png" /></p>
+<p>Voici la syntaxe employée en Python pour définir une fonction :</p>
+<div class="highlight"><pre><span></span><code>def nom_de_la_fonction(parametre):
+    instruction_1
+    instruction_2
+    return y
+suite programme
+</code></pre></div>
+<p>La fonction renvoie la valeur associée à y.</p>
+<p>ATTENTION : Notez bien la présence du décalage entre la première ligne et les lignes suivantes. Ce décalage est appelé indentation, l'indentation permet de définir un bloc de code. Dans l'exemple ci-dessus, l'indentation nous permet de savoir que "instruction_1", "instruction_2" et "return y" constituent un bloc de code, ce bloc correspond au contenu de la fonction. "suite programme" ne fait pas partie de la fonction, car il n'est pas indenté. Pour indenter du code, il y a 2 solutions : mettre 4 espaces ou utiliser une tabulation. En Python il est conseillé d'utiliser les 4 espaces, mais ce n'est pas une obligation. Une chose est sûre, une fois que vous avez choisi une méthode, n'en changé surtout pas au cours d'un même programme !</p>
+<p>Codons notre exemple (y=3x+2) en créant une fonction ma_fonction :</p>
+<p><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">ma_fonction</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="n">y</span>
+</code></pre></div>
+Pour "utiliser" la fonction ma_fonction, il suffit d'écrire : ma_fonction (4) (dans ce cas précis, notre fonction renverra le nombre 14 : x sera égale à 4 dans la fonction on aura donc le calcul 3 . 4 + 2 = 12  + 2 = 14)</p>
+<p>Si on considère cet exemple  :</p>
+<div class="highlight"><pre><span></span><code>def ma_fonction(x):
+    y = 3 * x + 2
+    return y
+solution = ma_fonction(4)
+</code></pre></div>
+<p>Après l'exécution de ce programme, la valeur de la variable <em>solution</em> sera 14. En effet, au moment de l'exécution de notre programme le code <em>ma_fonction(4)</em> sera systématiquement remplacé par la valeur renvoyée par la fonction. Dans notre exemple le <em>ma_fonction(4)</em> sera remplacé par le nombre 14, d'où la  valeur 14 pour la variable <em>solution</em>.</p>
+<p>Il est possible de passer plusieurs paramètres à une fonction :</p>
+<p><div class="highlight"><pre><span></span><code>def ma_fonction(x, b):
+    y = 2 * x + b
+    return y
+solution = ma_fonction(4, 3)
+</code></pre></div>
+Dans  ce cas,  dans  la fonction, le paramètre <em>x</em> sera égal à 4 et le paramètre <em>b</em> à 3 (attention à l'ordre des paramètres). On a aura donc la variable <em>solution</em> qui aura pour valeur  11 (2.4 + 3 = 11) après l'exécution de ce programme.</p>
+<p>Les paramètres peuvent être des chaînes de caractères (ainsi que la valeur retournée)</p>
+<p><div class="highlight"><pre><span></span><code>def dit_bonjour(nom, age):
+    phrase = f&quot;Bonjour {nom}, vous avez {age} ans.&quot;
+    return phrase
+p = dit_bonjour(&quot;toto&quot;, 16) 
+</code></pre></div>
+Après l'exécution de ce programme, la variable p aura  pour valeur la chaîne de caractères "Bonjour toto, vous avez 14 ans"</p>
+<p><strong>Attention</strong> : remarquez bien les guillemets autour du paramètre "toto" (c'est une chaîne de caractères)</p>
+<h3 id="b-les-fonctions-natives-de-python">b) les fonctions natives de python</h3>
+<p>Python propose des fonction prêtes à être utilisées par le programmeur : les fonctions natives (built-in function en anglais). Nous avons déjà eu l'occasion d'en voir deux avec <em>type</em> (qui renvoie le type d'une variable) et <em>str</em> qui renvoie la chaîne de caractère obtenue à partir d'un nombre (<em>str(4)</em> renvoie le caractère 4). Il existe beaucoup d'autres fonctions natives Python (il en existe plus de 50). Dans l'immédiat, nous allons en étudier deux autres :</p>
+<ul>
+<li>
+<p>la fonction <em>len</em> prend en paramètre une chaîne de caractères et renvoie le nombre de caractères présents dans cette chaîne de caractères (par exemple <em>len("azerty")</em> renvoie 5)</p>
+</li>
+<li>
+<p>la fonction <em>print</em> permet d'afficher à l'écran la valeur qui lui est passée en paramètre.</p>
+</li>
+</ul>
+<h3 id="c-les-modules-en-python">c) les modules en Python</h3>
+<p>Il est possible d'utiliser d'autres fonctions "prêtes à l'emploi" en important des modules. Un module est un fichier contenant des fonctions qui pourront être utilisées dans d'autres programmes. Le module <em>math</em> est un module très important puisqu'il comporte toutes les fonctions mathématiques classiques : cosinus, sinus, exposant, racine carrée...</p>
+<p>Pour utiliser les fonctions présentes dans un module, il est nécessaire d'importer le module dans notre programme. Par exemple, pour pouvoir utiliser les fonctions du module <em>math</em> il faudra écrire :</p>
+<p><div class="highlight"><pre><span></span><code>import math
+</code></pre></div>
+au début de son programme.</p>
+<p>Pour utiliser une fonction d'un module importé, il faudra préciser le nom du module qui propose cette fonction. Par exemple, pour déterminer le sinus de 3.14, il faudra écrire :
+<div class="highlight"><pre><span></span><code>math.sin(3.14)
+</code></pre></div>
+Voici une série de calculs qui fait appel à des fonctions issues du module maths :</p>
+<p><div class="highlight"><pre><span></span><code>import math
+
+a = 5
+b = 16
+c = 3.14
+puis = math.pow(a,3)
+racine = math.sqrt(b)
+s = math.sin(c)
+</code></pre></div>
+Après l'exécution de ce programme :</p>
+<ul>
+<li>la variable <em>puis</em> aura pour valeur 5<sup>3</sup> = 125</li>
+<li>la variable <em>racine</em> aura pour valeur 4 (racine carrée de 16)</li>
+<li>la variable <em>s</em> aura pour valeur 0.05 (le sinus de 3.14 est 0.05)</li>
+</ul>
+<h3 id="d-les-fonctions-et-le-mot-cle-return">d) les fonctions et le mot clé return</h3>
+<p>Il est possible d'écrire une fonction sans utiliser le mot clé <em>return</em>, cette pratique est souvent considérée comme une "mauvaise pratique", mais Python ne renverra pas d'erreur si vous le faites. Le code suivant est tout à fait correct :</p>
+<div class="highlight"><pre><span></span><code>def ma_fonction(i):
+    d = 5
+    z = i + d
+</code></pre></div>
+<p>Pour information, même en l'absence de <em>return</em>, une fonction Python renvoie quand même "quelque chose", puisqu'elle renvoie <em>None</em> qui veut dire rien...
+Dans le cas ci-dessus nous aurons donc :</p>
+<p><img alt="" src="../img/c1c_3.png" /></p>
+<h2 id="7-variables-locales-et-variables-globales">7) Variables locales et variables globales</h2>
+<h3 id="a-variables-et-fonctions">a) variables et fonctions</h3>
+<p>Considérons le programme suivant:</p>
+<p><div class="highlight"><pre><span></span><code>def ma_fonc():
+    i = 5
+ma_fonc()
+print (i)
+</code></pre></div>
+Nous commençons par définir une fonction <em>ma_fonc</em> qui ne prend aucun paramètre et qui ne renvoie aucune valeur (absence du mot clé <em>return</em>). Cette fonction attribue juste la valeur 5 a la variable ayant pour nom <em>i</em>.</p>
+<p>A la 3e ligne du programme, nous exécutons la fonction <em>ma_fonc</em>. </p>
+<p>Rappelons que la fonction <em>print</em> permet d'afficher à l'écran la valeur qui lui est passée en paramètre. La 4e ligne de ce programme permet donc d'afficher la valeur de la variable <em>i</em> à l'écran.</p>
+<p>On pourrait penser que ce programme va donc afficher 5 ! Pas du tout, nous avons le droit à l'erreur suivante :</p>
+<div class="highlight"><pre><span></span><code>NameError: name &#39;i&#39; is not defined
+</code></pre></div>
+<p>Le message d'erreur est suffisamment parlant, inutile de s'attarder dessus : la variable i n'est pas définie. A noter que cette erreur est déclenchée par la 4e ligne (le <em>print</em>).</p>
+<p>Pourquoi cette erreur, la variable i est bien définie dans la fonction <em>ma_fonc</em> et la fonction <em>ma_fonc</em> est bien exécutée, où est donc le problème ?</p>
+<p>En fait, la variable i est une variable dite locale : elle a été définie dans une fonction et elle "restera" dans cette fonction. Une fois que l'exécution de la fonction sera terminée, la variable i sera "détruite" (supprimée de la mémoire). Elle n'est donc pas accessible depuis "l'extérieur" de la fonction (ce qui explique le message d'erreur que nous obtenons, car le <em>print</em> est en dehors la fonction <em>ma_fonc</em>, la variable <em>i</em> n'est donc plus accessible).</p>
+<p>Étudions maintenant un cas un peu plus complexe :</p>
+<p><div class="highlight"><pre><span></span><code>i = 3
+def ma_fonc():
+    i = 5
+ma_fonc()
+print (i)  
+</code></pre></div>
+On pourrait s'attendre à voir s'afficher la valeur 5 à l'écran. Pas du tout, nous ne rencontrons pas d'erreur cette fois, mais c'est la valeur 3 qui s'affiche à l'écran.</p>
+<p>En fait dans cet exemple nous avons 2 variables i différentes : la variable i "globale" (celle qui a été définie en dehors de toute fonction) et la variable i "locale" (celle qui a été définie dans la fonction). Ces 2 variables portent le même nom, mais sont différentes (elles correspondent à des cases mémoire différentes). Au moment de l'exécution du <em>print</em> à la 5e ligne seule la variable globale existe encore (celle définie à la première ligne du programme), d'où l'affichage du 3.</p>
+<p>Une variable globale peut être "utilisée" à l'intérieur d'une fonction :</p>
+<p><div class="highlight"><pre><span></span><code>i = 3
+def ma_fonc():
+    print (i)
+ma_fonc()
+</code></pre></div>
+Attention, le <em>print</em> se situe dans la fonction (la ligne du <em>print</em> est bien indentée)</p>
+<p>Ce programme permet d'afficher la valeur 3 à l'écran.</p>
+<p>Quand on cherche à utiliser une variable dans une fonction, le système va d'abord chercher si cette variable se "trouve" dans l'espace local de la fonction, puis, s'il ne la trouve pas dans cet espace local, le système va aller rechercher la variable dans l'espace global. Pour le <em>print(i)</em> situé dans la fonction le système ne trouve pas de variable i dans l'espace local de la fonction <em>ma_fonc</em>, il passe donc à l'espace global et trouve la variable i (nous avons donc 3 qui s'affiche). </p>
+<p>Il est important de bien comprendre que dans la programme ci-dessous le système trouve une variable i dans l'espace local de la fonction, la "recherche" de la variable i se serait arrêtée là :</p>
+<p><div class="highlight"><pre><span></span><code>i = 3
+def ma_fonc():
+    i = 5
+    print (i)
+ma_fonc()
+</code></pre></div>
+et ce programme affiche la valeur 5 à l'écran. <em>i</em> a été trouvée dans l'espace local de la fonction <em>ma_fonc</em>, la recherche ne va donc pas plus loin (inutile de remonter jusqu'à l'espace global)</p>
+<p>En revanche le programme ci-dessous génère une erreur : "UnboundLocalError: local variable 'i' referenced before assignment"</p>
+<div class="highlight"><pre><span></span><code>i = 3
+def ma_fonc():
+    i = i + 1
+ma_fonc()
+print(i)
+</code></pre></div>
+<p>Il n'est à priori pas possible de modifier une variable globale (ici la variable <em>i</em>) dans une fonction.</p>
+<p>Pour pouvoir modifier une variable globale dans une fonction, il faut utiliser le mot clé <em>global</em> :</p>
+<p><div class="highlight"><pre><span></span><code>i = 3
+def ma_fonc():
+    global i
+    i = i + 1
+ma_fonc()
+print(i)
+</code></pre></div>
+Ici, aucune erreur la valeur 4 est bien affichée à l'écran.</p>
+<p>Je ne vais pas m'étendre sur l'utilisation du mot clé <em>global</em> car comme  nous allons le voir maintenant, c'est une (très) mauvaise pratique, car cette utilisation peut entraîner des "effets de bord".</p>
+<h3 id="b-les-effets-de-bord">b) les effets de bord</h3>
+<p>On parle d'effet de bord quand une fonction modifie l'état d'une variable globale. Dans notre exemple ci-dessus, la fonction <em>ma_fonc</em> modifie bien la valeur de <em>i</em> : avant l'exécution de <em>ma_fonc</em>, <em>i</em> a la valeur 3, après l'exécution de la fonction <em>ma_fonc</em>, <em>i</em> est associé à la valeur 4. Nous avons donc bien un effet de bord.</p>
+<p>Les effets de bord c'est "mal" ! Mais pourquoi est-ce "mal" ?</p>
+<p>Les effets de bords provoquent parfois des comportements non désirés par le programmeur (évidemment dans des programmes très complexes, pas dans des cas simplistes comme celui que nous venons de voir). Ils rendent aussi parfois les programmes difficilement lisibles (difficilement compréhensibles). À cause des effets de bord, on risque de se retrouver avec des variables qui auront des valeurs qui n'étaient pas prévues par le programmeur. On dit aussi qu'à un instant donné, l'état futur des variables est difficilement prévisible à cause des effets de bord. En résumé, on évitera autant que possible l'utilisation du "global".</p>
+<p>Un paradigme de programmation se propose d'éviter au maximum les effets de bords : la programmation fonctionnelle. Nous étudierons ce paradigme de programmation en terminale.</p>
+<h2 id="8-les-expressions-et-les-booleens">8) les expressions et les booléens</h2>
+<h3 id="a-introduction">a) introduction</h3>
+<p>Si quelqu'un vous dit que "4 est égal à 5", vous lui répondez quoi ? "c'est faux". Si maintenant la même personne vous dit que "7 est égal à 7", vous lui répondrez bien évidemment que "c'est vrai".</p>
+<p>En Python, ces deux "affirmations" ("4 est égal à 5" et "7 est égal à 7") s'écriront <em>4 == 5</em> et <em>7 == 7</em> (notez bien le double signe égal). </p>
+<p><em>4 == 5</em> est appelé une expression, une expression est soit vraie (<em>True</em> comme <em>7 == 7</em>), soit fausse (<em>False</em> comme <em>4 == 5</em>).</p>
+<p>Pour l'instant nous avons vu deux grands types de données : les nombres (entier ou flottant) et les chaînes de caractères, il existe un troisième type tout aussi important que les deux premiers : les booléens. Un booléen est un type de données qui ne peut prendre que deux valeurs : vrai (<em>True</em>) ou faux (<em>False</em>). Une expression est soit <em>True</em>, soit <em>False</em>.</p>
+<p>ATTENTION : notez le double égal "==" qui permet de distinguer une expression et une affectation (association d'une valeur à un nom (variable)). Le fait de confondre le "simple égal" et le "double égal" est une erreur classique qu'il faut éviter.</p>
+<p>Il est possible d'utiliser des variables dans une expression, par exemple avec :</p>
+<p><div class="highlight"><pre><span></span><code>a = 5
+b = 7
+</code></pre></div>
+on aura <em>a == b</em> qui sera <em>False</em></p>
+<p>A la place de l'opérateur "==" il est possible d'utiliser l'opérateur "!=" qui signifie "différent de".</p>
+<p>Par exemple <em>7 != 7</em> est <em>False</em> alors que <em>5 != 4</em> est <em>True</em>.</p>
+<p>Notez aussi l'existence des opérateurs :</p>
+<ul>
+<li>"strictement inférieur à" &lt;</li>
+<li>"strictement supérieur à" &gt;</li>
+<li>"inférieur ou égal à" &lt;=</li>
+<li>"supérieur ou égal à" &gt;=</li>
+</ul>
+<p>par exemple <em>5 &lt; 6</em> est <em>True</em> alors  que <em>5 &gt; 5</em> est <em>False</em></p>
+<h3 id="b-le-or-le-and-et-le-not">b) le "or", le "and" et le "not"</h3>
+<p>Il est aussi de combiner plusieurs expressions grâce aux opérateurs logiques <em>or</em> et <em>and</em>. Une combinaison d'expression est aussi une  expression (une combinaison d'expression est donc aussi soit <em>True</em> soit <em>False</em>)</p>
+<p>Par exemple si nous avons 2 expressions <em>exp1</em> et <em>exp2</em> il est possible de les combiner à l'aide de l'opérateur logique <em>or</em> : <em>exp1 or exp2</em> est <em>False</em> uniquement si <em>exp1</em> et <em>exp2</em> sont <em>False</em>, elle est <em>True</em> dans tous les autres cas.</p>
+<p>Les résultats peuvent être regroupés dans ce que l'on appelle une table de vérité :</p>
+<p>table de vérité pour le <em>or</em></p>
+<table>
+<thead>
+<tr>
+<th>exp1</th>
+<th>exp2</th>
+<th>exp1  or  exp2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr>
+<td>True</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+<p>table de vérité pour le <em>and</em></p>
+<table>
+<thead>
+<tr>
+<th>exp1</th>
+<th>exp2</th>
+<th>exp1  and  exp2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr>
+<td>False</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+<p>On trouve aussi le <em>not</em> comme opérateur logique avec la table de vérité suivante :</p>
+<table>
+<thead>
+<tr>
+<th>exp</th>
+<th>not (exp)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr>
+<td>False</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<h2 id="9-les-conditions">9) les conditions</h2>
+<p>Nous allons maintenant étudier une structure fondamentale en programmation le " si ...... alors.......sinon........".</p>
+<p>L'idée de base est la suivante :</p>
+<p><div class="highlight"><pre><span></span><code>si expression:
+    suite_instruction1
+sinon:
+    suite_instruction2
+</code></pre></div>
+Si "expression" est True alors "suite_instruction1" est exécuté et "suite_instruction2" est ignoré.</p>
+<p>Sinon (sous-entendu que "expression" est False) "suite_instruction2" est exécuté et "suite_instruction1" est ignoré.</p>
+<p>Notez l'indentation "suite_instruction1" et de "suite_instruction2"</p>
+<p>Si on considère le programme suivant :</p>
+<p><div class="highlight"><pre><span></span><code>a = 4
+b = 7
+if a &lt; b:
+    print(&quot;Je suis toto.&quot;);
+    print(&quot;Je n&#39;aime pas titi.&quot;)
+else:
+    print(&quot;Je suis titi.&quot;)
+    print(&quot;Je n&#39;aime pas toto.&quot;)
+print(&quot;En revanche, j&#39;aime le Python.&quot;)
+</code></pre></div>
+nous avons <em>a &lt; b</em> qui est True, nous allons donc exécuter les  2 lignes </p>
+<p><div class="highlight"><pre><span></span><code>print(&quot;Je suis toto.&quot;);
+print(&quot;Je n&#39;aime pas titi.&quot;)
+</code></pre></div>
+les lignes </p>
+<p><div class="highlight"><pre><span></span><code>print(&quot;Je suis titi.&quot;)
+print(&quot;Je n&#39;aime pas toto.&quot;)
+</code></pre></div>
+seront ignorées.</p>
+<p>En revanche la ligne 
+<div class="highlight"><pre><span></span><code>print(&quot;En revanche, j&#39;aime le Python.&quot;)
+</code></pre></div>
+sera systématiquement exécutée.</p>
+<p>L'exécution de ce programme permettra d'afficher à l'écran :</p>
+<div class="highlight"><pre><span></span><code>Je suis toto.
+Je n&#39;aime pas titi.
+En revanche, j&#39;aime le Python.
+</code></pre></div>
+<p>Si maintenant on considère ce programme :</p>
+<p><div class="highlight"><pre><span></span><code>a = 8
+b = 7
+if a &lt; b:
+    print(&quot;Je suis toto.&quot;);
+    print(&quot;Je n&#39;aime pas titi.&quot;)
+else:
+    print(&quot;Je suis titi.&quot;)
+    print(&quot;Je n&#39;aime pas toto.&quot;)
+print(&quot;En revanche, j&#39;aime le Python.&quot;)
+</code></pre></div>
+L'exécution de ce programme entraînera l'affichage suivant  :
+<div class="highlight"><pre><span></span><code>Je suis titi.
+Je n&#39;aime pas toto.
+En revanche, j&#39;aime le Python.
+</code></pre></div></p>
+<h2 id="10-la-boucle-while">10) la boucle <em>while</em></h2>
+<p>La notion de boucle est fondamentale en informatique. Une boucle permet d'exécuter plusieurs fois des instructions qui ne sont présentes qu'une seule fois dans le code.</p>
+<p>La structure de la boucle while est la suivante :</p>
+<p><div class="highlight"><pre><span></span><code>while expression:
+    instruction1
+    instruction2
+suite programme
+</code></pre></div>
+Tant que <em>expression</em> sera True, on exécutera encore et encore <em>instruction1</em> et <em>instruction2</em>. Après chaque exécution de <em>instruction1</em> et <em>instruction2</em> (on dit souvent "après chaque tour de boucle"), <em>expression</em> sera de nouveau évaluée (pour savoir si elle est toujours <em>True</em> ou si elle est devenue <em>False</em>)</p>
+<p>Quand <em>expression</em> deviendra <em>False</em> on passera directement à <em>suite programme</em> (sans entrer de nouveau dans la boucle),  la  boucle sera terminée.</p>
+<p>Que se passe-t-il si <em>expression</em> ne devient jamais <em>False</em>  ?  On entre alors dans  une boucle "infinie" : c'est une erreur classique en programmation (aucun programme "bien fait" ne tombe dans une boucle infinie, s'il y a une boucle infinie, c'est qu'il y a forcement une erreur dans votre programme).</p>
+<p>Considérons le programme suivant :</p>
+<p><div class="highlight"><pre><span></span><code>i = 0
+while i &lt; 3  :
+    print(i)
+    i = i + 1
+print(&quot;FIN&quot;)
+</code></pre></div>
+Voici comment analyser ce programme :</p>
+<p>Au début de l'exécution de ce programme nous avons la variable i qui a pour valeur 0. </p>
+<p>Nous arrivons ensuite au niveau du while :  l'expression i &lt; 3  est True, on "entre" donc dans la boucle : on  affiche la valeur de i : 0 et on incrémente  i de 1 (i a maintenant pour valeur 1)</p>
+<p>Nous passons au  2e tour de boucle : l'expression i &lt; 3  est True, on "entre" donc dans la boucle : on affiche la valeur de i : 1 et on incrémente  i de 1 (i a maintenant pour valeur 2).</p>
+<p>Nous passons au  3e tour de boucle : l'expression i &lt; 3  est True, on "entre" donc dans la boucle : on affiche la valeur de i :  2 et on incrémente  i de 1 (i a maintenant pour valeur 3).</p>
+<p>Nous passons au  4e tour de boucle : l'expression i &lt; 3  est False (3 n'est pas strictement inférieur à 3), on n'entre pas dans la  boucle et on passe à l'instruction qui suit immédiatement la boucle : on exécute <em>print("FIN")</em> et le programme s'arrête (il n'y a plus d'instruction après)</p>
+<p>Après l'exécution de ce programme, nous aurons à l'écran :</p>
+<div class="highlight"><pre><span></span><code>0
+1
+2
+FIN
+</code></pre></div>
+<p>Il est très important que vous soyez capable d'effectuer l'analyse d'un programme comme nous venons de la faire ci-dessus, cela vous permettra d'éviter beaucoup d'erreurs</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Pied de page">
+      
+      
+        
+        <a href="../c1a/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Activité" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              Activité
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.b88e97c5.min.js"></script>
+      
+    
+  </body>
+</html>

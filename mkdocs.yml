@@ -120,9 +120,7 @@ nav:
     - "C27 : simulation réseau (II)" :
       - 'Activité' : 'c27a.md'
     - "C28 : formulaire d'une page web":
-      - 'Cours': 'c28c.md'
       - 'Activité' : 'c28a.md'
-      - 'Révision' : 'c28r.md'
   - "Projet 4 : répertoire téléphonique version web" : 'pr4.md'
   - 'Partie 8':
     - "C29 : traitement de données en tables" :
