@@ -1,5 +1,6 @@
-.center {
+#premiere-nsi {
     display: flex;
     align-items: center;
     justify-content: center;
+    color:green;
   }
