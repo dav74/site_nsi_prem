@@ -6,7 +6,7 @@ Il est possible de "stocker" plusieurs grandeurs dans une même structure, ce ty
 
 Comme déjà dit ci-dessus, un tuple est une séquence. Voici un exemple très simple :
 
-```
+```python
 mon_tuple = (5, 8, 6, 9)
 ```
 
@@ -20,7 +20,7 @@ Comment accéder à l'élément d'indice i dans un tuple ?
 
 Simplement en utilisant la "notation entre crochets" :
 
-```
+```python
 mon_tuple = (5, 8, 6, 9)
 a = mon_tuple[2]
 ```
@@ -33,7 +33,7 @@ Un tuple ne contient pas forcément des nombres entiers, il peut aussi contenir 
 
 Dans le programme ci-dessous :
 
-```
+```python
 mon_tuple = ("le", "monde", "bonjour")
 msg = mon_tuple[2] + " " + mon_tuple[0] + " " + mon_tuple[1] + "!"
 ```
@@ -44,7 +44,7 @@ Grâce au tuple, une fonction peut renvoyer plusieurs valeurs :
 
 Intéressons-nous au programme suivant :
 
-```
+```python
 def add(a, b):
 	c = a + b
 	return (a, b, c)
@@ -54,7 +54,7 @@ Après exécution du programme ci-dessus, la variable *val* a  pour valeur le tu
 
 Il est possible d'associer à des noms les valeurs contenues dans un tuple. Dans l'exemple ci-dessous :
 
-```
+```python
 a, b, c = (5, 8, 6)
 ```
 
@@ -68,7 +68,7 @@ Il n'est pas possible de modifier un tuple après sa création (on parle d'objet
 
 Pour créer un tableau, il existe différentes méthodes : une de ces méthodes ressemble beaucoup à la création d'un tuple :
 
-```
+```python
 mon_tab = [5, 8, 6, 9]
 ```
 
@@ -78,7 +78,7 @@ Un tableau est une séquence, il est donc possible de "récupérer" un élément
 
 Dans le cas ci-dessous :
 
-```
+```python
 mon_tab = [5, 8, 6, 9]
 val = mon_tab[1]
 ```
@@ -86,7 +86,7 @@ la variable *val* a pour valeur  8 (index 0 : 5, index 1 :  8...)
 
 Il est possible de modifier un tableau à l'aide de la "notation entre crochets" :
 
-```
+```python
 mon_tab = [5, 8, 6, 9]
 mon_tab[2] = 15
 ```
@@ -94,7 +94,7 @@ Après l'exécution du programme ci-dessus, la tableau *mon_tab* est constitué 
 
 Il est aussi possible d'ajouter un élément en fin de tableau à l'aide de la méthode "append" :
 
-```
+```python
 mon_tab = [5, 8, 6, 9]
 mon_tab.append(15)
 ```
@@ -103,7 +103,7 @@ Après l'exécution du programme ci-dessus, la tableau *mon_tab* est constitué 
 
 L'instruction "del" permet de supprimer un élément d'un tableau en utilisant son index :
 
-```
+```python
 mon_tab = [5, 8, 6, 9]
 del mon_tab[1]
 ```
@@ -111,7 +111,7 @@ del mon_tab[1]
 
 La fonction "len" renvoie le nombre d’éléments présents dans une séquence (tableau et tuple)
 
-```
+```python
 mon_tab = [5, 8, 6, 9]
 a = len(mon_tab)
 ```
@@ -125,7 +125,7 @@ La boucle for... in permet de parcourir chacun des éléments d’une séquence 
 
 Prenons l'exemple suivant :
 
-```
+```python
 mon_tab = [5, 8, 6, 9]
 for ele in mon_tab:
 	print(ele)
@@ -151,7 +151,7 @@ Quelques explications : comme son nom l'indique, la boucle "for" est une boucle 
 
 Une chose importante à bien comprendre : le choix du nom de la variable qui va être associé aux éléments du tableau les uns après les autres (*ele*) est totalement arbitraire, il est possible de choisir un autre nom sans aucun problème, le code suivant aurait donné exactement le même résultat :
 
-```
+```python
 mon_tab = [5, 8, 6, 9]
 for toto in mon_tab:
 	print(toto)
@@ -159,14 +159,14 @@ for toto in mon_tab:
 
 Dans la boucle for... in il est possible d’utiliser la fonction native *range* à la place d’un tableau d’entiers :
 
-```
+```python
 for ele in range(0, 5):
 	print (ele)
 ```
 
 aura exactement le même effet que le programme : 
 
-```
+```python
 for ele in [0, 1, 2, 3, 4]:
 	print (ele)
 ```
@@ -179,13 +179,13 @@ ATTENTION : si vous avez dans un programme "range(a,b)", a est la borne inférie
 
 Nous avons vu qu'il était possible de "remplir" un tableau en renseignant les éléments du tableau les uns après les autres :
 
-```
+```python
 mon_tab = [0, 1, 2, 3]
 ```
 
 Il est aussi possible d'obtenir exactement le même résultat que ci-dessus en une seule ligne grâce à la compréhension de tableau :
 
-```
+```python
 mon_tab = [p for p in range(0, 4)]
 ```
 
@@ -193,7 +193,7 @@ nous avons une boucle for entre crochets. p va successivement prendre les valeur
 
 Les compréhensions de tableau permettent de rajouter une condition (if) :
 
-```
+```python
 l = [1, 7, 9, 15, 5, 20, 10, 8]
 mon_tab = [p for p in l if p > 10]
 ```
@@ -202,7 +202,7 @@ ci-dessus nous utilisons le tableau *l* pour créer le tableau *mon_tab* : on pa
 
 Il y a aussi la possibilité d'ajouter des opérations arithmétiques  :
 
-```
+```python
 l = [1, 7, 9, 15, 5, 20, 10, 8]
 mon_tab = [p**2 for p in l if p < 10]
 ```
@@ -215,7 +215,7 @@ Chaque élément d'un tableau peut être un tableau, on parle de tableau de tabl
 
 Voici un exemple de tableau de tableau :
 
-```
+```python
 m = [[1, 3, 4], [5 ,6 ,8], [2, 1, 3], [7, 8, 15]]
 ```
 
@@ -223,7 +223,7 @@ Le premier élément du tableau ci-dessus est bien un tableau ([1, 3, 4]), le de
 
 Il est souvent plus pratique de présenter ces "tableaux de tableaux" comme suit :
 
-```
+```python
 m = [[1, 3, 4],
      [5, 6, 8],
      [2, 1, 3],
@@ -257,7 +257,7 @@ Pour cibler un élément particulier de la matrice, on utilise la notation avec 
 
 Si nous prenons cet exemple : 
 
-```
+```python
 m = [[1, 3, 4],
      [5, 6, 8],
      [2, 1, 3],
@@ -271,7 +271,7 @@ Explications : *m[1]* correspond au  tableau *[5, 6, 8]* (2e élément).  Dans c
 
 Si maintenant nous considérons l'exemple suivant :
 
-```
+```python
 m = [1, 2, 3]
 mm = [m, m, m]
 m[0] = 100
@@ -282,7 +282,7 @@ Comme vous pouvez le constater, la modification du tableau associé au nom m ent
 
 Il est possible de parcourir l'ensemble des éléments d'une matrice à l'aide d'une "double boucle for" :
 
-```
+```python
 m = [[1, 3, 4],
      [5, 6, 8],
      [2, 1, 3],

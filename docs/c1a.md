@@ -80,7 +80,7 @@ Tapez *point_de_vie* dans la partie console de Basthon et appuyez sur "Entrée"
 
 Testez le programme suivant :
 
-```
+```python
 a = 5.2
 b = 12
 ```
@@ -93,7 +93,7 @@ Vérifiez que le type de la variable *a* est float et le type de la variable *b*
 
 Quelles sont les valeurs des variables suivantes : d, e, f, g, h et i après l'exécution du programme ci-dessous
 
-```
+```python
 import math
 a = 5
 b = 16
@@ -112,7 +112,7 @@ Vérifiez vos réponses à l'aide de la console
 Soit le programme suivant :
 
 
-```
+```python
 a = "Hello"
 b = "World"
 mon_expression = a + b
@@ -124,7 +124,7 @@ Vérifiez à l'aide de la console que la variable *mon_expression* a bien pour v
 Soit le programme suivant :
 
 
-```
+```python
 mon_nombre = 5
 res = f"Nombre de personnes : {mon_nombre}"
 ```
@@ -135,7 +135,7 @@ Vérifiez à l'aide de la console que la variable *res* a bien pour valeur la ch
 
 Soit la fonction suivante :
 
-```
+```python
 def ma_fonction(x):
 	y = 3 * x + 2
 	return y 
@@ -150,7 +150,7 @@ Après avoir exécuté le programme ci-dessus, tapez dans la console *ma_fonctio
 
 Soit la fonction suivante :
 
-```
+```python
 def ma_fonction(x,b):
 	y = 4 * x + b
 	return y 
@@ -164,7 +164,7 @@ Vérifiez votre réponse à l'aide  de la console.
 
 Soit la fonction suivante :
 
-```
+```python
 def annonce(num, prov, dest):
 	if dest != "0":
 		msg = f"le train n° {num} en provenance de {prov} et à destination de {dest}, entre en gare."
@@ -184,7 +184,7 @@ Vérifiez votre réponse à l'aide  de la console.
 
 Soit la fonction suivante :
 
-```
+```python
 def ma_fct(a,b):
 	if a < 5 and b > 2 :
 		return 42
@@ -202,7 +202,7 @@ Vérifiez votre réponse à l'aide  de la console.
 
 Soit la fonction suivante :
 
-```
+```python
 def ma_fct(a,b):
 	if a < 5 or b > 2 :
 		return 42
@@ -220,7 +220,7 @@ Vérifiez votre réponse à l'aide  de la console.
 
 Soit la fonction suivante :
 
-```
+```python
 def ma_fct(a,b):
 	if a < 2 or b < 2 :
 		return 42
@@ -238,7 +238,7 @@ Vérifiez votre réponse à l'aide  de la console.
 
 Soit la fonction suivante :
 
-```
+```python
 def ma_fct(a):
 	b = 0
 	while a > 2:
@@ -258,7 +258,7 @@ Vérifiez votre réponse à l'aide  de la console.
 
 Soit la fonction suivante :
 
-```
+```python
 def ma_fct(a):
 	b = 3
 	while a > 0:
@@ -277,7 +277,7 @@ Vérifiez votre réponse à l'aide  de la console.
 
 On désire programmer une fonction qui prend en paramètre  le rayon d'un cercle et renvoie son aire :
 
-```
+```python
 import math
 
 def aire_cercle(...):
@@ -291,7 +291,7 @@ Complétez la fonction *aire_cercle* ci-dessus (remplacez les ...).
 
 On désire programmer une fonction qui prend en paramètre un nombre et qui renvoie la chaîne de caractères "pair" si le nombre est pair et "impair" dans le cas contraire 
 
-```
+```python
 import math
 
 def pair_impair(n):
@@ -320,7 +320,7 @@ Exemple  : si on  tape dans la console *rebours(5)*, on doit obtenir :
  
 Complétez la fonction *rebours* suivante :
 
-```
+```python
 def rebours(n):
 	while ...:
 		print(n)

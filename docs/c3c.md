@@ -4,7 +4,7 @@ Comme les listes, les dictionnaires permettent de "stocker" des données. Chaque
 
 Voici un exemple de dictionnaire :
 
-```
+```python
 mon_dico = {"nom": "Durand", "prenom": "Christophe", "date de naissance": "29/02/1981"}
 ```
 
@@ -12,7 +12,7 @@ Comme vous pouvez le constater, nous utilisons des accolades {} pour définir le
 
 Pour créer un dictionnaire, il est aussi possible de procéder comme suit :
 
-```
+```python
 mon_dico = {}
 mon_dico["nom"] = "Durand"
 mon_dico["prenom"] = "Christophe"
@@ -21,7 +21,7 @@ mon_dico["date de naissance"] = "29/02/1981"
 
 À noter qu'il est aussi possible d'écrire :
 
-```
+```python
 mon_dico = dict()
 mon_dico["nom"] = "Durand"
 mon_dico["prenom"] = "Christophe"
@@ -30,7 +30,7 @@ mon_dico["date de naissance"] = "29/02/1981"
 
 Il est possible d'obtenir la valeur associée à une clé :
 
-```
+```python
 mon_dico = {"nom": "Durand", "prenom": "Christophe", "date de naissance": "29/02/1981"}
 
 a = mon_dico['nom']
@@ -40,7 +40,7 @@ Dans le programme ci-dessus, la variable *a* aura pour valeur *Durand*.
 
 Il est facile d'ajouter un élément à un dictionnaire (les dictionnaires sont mutables)
 
-```
+```python
 mon_dico = {"nom": "Durand", "prenom": "Christophe", "date de naissance": "29/02/1981"}
 
 mon_dico['lieu de naissance'] = 'Contamine'
@@ -51,19 +51,19 @@ L'instruction "del" permet du supprimer une paire "clé/valeur"
 
 Soit le dictionnaire suivant :
 
-```
+```python
 mes_fruits = {"poire": 3, "pomme": 4, "orange": 2}
 ```
 si on exécute la ligne :
 
-```
+```python
 del mes_fruits["pomme"]
 ```
 le dictionnaire *mes_fruits* n'aura plus  que 2 clés : *poire* et *orange*
 
 Il est possible de modifier la valeur d'une clé :
 
-```
+```python
 mes_fruits = {"poire": 3, "pomme": 4, "orange": 2}
 mes_fruits["pomme"] = mes_fruits["pomme"] - 1
 ```
@@ -78,7 +78,7 @@ Il est possible de parcourir un dictionnaire à l'aide d'une boucle for. Ce parc
 
 Le programme suivant :
 
-```
+```python
 mes_fruits = {"poire": 3, "pomme": 4, "orange": 2}
 
 for fruit in mes_fruits.keys():
@@ -96,7 +96,7 @@ Attention : vous n'obtiendrez par forcement le même ordre que ci-dessus (surtou
 
 À noter que le *.keys()* n'est pas obligatoire pour parcourir les clés, on obtient le même résultat avec simplement :
 
-```
+```python
 mes_fruits = {"poire": 3, "pomme": 4, "orange": 2}
 
 for fruit in mes_fruits:
@@ -107,7 +107,7 @@ for fruit in mes_fruits:
 
 La méthode *values* permet de parcourir le dictionnaire selon les valeurs :
 
-```
+```python
 mes_fruits = {"poire": 3, "pomme": 4, "orange": 2}
 for qte in mes_fruits.values():
   print(qte)
@@ -125,7 +125,7 @@ Le programme ci-dessus permet d'obtenir :
 
 Il est possible de parcourir un dictionnaire à la fois sur les clés et les valeurs en utilisant la méthode *items* :
 
-```
+```python
 mes_fruits = {"poire": 3, "pomme": 4, "orange": 2}
 
 for fruit, qte in mes_fruits.items():

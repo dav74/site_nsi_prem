@@ -3,7 +3,7 @@ Il est possible de visualiser le contenu d'un tuple ou d'un tableau directement 
 
 Saisissez le code suivant dans la partie "éditeur" de spyder :
 
-```
+```python
 mon_tuple = (5, 8, 6, 9)
 ```
 Exécutez le programme
@@ -14,7 +14,7 @@ Tapez ensuite *mon_tuple* dans la partie "console"
 
 Complétez le programme suivant afin que la variable *a* ait pour valeur 8
 
-```
+```python
 mon_tuple = (5, 8, 6, 9)
 a = mon_tuple[...]
 ```
@@ -23,7 +23,7 @@ a = mon_tuple[...]
 
 Complétez le programme suivant afin que la variable *a* ait pour valeur 8 et que la variable *b* ait pour valeur 5 
 
-```
+```python
 a, b = (..., ...)
 ```
 
@@ -31,7 +31,7 @@ a, b = (..., ...)
 
 Complétez le programme ci-dessous pour qu'après exécution de ce dernier, le tableau *mon_tab* soit composé des éléments suivants : [15, 8, 6,  9]
 
-```
+```python
 mon_tab = [5, 8, 6, 9]
 mon_tab[...] = 15
 ```
@@ -41,18 +41,18 @@ mon_tab[...] = 15
 
 Soit le tableau suivant :
 
-```
+```python
 tab = [3,3,6,9]
 ```
 Quelle sera la composition de ce tableau si on exécute la ligne suivante :
 
-```
+```python
 tab.append(0)
 ```
 
 ### activité 2.6
 
-```
+```python
 mon_tab = [1, 2, 3, 4]
 del mon_tab[1]
 ```
@@ -60,7 +60,7 @@ Donnez  la composition du tableau *mon_tab*  après l'exécution du programme  c
 
 ### activité 2.7
 
-```
+```python
 mon_tab = [5, 8, 6, 9, 15,  0]
 a = len(mon_tab)
 ```
@@ -68,7 +68,7 @@ Quelle  est la valeur de la variable *a*  après  l'exécution du programme ci-d
 
 ### activité 2.8
 
-```
+```python
 tab = [1, 2, 3]
 s = 0
 for t in tab:
@@ -78,7 +78,7 @@ Quelle est la valeur de la variable *s* après  l'exécution du programme  ci-de
 
 ### activité 2.9
 
-```
+```python
 tab = [5, 3, 4, 8]
 mon_tab = [2*t for t in tab if t > 4]
 ```
@@ -89,7 +89,7 @@ Quelle est la composition du tableau *mon_tab* après  l'exécution du programme
 
 Soit le programme suivant :
 
-```
+```python
 m = [[1, 3, 4],
      [5, 6, 8],
      [2, 1, 3],
@@ -101,7 +101,7 @@ Quelle est la valeur de la variable *a* après  l'exécution de ce programme ? V
 
 ### activité 2.11
 
-```
+```python
 m = [[1, 3],
      [5, 8],
      [2, 3]]
@@ -121,7 +121,7 @@ La fonction *recherche_max* prend en paramètre un tableau et renvoie la plus gr
 
 Par exemple, *recherche_max([4, 3, 0, 5])* renvoie 5
 
-```
+```python
 def recherche_max(tab):
 	maxi = ...
 	for t in tab :
@@ -142,7 +142,7 @@ Exemples :
 20
 ```
 
-```
+```python
 def somme(tab):
 	s = ...
 	for t in ... :
@@ -165,7 +165,7 @@ Exemples :
 -1
 ```
 
-```
+```python
 def recherche(tab, n):
 	indice = ...
 	i = 0

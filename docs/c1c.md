@@ -33,7 +33,7 @@ Une variable est constituée de 2 choses :
 
 On dira donc qu'une variable est l'association d'un nom et d'une valeur
 
-```
+```python
 i = 12
 ```
 Grâce à cette ligne, nous avons défini une variable qui porte le nom i. Ce nom i est associé à la valeur 12.
@@ -47,7 +47,7 @@ J'attire votre  attention que nous utilisons un point à la place d'une virgule 
 
 Un nom peut donc être associé à plusieurs types d'entités (pour l'instant nous n'en avons vu que deux, mais nous en verrons d'autres plus loin) : les nombres entiers ("integer" en anglais, abrégé en "int") et les nombres à virgule ("float" en anglais). Il est possible de connaitre le type de l'entité à l'aide de l'instruction "type".
 
-```
+```python
 a = 5
 b = 5.4
 ```
@@ -61,7 +61,7 @@ Les signes utilisés sont classiques : +, - , * (multiplication), / (division), 
 
 Il est tout à fait possible d'effectuer des opérations directement avec des nombres, mais il est aussi possible d'utiliser des variables.
 
-```
+```python
 a = 5
 b = 16
 c = 3.14 / 2
@@ -74,7 +74,7 @@ h = a
 
 Considérons maintenant le programme suivant :
 
-```
+```python
 a = 11
 a = a + 1
 ```
@@ -94,7 +94,7 @@ Donc la valeur de a est bien 12
 Ce raisonnement peut être généralisé pour éviter des erreurs parfois difficiles à corriger : dans une égalité, commencer toujours par évaluer l'expression se trouvant à droite du signe égal.
 
 L'opération 
-```
+```python
 a = a + 1
 ```
 se nomme une incrémentation.
@@ -106,7 +106,7 @@ se nomme une incrémentation.
 
 On peut aussi associer des noms à des suites de caractères que l'on appelle "chaîne de caractères".
 
-```
+```python
 ma_chaine = "Bonjour le monde !"
 ```
 
@@ -124,7 +124,7 @@ D'après Wikipédia :
 
 Si on considère le programme suivant :
 
-```
+```python
 a = "Hello"
 b = "World"
 mon_expression = a + b
@@ -133,7 +133,7 @@ après l'exécution de ce programme, la variable *mon_expression* aura pour vale
 
 Il est aussi possible de concaténer une chaîne de caractères et une ou plusieurs variables :
 
-```
+```python
 ma_chaine_1 = "Bonjour "
 ma_chaine_2 = "le "
 res = ma_chaine_1 + ma_chaine_2 + "monde!"
@@ -144,7 +144,7 @@ Les 2 noms ma_chaine_1 et ma_chaine_2 sont associés à 2 chaînes de caractère
 
 Que se passe-t-il si nous avons ce cas de figure :
 
-```
+```python
 a = "Nombre de pommes : "
 b = 4 
 c = a + b
@@ -153,7 +153,7 @@ a est de type *str* alors que b est de type *int*. Le signe plus représente une
 
 La solution : transformer le nombre 4 en caractère 4 à l'aide du mot clé *str*:
 
-```
+```python
 a = "Nombre de pommes : "
 b = 4 
 c = a + str(b)
@@ -164,7 +164,7 @@ Autre solution pour faire cohabiter des variables de type *int* ou *float* avec 
 
 Il est possible d'écrire :
 
-```
+```python
 a = "Nombre de pommes :"
 b = 4 
 c = f"{a} {b}"
@@ -175,7 +175,7 @@ Dans la chaîne de caractère, *{a}* sera remplacé par la valeur de la variable
 
 autre exemple d'utilisation des fstring :
 
-```
+```python
 num_train = 4232
 dest = "Paris" 
 c = f"Le train n°{num_train} à destination de {dest} entre en gare" 
@@ -229,7 +229,7 @@ Pour "utiliser" la fonction ma_fonction, il suffit d'écrire : ma_fonction (4) (
 
 Si on considère cet exemple  :
 
-```
+```python
 def ma_fonction(x):
 	y = 3 * x + 2
 	return y
@@ -240,7 +240,7 @@ Après l'exécution de ce programme, la valeur de la variable *solution* sera 14
 
 Il est possible de passer plusieurs paramètres à une fonction :
 
-```
+```python
 def ma_fonction(x, b):
 	y = 2 * x + b
 	return y
@@ -250,7 +250,7 @@ Dans  ce cas,  dans  la fonction, le paramètre *x* sera égal à 4 et le param�
 
 Les paramètres peuvent être des chaînes de caractères (ainsi que la valeur retournée)
 
-```
+```python
 def dit_bonjour(nom, age):
 	phrase = f"Bonjour {nom}, vous avez {age} ans."
 	return phrase
@@ -274,18 +274,18 @@ Il est possible d'utiliser d'autres fonctions "prêtes à l'emploi" en important
 
 Pour utiliser les fonctions présentes dans un module, il est nécessaire d'importer le module dans notre programme. Par exemple, pour pouvoir utiliser les fonctions du module *math* il faudra écrire :
 
-```
+```python
 import math
 ```
 au début de son programme.
 
 Pour utiliser une fonction d'un module importé, il faudra préciser le nom du module qui propose cette fonction. Par exemple, pour déterminer le sinus de 3.14, il faudra écrire :
-```
+```python
 math.sin(3.14)
 ```    
 Voici une série de calculs qui fait appel à des fonctions issues du module maths :
 
-```
+```python
 import math
 
 a = 5
@@ -305,7 +305,7 @@ Après l'exécution de ce programme :
 
 Il est possible d'écrire une fonction sans utiliser le mot clé *return*, cette pratique est souvent considérée comme une "mauvaise pratique", mais Python ne renverra pas d'erreur si vous le faites. Le code suivant est tout à fait correct :
 
-```
+```python
 def ma_fonction(i):
 	d = 5
 	z = i + d
@@ -322,7 +322,7 @@ Dans le cas ci-dessus nous aurons donc :
 
 Considérons le programme suivant:
 
-```
+```python
 def ma_fonc():
 	i = 5
 ma_fonc()
@@ -348,7 +348,7 @@ En fait, la variable i est une variable dite locale : elle a été définie dans
 
 Étudions maintenant un cas un peu plus complexe :
 
-```
+```python
 i = 3
 def ma_fonc():
 	i = 5
@@ -361,7 +361,7 @@ En fait dans cet exemple nous avons 2 variables i différentes : la variable i "
 
 Une variable globale peut être "utilisée" à l'intérieur d'une fonction :
 
-```
+```python
 i = 3
 def ma_fonc():
 	print (i)
@@ -375,7 +375,7 @@ Quand on cherche à utiliser une variable dans une fonction, le système va d'ab
 
 Il est important de bien comprendre que dans la programme ci-dessous le système trouve une variable i dans l'espace local de la fonction, la "recherche" de la variable i se serait arrêtée là :
 
-```
+```python
 i = 3
 def ma_fonc():
 	i = 5
@@ -386,7 +386,7 @@ et ce programme affiche la valeur 5 à l'écran. *i* a été trouvée dans l'esp
 
 En revanche le programme ci-dessous génère une erreur : "UnboundLocalError: local variable 'i' referenced before assignment"
 
-```
+```python
 i = 3
 def ma_fonc():
 	i = i + 1
@@ -398,7 +398,7 @@ Il n'est à priori pas possible de modifier une variable globale (ici la variabl
 
 Pour pouvoir modifier une variable globale dans une fonction, il faut utiliser le mot clé *global* :
 
-```
+```python
 i = 3
 def ma_fonc():
 	global i
@@ -436,7 +436,7 @@ ATTENTION : notez le double égal "==" qui permet de distinguer une expression e
 
 Il est possible d'utiliser des variables dans une expression, par exemple avec :
 
-```
+```python
 a = 5
 b = 7
 ```
@@ -510,7 +510,7 @@ Notez l'indentation "suite_instruction1" et de "suite_instruction2"
 
 Si on considère le programme suivant :
 
-```
+```python
 a = 4
 b = 7
 if a < b:
@@ -523,20 +523,20 @@ print("En revanche, j'aime le Python.")
 ```
 nous avons *a < b* qui est True, nous allons donc exécuter les  2 lignes 
 
-```
+```python
 print("Je suis toto.");
 print("Je n'aime pas titi.")
 ```
 les lignes 
 
-```
+```python
 print("Je suis titi.")
 print("Je n'aime pas toto.")
 ```
 seront ignorées.
 
 En revanche la ligne 
-```
+```python
 print("En revanche, j'aime le Python.")
 ```
 sera systématiquement exécutée.
@@ -551,7 +551,7 @@ En revanche, j'aime le Python.
 
 Si maintenant on considère ce programme :
 
-```
+```python
 a = 8
 b = 7
 if a < b:
@@ -589,7 +589,7 @@ Que se passe-t-il si *expression* ne devient jamais *False*  ?  On entre alors d
 
 Considérons le programme suivant :
 
-```
+```python
 i = 0
 while i < 3  :
 	print(i)
