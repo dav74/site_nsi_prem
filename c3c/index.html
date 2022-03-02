@@ -3078,54 +3078,54 @@
 <h2 id="1-presentation-des-dictionnaires">1)  présentation des dictionnaires</h2>
 <p>Comme les listes, les dictionnaires permettent de "stocker" des données. Chaque élément d'un dictionnaire est composé de 2 parties, on parle de paires "clé/valeur". </p>
 <p>Voici un exemple de dictionnaire :</p>
-<div class="highlight"><pre><span></span><code>mon_dico = {&quot;nom&quot;: &quot;Durand&quot;, &quot;prenom&quot;: &quot;Christophe&quot;, &quot;date de naissance&quot;: &quot;29/02/1981&quot;}
+<div class="highlight"><pre><span></span><code><span class="n">mon_dico</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;nom&quot;</span><span class="p">:</span> <span class="s2">&quot;Durand&quot;</span><span class="p">,</span> <span class="s2">&quot;prenom&quot;</span><span class="p">:</span> <span class="s2">&quot;Christophe&quot;</span><span class="p">,</span> <span class="s2">&quot;date de naissance&quot;</span><span class="p">:</span> <span class="s2">&quot;29/02/1981&quot;</span><span class="p">}</span>
 </code></pre></div>
 <p>Comme vous pouvez le constater, nous utilisons des accolades {} pour définir le début et la fin du dictionnaire (alors que nous utilisons des crochets [] pour les listes et les parenthèses pour les tuples). Dans le dictionnaire ci-dessus, "nom", "prenom" et "date de naissance" sont des clés et "Durand", "Christophe" et "29/02/1981" sont des valeurs. La clé "nom" est associée à la valeur "Durand", la clé "prenom" est associée à la valeur "Christophe" et la clé "date de naissance" est associée à la valeur "29/02/1981". Les clés sont des chaînes de caractères ou des nombres. Les valeurs peuvent être des chaînes de caractères, des nombres, des booléens...</p>
 <p>Pour créer un dictionnaire, il est aussi possible de procéder comme suit :</p>
-<div class="highlight"><pre><span></span><code>mon_dico = {}
-mon_dico[&quot;nom&quot;] = &quot;Durand&quot;
-mon_dico[&quot;prenom&quot;] = &quot;Christophe&quot;
-mon_dico[&quot;date de naissance&quot;] = &quot;29/02/1981&quot;
+<div class="highlight"><pre><span></span><code><span class="n">mon_dico</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">mon_dico</span><span class="p">[</span><span class="s2">&quot;nom&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Durand&quot;</span>
+<span class="n">mon_dico</span><span class="p">[</span><span class="s2">&quot;prenom&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Christophe&quot;</span>
+<span class="n">mon_dico</span><span class="p">[</span><span class="s2">&quot;date de naissance&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;29/02/1981&quot;</span>
 </code></pre></div>
 <p>À noter qu'il est aussi possible d'écrire :</p>
-<div class="highlight"><pre><span></span><code>mon_dico = dict()
-mon_dico[&quot;nom&quot;] = &quot;Durand&quot;
-mon_dico[&quot;prenom&quot;] = &quot;Christophe&quot;
-mon_dico[&quot;date de naissance&quot;] = &quot;29/02/1981&quot;
+<div class="highlight"><pre><span></span><code><span class="n">mon_dico</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+<span class="n">mon_dico</span><span class="p">[</span><span class="s2">&quot;nom&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Durand&quot;</span>
+<span class="n">mon_dico</span><span class="p">[</span><span class="s2">&quot;prenom&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Christophe&quot;</span>
+<span class="n">mon_dico</span><span class="p">[</span><span class="s2">&quot;date de naissance&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;29/02/1981&quot;</span>
 </code></pre></div>
 <p>Il est possible d'obtenir la valeur associée à une clé :</p>
-<div class="highlight"><pre><span></span><code>mon_dico = {&quot;nom&quot;: &quot;Durand&quot;, &quot;prenom&quot;: &quot;Christophe&quot;, &quot;date de naissance&quot;: &quot;29/02/1981&quot;}
+<div class="highlight"><pre><span></span><code><span class="n">mon_dico</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;nom&quot;</span><span class="p">:</span> <span class="s2">&quot;Durand&quot;</span><span class="p">,</span> <span class="s2">&quot;prenom&quot;</span><span class="p">:</span> <span class="s2">&quot;Christophe&quot;</span><span class="p">,</span> <span class="s2">&quot;date de naissance&quot;</span><span class="p">:</span> <span class="s2">&quot;29/02/1981&quot;</span><span class="p">}</span>
 
-a = mon_dico[&#39;nom&#39;]
+<span class="n">a</span> <span class="o">=</span> <span class="n">mon_dico</span><span class="p">[</span><span class="s1">&#39;nom&#39;</span><span class="p">]</span>
 </code></pre></div>
 <p>Dans le programme ci-dessus, la variable <em>a</em> aura pour valeur <em>Durand</em>.</p>
 <p>Il est facile d'ajouter un élément à un dictionnaire (les dictionnaires sont mutables)</p>
-<p><div class="highlight"><pre><span></span><code>mon_dico = {&quot;nom&quot;: &quot;Durand&quot;, &quot;prenom&quot;: &quot;Christophe&quot;, &quot;date de naissance&quot;: &quot;29/02/1981&quot;}
+<p><div class="highlight"><pre><span></span><code><span class="n">mon_dico</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;nom&quot;</span><span class="p">:</span> <span class="s2">&quot;Durand&quot;</span><span class="p">,</span> <span class="s2">&quot;prenom&quot;</span><span class="p">:</span> <span class="s2">&quot;Christophe&quot;</span><span class="p">,</span> <span class="s2">&quot;date de naissance&quot;</span><span class="p">:</span> <span class="s2">&quot;29/02/1981&quot;</span><span class="p">}</span>
 
-mon_dico[&#39;lieu de naissance&#39;] = &#39;Contamine&#39;
+<span class="n">mon_dico</span><span class="p">[</span><span class="s1">&#39;lieu de naissance&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Contamine&#39;</span>
 </code></pre></div>
 La  deuxième ligne du programme ci-dessus  a permis  d'ajouter la clé <em>lieu de naissance</em> au dictionnaire <em>mon_dico</em>. Cette clé a pour valeur <em>Contamine</em></p>
 <p>L'instruction "del" permet du supprimer une paire "clé/valeur"</p>
 <p>Soit le dictionnaire suivant :</p>
-<p><div class="highlight"><pre><span></span><code>mes_fruits = {&quot;poire&quot;: 3, &quot;pomme&quot;: 4, &quot;orange&quot;: 2}
+<p><div class="highlight"><pre><span></span><code><span class="n">mes_fruits</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;poire&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;pomme&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
 </code></pre></div>
 si on exécute la ligne :</p>
-<p><div class="highlight"><pre><span></span><code>del mes_fruits[&quot;pomme&quot;]
+<p><div class="highlight"><pre><span></span><code><span class="k">del</span> <span class="n">mes_fruits</span><span class="p">[</span><span class="s2">&quot;pomme&quot;</span><span class="p">]</span>
 </code></pre></div>
 le dictionnaire <em>mes_fruits</em> n'aura plus  que 2 clés : <em>poire</em> et <em>orange</em></p>
 <p>Il est possible de modifier la valeur d'une clé :</p>
-<div class="highlight"><pre><span></span><code>mes_fruits = {&quot;poire&quot;: 3, &quot;pomme&quot;: 4, &quot;orange&quot;: 2}
-mes_fruits[&quot;pomme&quot;] = mes_fruits[&quot;pomme&quot;] - 1
+<div class="highlight"><pre><span></span><code><span class="n">mes_fruits</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;poire&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;pomme&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+<span class="n">mes_fruits</span><span class="p">[</span><span class="s2">&quot;pomme&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mes_fruits</span><span class="p">[</span><span class="s2">&quot;pomme&quot;</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span>
 </code></pre></div>
 <p>Après l'exécution de ce programme, la clé <em>pomme</em> aura pour valeur 3</p>
 <h2 id="2-parcourir-un-dictionnaire-avec-la-boucle-for">2) parcourir un dictionnaire avec la boucle for</h2>
 <h3 id="a-parcourir-les-cles">a) parcourir les clés</h3>
 <p>Il est possible de parcourir un dictionnaire à l'aide d'une boucle for. Ce parcours peut se faire selon les clés ou les valeurs. Commençons par parcourir les clés à l'aide de la méthode <em>keys</em></p>
 <p>Le programme suivant :</p>
-<p><div class="highlight"><pre><span></span><code>mes_fruits = {&quot;poire&quot;: 3, &quot;pomme&quot;: 4, &quot;orange&quot;: 2}
+<p><div class="highlight"><pre><span></span><code><span class="n">mes_fruits</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;poire&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;pomme&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
 
-for fruit in mes_fruits.keys():
-    print(fruit)
+<span class="k">for</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="n">mes_fruits</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">fruit</span><span class="p">)</span>
 </code></pre></div>
 permet d'afficher :</p>
 <div class="highlight"><pre><span></span><code>poire
@@ -3134,16 +3134,16 @@ orange
 </code></pre></div>
 <p>Attention : vous n'obtiendrez par forcement le même ordre que ci-dessus (surtout si vous utilisez une version un peu ancienne de Python). En effet, les paires clé/valeur ne sont pas ordonnées dans un dictionnaire.</p>
 <p>À noter que le <em>.keys()</em> n'est pas obligatoire pour parcourir les clés, on obtient le même résultat avec simplement :</p>
-<div class="highlight"><pre><span></span><code>mes_fruits = {&quot;poire&quot;: 3, &quot;pomme&quot;: 4, &quot;orange&quot;: 2}
+<div class="highlight"><pre><span></span><code><span class="n">mes_fruits</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;poire&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;pomme&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
 
-for fruit in mes_fruits:
-    print(fruit)
+<span class="k">for</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="n">mes_fruits</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">fruit</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="b-parcourir-les-valeurs">b) parcourir les valeurs</h3>
 <p>La méthode <em>values</em> permet de parcourir le dictionnaire selon les valeurs :</p>
-<div class="highlight"><pre><span></span><code>mes_fruits = {&quot;poire&quot;: 3, &quot;pomme&quot;: 4, &quot;orange&quot;: 2}
-for qte in mes_fruits.values():
-  print(qte)
+<div class="highlight"><pre><span></span><code><span class="n">mes_fruits</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;poire&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;pomme&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+<span class="k">for</span> <span class="n">qte</span> <span class="ow">in</span> <span class="n">mes_fruits</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">qte</span><span class="p">)</span>
 </code></pre></div>
 <p>Le programme ci-dessus permet d'obtenir :</p>
 <div class="highlight"><pre><span></span><code>3
@@ -3152,10 +3152,10 @@ for qte in mes_fruits.values():
 </code></pre></div>
 <h3 id="c-parcourir-les-cles-et-les-valeurs-en-meme-temps">c)  parcourir les clés et les valeurs en même temps</h3>
 <p>Il est possible de parcourir un dictionnaire à la fois sur les clés et les valeurs en utilisant la méthode <em>items</em> :</p>
-<p><div class="highlight"><pre><span></span><code>mes_fruits = {&quot;poire&quot;: 3, &quot;pomme&quot;: 4, &quot;orange&quot;: 2}
+<p><div class="highlight"><pre><span></span><code><span class="n">mes_fruits</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;poire&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;pomme&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
 
-for fruit, qte in mes_fruits.items():
-    print (f&quot;{fruit} : {qte}&quot;)
+<span class="k">for</span> <span class="n">fruit</span><span class="p">,</span> <span class="n">qte</span> <span class="ow">in</span> <span class="n">mes_fruits</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">fruit</span><span class="si">}</span><span class="s2"> : </span><span class="si">{</span><span class="n">qte</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div>
 l'exécution du programme ci-dessus nous permet d'avoir :
 <div class="highlight"><pre><span></span><code>poire : 3

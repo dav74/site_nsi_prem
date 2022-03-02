@@ -3108,57 +3108,57 @@
 <h3 id="activite-31">activité 3.1</h3>
 <p>Il est possible d'afficher le contenu d'un dictionnaire dans la console.</p>
 <p>Tapez la ligne suivante dans la partie éditeur de Spyder ou de basthon :</p>
-<p><div class="highlight"><pre><span></span><code>mes_fruits = {&quot;poire&quot;: 3, &quot;pomme&quot;: 4, &quot;orange&quot;: 2}
+<p><div class="highlight"><pre><span></span><code><span class="n">mes_fruits</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;poire&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;pomme&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
 </code></pre></div>
 après avoir exécuté le "programme" ci-dessus, tapez  <em>mes_fruits</em> dans la partie console. Vous devriez alors voir s'afficher le contenu (clés et valeurs) du dictionnaire.</p>
 <h3 id="activite-32">activité 3.2</h3>
-<p><div class="highlight"><pre><span></span><code>d = {&quot;voiture&quot;: 25, &quot;vélo&quot;: 55, &quot;train&quot;: 20}
-tr = d[&#39;vélo&#39;]
+<p><div class="highlight"><pre><span></span><code><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;voiture&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;vélo&quot;</span><span class="p">:</span> <span class="mi">55</span><span class="p">,</span> <span class="s2">&quot;train&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">}</span>
+<span class="n">tr</span> <span class="o">=</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;vélo&#39;</span><span class="p">]</span>
 </code></pre></div>
 Quelle  est la valeur de la variable <em>tr</em> après l'exécution du programme ci-dessus. Vérifiez votre réponse à l'aide de la console.</p>
 <h3 id="activite-33">activité 3.3</h3>
-<p><div class="highlight"><pre><span></span><code>tab = []
-d = {&quot;voiture&quot;: 25, &quot;vélo&quot;: 55, &quot;train&quot;: 20}
-for t in d.values():
-    if t &lt; 40 :
-        tab.append(t)
+<p><div class="highlight"><pre><span></span><code><span class="n">tab</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;voiture&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;vélo&quot;</span><span class="p">:</span> <span class="mi">55</span><span class="p">,</span> <span class="s2">&quot;train&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">}</span>
+<span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="mi">40</span> <span class="p">:</span>
+        <span class="n">tab</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
 </code></pre></div>
 Quelle est la valeur de la variable <em>tab</em> après l'exécution de  ce programme. Vérifiez votre réponse à l'aide de la console.</p>
 <h3 id="activite-34">activité 3.4</h3>
-<p><div class="highlight"><pre><span></span><code>tab = []
-d = {&quot;voiture&quot;: 25, &quot;vélo&quot;: 55, &quot;train&quot;: 20}
-for v,t in d.items():
-    if t &lt; 40 :
-        tab.append(v)
+<p><div class="highlight"><pre><span></span><code><span class="n">tab</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;voiture&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;vélo&quot;</span><span class="p">:</span> <span class="mi">55</span><span class="p">,</span> <span class="s2">&quot;train&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">}</span>
+<span class="k">for</span> <span class="n">v</span><span class="p">,</span><span class="n">t</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="mi">40</span> <span class="p">:</span>
+        <span class="n">tab</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 </code></pre></div>
 Quelle est la valeur de la variable <em>tab</em> après l'exécution de  ce programme. Vérifiez votre réponse à l'aide de la console.</p>
 <h3 id="activite-35">activité 3.5</h3>
-<p><div class="highlight"><pre><span></span><code>tab = [{&#39;nom&#39;: &#39;toto&#39;, &#39;num&#39;: 2}, {&#39;nom&#39;: &#39;titi&#39;, &#39;num&#39;: 5},  {&#39;nom&#39;: &#39;tata&#39;, &#39;num&#39;: 4}]
-tab_nom =  []
+<p><div class="highlight"><pre><span></span><code><span class="n">tab</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span> <span class="s1">&#39;toto&#39;</span><span class="p">,</span> <span class="s1">&#39;num&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span> <span class="s1">&#39;titi&#39;</span><span class="p">,</span> <span class="s1">&#39;num&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">},</span>  <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span> <span class="s1">&#39;tata&#39;</span><span class="p">,</span> <span class="s1">&#39;num&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">}]</span>
+<span class="n">tab_nom</span> <span class="o">=</span>  <span class="p">[]</span>
 
-for t in tab :
-    if t[&#39;num&#39;] &gt; 3:
-        tab_nom.append(t[&#39;nom&#39;])
+<span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">tab</span> <span class="p">:</span>
+    <span class="k">if</span> <span class="n">t</span><span class="p">[</span><span class="s1">&#39;num&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="n">tab_nom</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="s1">&#39;nom&#39;</span><span class="p">])</span>
 </code></pre></div>
 Quelle est la valeur de la variable <em>tab_nom</em> après l'exécution de  ce programme. Vérifiez votre réponse à l'aide de la console.</p>
 <h3 id="activite-36">activité 3.6</h3>
 <p>On utilise un tableau contenant des dictionnaires afin de stocker les  notes des élèves Titi, Toto et Tutu :</p>
-<div class="highlight"><pre><span></span><code>[{&#39;nom&#39;:&#39;Titi&#39;, &#39;note&#39;:12}, {&#39;nom&#39;:&#39;Tutu&#39;, &#39;note&#39;:11}, {&#39;nom&#39;:&#39;Toto&#39;, &#39;note&#39;:17}]
+<div class="highlight"><pre><span></span><code><span class="p">[{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;Titi&#39;</span><span class="p">,</span> <span class="s1">&#39;note&#39;</span><span class="p">:</span><span class="mi">12</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;Tutu&#39;</span><span class="p">,</span> <span class="s1">&#39;note&#39;</span><span class="p">:</span><span class="mi">11</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;Toto&#39;</span><span class="p">,</span> <span class="s1">&#39;note&#39;</span><span class="p">:</span><span class="mi">17</span><span class="p">}]</span>
 </code></pre></div>
 <p>La fonction <em>plusHaute</em> prend en paramètre un tableau contenant des dictionnaires (comme celui ci-dessus) et renvoie le nom de l'élève ayant obtenu la meilleure note (on partira du principe que les élèves ont tous des notes différentes).</p>
-<div class="highlight"><pre><span></span><code>def plusHaute(tab):
-    nom = &quot;&quot;
-    max_note = ...
-    for t in ...:
-        if t[&#39;note&#39;] &gt; ...:
-            max_note = t[...]
-            nom = t[...]
-    return ...
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">plusHaute</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
+    <span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="n">max_note</span> <span class="o">=</span> <span class="o">...</span>
+    <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="o">...</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">t</span><span class="p">[</span><span class="s1">&#39;note&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="o">...</span><span class="p">:</span>
+            <span class="n">max_note</span> <span class="o">=</span> <span class="n">t</span><span class="p">[</span><span class="o">...</span><span class="p">]</span>
+            <span class="n">nom</span> <span class="o">=</span> <span class="n">t</span><span class="p">[</span><span class="o">...</span><span class="p">]</span>
+    <span class="k">return</span> <span class="o">...</span>
 </code></pre></div>
 <p>Complétez la fonction <em>plusHaute</em></p>
 <h3 id="activite-37">activité 3.7</h3>
 <p>On utilise un tableau et des dictionnaires pour stocker des noms et des numéros  de téléphone :</p>
-<div class="highlight"><pre><span></span><code>[{&#39;nom&#39;:&#39;Titi&#39;, &#39;num&#39;:987675643}, {&#39;nom&#39;:&#39;Tutu&#39;, &#39;num&#39;:424224}, {&#39;nom&#39;:&#39;Toto&#39;, &#39;num&#39;:343235365}]
+<div class="highlight"><pre><span></span><code><span class="p">[{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;Titi&#39;</span><span class="p">,</span> <span class="s1">&#39;num&#39;</span><span class="p">:</span><span class="mi">987675643</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;Tutu&#39;</span><span class="p">,</span> <span class="s1">&#39;num&#39;</span><span class="p">:</span><span class="mi">424224</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;Toto&#39;</span><span class="p">,</span> <span class="s1">&#39;num&#39;</span><span class="p">:</span><span class="mi">343235365</span><span class="p">}]</span>
 </code></pre></div>
 <p>La fonction <em>numTel</em> prend 2 paramètres :</p>
 <ul>
@@ -3166,15 +3166,15 @@ Quelle est la valeur de la variable <em>tab_nom</em> après l'exécution de  ce 
 <li>un nom <em>n</em></li>
 </ul>
 <p>La fonction <em>numTel</em> doit renvoyer le numéro de téléphone de <em>n</em> si ce dernier existe. Dans le cas où <em>n</em> n'existe pas, la  fonction <em>numTel</em> doit renvoyer -1</p>
-<div class="highlight"><pre><span></span><code>def numTel(n, ...):
-    for ... in tab_tel:
-        if ...  == t[&#39;nom&#39;]:
-            return ...
-    return ...
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">numTel</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="o">...</span><span class="p">):</span>
+    <span class="k">for</span> <span class="o">...</span> <span class="ow">in</span> <span class="n">tab_tel</span><span class="p">:</span>
+        <span class="k">if</span> <span class="o">...</span>  <span class="o">==</span> <span class="n">t</span><span class="p">[</span><span class="s1">&#39;nom&#39;</span><span class="p">]:</span>
+            <span class="k">return</span> <span class="o">...</span>
+    <span class="k">return</span> <span class="o">...</span>
 </code></pre></div>
 <h3 id="activite-38">activité 3.8</h3>
 <p>On utilise un tableau contenant des dictionnaires afin de stocker les  notes des élèves Titi, Toto et Tutu :</p>
-<p><div class="highlight"><pre><span></span><code>[{&#39;nom&#39;:&#39;Titi&#39;, &#39;note&#39;:12}, {&#39;nom&#39;:&#39;Tutu&#39;, &#39;note&#39;:11}, {&#39;nom&#39;:&#39;Toto&#39;, &#39;note&#39;:17}]
+<p><div class="highlight"><pre><span></span><code><span class="p">[{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;Titi&#39;</span><span class="p">,</span> <span class="s1">&#39;note&#39;</span><span class="p">:</span><span class="mi">12</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;Tutu&#39;</span><span class="p">,</span> <span class="s1">&#39;note&#39;</span><span class="p">:</span><span class="mi">11</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;Toto&#39;</span><span class="p">,</span> <span class="s1">&#39;note&#39;</span><span class="p">:</span><span class="mi">17</span><span class="p">}]</span>
 </code></pre></div>
 La fonction <em>moyenne</em> prend en paramètre un tableau contenant des dictionnaires (comme celui ci-dessus) et renvoie la moyenne des notes.</p>
 <p>Écrivez la fonction <em>moyenne</em></p>

@@ -3331,148 +3331,148 @@ Cliquez ensuite sur le bouton <em>Exécuter</em></p>
 <p><img alt="" src="../img/c1a_11.png" /></p>
 <h3 id="activite-14">activité 1.4</h3>
 <p>Testez le programme suivant :</p>
-<div class="highlight"><pre><span></span><code>a = 5.2
-b = 12
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mf">5.2</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">12</span>
 </code></pre></div>
 <p>après  avoir exécuté ce programme, tapez type(a) puis type(b) dans la console.</p>
 <p>Vérifiez que le type de la variable <em>a</em> est float et le type de la variable <em>b</em> est <em>int</em></p>
 <h3 id="activite-15">activité 1.5</h3>
 <p>Quelles sont les valeurs des variables suivantes : d, e, f, g, h et i après l'exécution du programme ci-dessous</p>
-<p><div class="highlight"><pre><span></span><code>import math
-a = 5
-b = 16
-c = 3.14 / 2
-d = b / a
-e = b // a
-f = b % a
-g = math.pow(a,2)
-h = math.sqrt(b)
-i = math.sin(c)
+<p><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">math</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mf">3.14</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="n">d</span> <span class="o">=</span> <span class="n">b</span> <span class="o">/</span> <span class="n">a</span>
+<span class="n">e</span> <span class="o">=</span> <span class="n">b</span> <span class="o">//</span> <span class="n">a</span>
+<span class="n">f</span> <span class="o">=</span> <span class="n">b</span> <span class="o">%</span> <span class="n">a</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">h</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="n">i</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
 </code></pre></div>
 Vérifiez vos réponses à l'aide de la console</p>
 <h3 id="activite-16">activité 1.6</h3>
 <p>Soit le programme suivant :</p>
-<p><div class="highlight"><pre><span></span><code>a = &quot;Hello&quot;
-b = &quot;World&quot;
-mon_expression = a + b
+<p><div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Hello&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;World&quot;</span>
+<span class="n">mon_expression</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </code></pre></div>
 Vérifiez à l'aide de la console que la variable <em>mon_expression</em> a bien pour valeur <em>HelloWorld</em></p>
 <h3 id="activite-17">activité 1.7</h3>
 <p>Soit le programme suivant :</p>
-<p><div class="highlight"><pre><span></span><code>mon_nombre = 5
-res = f&quot;Nombre de personnes : {mon_nombre}&quot;
+<p><div class="highlight"><pre><span></span><code><span class="n">mon_nombre</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">res</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Nombre de personnes : </span><span class="si">{</span><span class="n">mon_nombre</span><span class="si">}</span><span class="s2">&quot;</span>
 </code></pre></div>
 Vérifiez à l'aide de la console que la variable <em>res</em> a bien pour valeur la chaîne de  caractères <em>Nombre de personnes : 5</em></p>
 <h3 id="activite-18">activité 1.8</h3>
 <p>Soit la fonction suivante :</p>
-<p><div class="highlight"><pre><span></span><code>def ma_fonction(x):
-    y = 3 * x + 2
-    return y 
+<p><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">ma_fonction</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="n">y</span> 
 </code></pre></div>
 Il est possible d'utiliser la console pour évaluer une fonction pour une valeur de paramètre donnée.</p>
 <p>Après avoir exécuté le programme ci-dessus, tapez dans la console <em>ma_fonction(4)</em>. Vous devriez obtenir ceci :</p>
 <p><img alt="" src="../img/c1a_8.png" /></p>
 <h3 id="activite-19">activité 1.9</h3>
 <p>Soit la fonction suivante :</p>
-<div class="highlight"><pre><span></span><code>def ma_fonction(x,b):
-    y = 4 * x + b
-    return y 
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">ma_fonction</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">b</span>
+    <span class="k">return</span> <span class="n">y</span> 
 </code></pre></div>
 <p>Quelle est la valeur renvoyée par cette fonction si on prend x = 3 et b = 3 ?</p>
 <p>Vérifiez votre réponse à l'aide  de la console.</p>
 <h3 id="activite-110">activité 1.10</h3>
 <p>Soit la fonction suivante :</p>
-<div class="highlight"><pre><span></span><code>def annonce(num, prov, dest):
-    if dest != &quot;0&quot;:
-        msg = f&quot;le train n° {num} en provenance de {prov} et à destination de {dest}, entre en gare.&quot;
-    else:
-        msg = f&quot;le train n° {num} en provenance de {prov} entre en gare. Ce train est terminus Triffouillis-les-Oies.&quot;
-    return msg
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">annonce</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">prov</span><span class="p">,</span> <span class="n">dest</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">dest</span> <span class="o">!=</span> <span class="s2">&quot;0&quot;</span><span class="p">:</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;le train n° </span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2"> en provenance de </span><span class="si">{</span><span class="n">prov</span><span class="si">}</span><span class="s2"> et à destination de </span><span class="si">{</span><span class="n">dest</span><span class="si">}</span><span class="s2">, entre en gare.&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;le train n° </span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2"> en provenance de </span><span class="si">{</span><span class="n">prov</span><span class="si">}</span><span class="s2"> entre en gare. Ce train est terminus Triffouillis-les-Oies.&quot;</span>
+    <span class="k">return</span> <span class="n">msg</span>
 
-mon_msg = annonce(4242, &quot;Paris&quot;, &quot;0&quot;)
+<span class="n">mon_msg</span> <span class="o">=</span> <span class="n">annonce</span><span class="p">(</span><span class="mi">4242</span><span class="p">,</span> <span class="s2">&quot;Paris&quot;</span><span class="p">,</span> <span class="s2">&quot;0&quot;</span><span class="p">)</span>
 </code></pre></div>
 <p>Quelle est la valeur de la variable  <em>mon_msg</em> après l'exécution de ce programme ?</p>
 <p>Vérifiez votre réponse à l'aide  de la console.</p>
 <h3 id="activite-111">activité 1.11</h3>
 <p>Soit la fonction suivante :</p>
-<div class="highlight"><pre><span></span><code>def ma_fct(a,b):
-    if a &lt; 5 and b &gt; 2 :
-        return 42
-    else :
-        return 24
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">ma_fct</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">5</span> <span class="ow">and</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="p">:</span>
+        <span class="k">return</span> <span class="mi">42</span>
+    <span class="k">else</span> <span class="p">:</span>
+        <span class="k">return</span> <span class="mi">24</span>
 
-val = ma_fct(6, 3)
+<span class="n">val</span> <span class="o">=</span> <span class="n">ma_fct</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 </code></pre></div>
 <p>Quelle est la valeur de la variable  <em>val</em> après l'exécution de ce programme ?</p>
 <p>Vérifiez votre réponse à l'aide  de la console.</p>
 <h3 id="activite-112">activité 1.12</h3>
 <p>Soit la fonction suivante :</p>
-<div class="highlight"><pre><span></span><code>def ma_fct(a,b):
-    if a &lt; 5 or b &gt; 2 :
-        return 42
-    else :
-        return 24
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">ma_fct</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">5</span> <span class="ow">or</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="p">:</span>
+        <span class="k">return</span> <span class="mi">42</span>
+    <span class="k">else</span> <span class="p">:</span>
+        <span class="k">return</span> <span class="mi">24</span>
 
-val = ma_fct(6, 3)
+<span class="n">val</span> <span class="o">=</span> <span class="n">ma_fct</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 </code></pre></div>
 <p>Quelle est la valeur de la variable  <em>val</em> après l'exécution de ce programme ?</p>
 <p>Vérifiez votre réponse à l'aide  de la console.</p>
 <h3 id="activite-113">activité 1.13</h3>
 <p>Soit la fonction suivante :</p>
-<div class="highlight"><pre><span></span><code>def ma_fct(a,b):
-    if a &lt; 2 or b &lt; 2 :
-        return 42
-    else :
-        return 24
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">ma_fct</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="ow">or</span> <span class="n">b</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">:</span>
+        <span class="k">return</span> <span class="mi">42</span>
+    <span class="k">else</span> <span class="p">:</span>
+        <span class="k">return</span> <span class="mi">24</span>
 
-val = ma_fct(6, 3)
+<span class="n">val</span> <span class="o">=</span> <span class="n">ma_fct</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 </code></pre></div>
 <p>Quelle est la valeur de la variable  <em>val</em> après l'exécution de ce programme ?</p>
 <p>Vérifiez votre réponse à l'aide  de la console.</p>
 <h3 id="activite-114">activité 1.14</h3>
 <p>Soit la fonction suivante :</p>
-<div class="highlight"><pre><span></span><code>def ma_fct(a):
-    b = 0
-    while a &gt; 2:
-        b = b + 1
-        a = a - 2
-    return b
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">ma_fct</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">b</span> <span class="o">=</span> <span class="n">b</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="n">b</span>
 
-val = ma_fct(6)
+<span class="n">val</span> <span class="o">=</span> <span class="n">ma_fct</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
 </code></pre></div>
 <p>Quelle est la valeur de la variable  <em>val</em> après l'exécution de ce programme ?</p>
 <p>Vérifiez votre réponse à l'aide  de la console.</p>
 <h3 id="activite-115">activité 1.15</h3>
 <p>Soit la fonction suivante :</p>
-<div class="highlight"><pre><span></span><code>def ma_fct(a):
-    b = 3
-    while a &gt; 0:
-        b = b + a
-        a = a - 2
-    return b
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">ma_fct</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="k">while</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">b</span> <span class="o">=</span> <span class="n">b</span> <span class="o">+</span> <span class="n">a</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="n">b</span>
 
-val = ma_fct(6)
+<span class="n">val</span> <span class="o">=</span> <span class="n">ma_fct</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
 </code></pre></div>
 <p>Quelle est la valeur de la variable  <em>val</em> après l'exécution de ce programme ?</p>
 <p>Vérifiez votre réponse à l'aide  de la console.</p>
 <h3 id="activite-116">activité 1.16</h3>
 <p>On désire programmer une fonction qui prend en paramètre  le rayon d'un cercle et renvoie son aire :</p>
-<div class="highlight"><pre><span></span><code>import math
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">math</span>
 
-def aire_cercle(...):
-    aire = math.pi*r**2
-    return ...
+<span class="k">def</span> <span class="nf">aire_cercle</span><span class="p">(</span><span class="o">...</span><span class="p">):</span>
+    <span class="n">aire</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span>
+    <span class="k">return</span> <span class="o">...</span>
 </code></pre></div>
 <p>Complétez la fonction <em>aire_cercle</em> ci-dessus (remplacez les ...).</p>
 <h3 id="activite-117">activité 1.17</h3>
 <p>On désire programmer une fonction qui prend en paramètre un nombre et qui renvoie la chaîne de caractères "pair" si le nombre est pair et "impair" dans le cas contraire </p>
-<div class="highlight"><pre><span></span><code>import math
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">math</span>
 
-def pair_impair(n):
-    if ... % 2 == 0:
-        return ...
-    else :
-        return &quot;impair&quot;
+<span class="k">def</span> <span class="nf">pair_impair</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="o">...</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="o">...</span>
+    <span class="k">else</span> <span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;impair&quot;</span>
 </code></pre></div>
 <p>Complétez la fonction <em>pair_impair</em> ci-dessus (remplacez les ...).</p>
 <h3 id="activite-118">activité 1.18</h3>
@@ -3486,10 +3486,10 @@ def pair_impair(n):
 0
 </code></pre></div>
 <p>Complétez la fonction <em>rebours</em> suivante :</p>
-<div class="highlight"><pre><span></span><code>def rebours(n):
-    while ...:
-        print(n)
-        ...
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">rebours</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">while</span> <span class="o">...</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+        <span class="o">...</span>
 </code></pre></div>
 <h3 id="activite-119">activité 1.19</h3>
 <p>Vous êtes gérant d'un magasin et vous désirez écrire un programme Python qui calculera automatiquement le montant de la facture des clients.</p>
