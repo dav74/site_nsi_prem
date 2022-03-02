@@ -20,7 +20,7 @@ nav:
       - 'Cours': 'c3c.md'
       - 'Activité' : 'c3a.md'
       - 'Révision' : 'c3r.md'
-  - "Projet 1 : Répertoire téléphonique" : 'pr1.md'
+  - "Projet 1" : 'pr1.md'
   - 'Partie 2':
     - "C4 : écriture d'un entier positif":
       - 'Cours': 'c4c.md'
@@ -45,7 +45,7 @@ nav:
       - 'Révision' : 'c8r.md'
     - 'C9 : simulation CPU':
       - 'Activité' : 'c9a.md'
-  - "Projet 2 : générateur de QCM" : 'pr2.md'
+  - "Projet 2" : 'pr2.md'
   - 'Partie 4':
     - "C10 : introduction à l'algorithmique":
       - 'Cours': 'c10c.md'
@@ -72,7 +72,7 @@ nav:
       - 'Cours': 'c15c.md'
       - 'Activité' : 'c15a.md'
       - 'Révision' : 'c15r.md'
-  - "Projet 3 : jeu du pendu" : 'pr3.md'
+  - "Projet 3" : 'pr3.md'
   - 'Partie 6':
     - "C16 : introduction réseau" :
       - 'Cours': 'c16c.md'
@@ -121,7 +121,7 @@ nav:
       - 'Activité' : 'c27a.md'
     - "C28 : formulaire d'une page web":
       - 'Activité' : 'c28a.md'
-  - "Projet 4 : répertoire téléphonique version web" : 'pr4.md'
+  - "Projet 4" : 'pr4.md'
   - 'Partie 8':
     - "C29 : traitement de données en tables" :
       - 'Cours': 'c29c.md'
@@ -140,7 +140,7 @@ nav:
       - 'Cours': 'c32c.md'
       - 'Activité' : 'c32a.md'
       - 'Révision' : 'c32r.md'
-  - "Projet 5 : les survivants du Titanic" : 'pr5.md'
+  - "Projet 5" : 'pr5.md'
   - 'Partie 10':
     - "C33: interface Homme - Machine" :
       - 'Cours': 'c33c.md'
