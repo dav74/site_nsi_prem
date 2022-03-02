@@ -3337,7 +3337,7 @@ Programmer, c'est créer des programmes (suite d'instructions données à l'ordi
 </li>
 </ul>
 <p>On dira donc qu'une variable est l'association d'un nom et d'une valeur</p>
-<p><div class="highlight"><pre><span></span><code>i = 12
+<p><div class="highlight"><pre><span></span><code><span class="n">i</span> <span class="o">=</span> <span class="mi">12</span>
 </code></pre></div>
 Grâce à cette ligne, nous avons défini une variable qui porte le nom i. Ce nom i est associé à la valeur 12.</p>
 <p>Il est aussi possible d'associer un nom à un nombre à virgule  :</p>
@@ -3345,26 +3345,26 @@ Grâce à cette ligne, nous avons défini une variable qui porte le nom i. Ce no
 </code></pre></div>
 J'attire votre  attention que nous utilisons un point à la place d'une virgule (convention anglo-saxonne).</p>
 <p>Un nom peut donc être associé à plusieurs types d'entités (pour l'instant nous n'en avons vu que deux, mais nous en verrons d'autres plus loin) : les nombres entiers ("integer" en anglais, abrégé en "int") et les nombres à virgule ("float" en anglais). Il est possible de connaitre le type de l'entité à l'aide de l'instruction "type".</p>
-<p><div class="highlight"><pre><span></span><code>a = 5
-b = 5.4
+<p><div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mf">5.4</span>
 </code></pre></div>
 un <em>type(a)</em> donnera comme résultat <em>int</em> alors qu'un <em>type(b)</em> donnera <em>float</em></p>
 <h2 id="3-un-peu-de-calculs">3) un peu de calculs</h2>
 <p>Un ordinateur est bien évidemment capable d'effectuer des opérations mathématiques (arithmétiques).</p>
 <p>Les signes utilisés sont classiques : +, - , * (multiplication), / (division), // (division euclidienne) ou encore % (modulo : reste d'une division euclidienne).</p>
 <p>Il est tout à fait possible d'effectuer des opérations directement avec des nombres, mais il est aussi possible d'utiliser des variables.</p>
-<div class="highlight"><pre><span></span><code>a = 5
-b = 16
-c = 3.14 / 2
-d = b / a
-e = b // a
-f = b % a
-g = a + b
-h = a
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mf">3.14</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="n">d</span> <span class="o">=</span> <span class="n">b</span> <span class="o">/</span> <span class="n">a</span>
+<span class="n">e</span> <span class="o">=</span> <span class="n">b</span> <span class="o">//</span> <span class="n">a</span>
+<span class="n">f</span> <span class="o">=</span> <span class="n">b</span> <span class="o">%</span> <span class="n">a</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="n">h</span> <span class="o">=</span> <span class="n">a</span>
 </code></pre></div>
 <p>Considérons maintenant le programme suivant :</p>
-<p><div class="highlight"><pre><span></span><code>a = 11
-a = a + 1
+<p><div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">11</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span>
 </code></pre></div>
 D'après  vous, quelle est la valeur de la variable <em>a</em> après l'exécution du programme ci-dessus ?</p>
 <p>La réponse est 12.</p>
@@ -3377,13 +3377,13 @@ D'après  vous, quelle est la valeur de la variable <em>a</em> après l'exécuti
 <p>Donc la valeur de a est bien 12</p>
 <p>Ce raisonnement peut être généralisé pour éviter des erreurs parfois difficiles à corriger : dans une égalité, commencer toujours par évaluer l'expression se trouvant à droite du signe égal.</p>
 <p>L'opération 
-<div class="highlight"><pre><span></span><code>a = a + 1
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span>
 </code></pre></div>
 se nomme une incrémentation.</p>
 <h2 id="4-chaines-de-caracteres">4)  chaînes de caractères</h2>
 <h3 id="a-notion-de-chaine-de-caracteres">a) notion de chaîne de caractères</h3>
 <p>On peut aussi associer des noms à des suites de caractères que l'on appelle "chaîne de caractères".</p>
-<div class="highlight"><pre><span></span><code>ma_chaine = &quot;Bonjour le monde !&quot;
+<div class="highlight"><pre><span></span><code><span class="n">ma_chaine</span> <span class="o">=</span> <span class="s2">&quot;Bonjour le monde !&quot;</span>
 </code></pre></div>
 <p>Le contenu de la variable <em>ma_chaine</em> est de type <em>string</em> et donc un <em>type(ma_chaine)</em> donnera un <em>str</em> (abréviation de string en Python)</p>
 <h3 id="b-le-signe-et-les-chaines-de-caracteres">b)  le signe + et les chaînes de caractères</h3>
@@ -3391,42 +3391,42 @@ se nomme une incrémentation.</p>
 <p>D'après Wikipédia :</p>
 <p>« Le terme concaténation (substantif féminin), du latin cum («avec») et catena(«chaîne, liaison»), désigne l'action de mettre bout à bout au moins deux chaînes. »</p>
 <p>Si on considère le programme suivant :</p>
-<p><div class="highlight"><pre><span></span><code>a = &quot;Hello&quot;
-b = &quot;World&quot;
-mon_expression = a + b
+<p><div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Hello&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;World&quot;</span>
+<span class="n">mon_expression</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </code></pre></div>
 après l'exécution de ce programme, la variable <em>mon_expression</em> aura pour valeur  <em>HelloWorld</em></p>
 <p>Il est aussi possible de concaténer une chaîne de caractères et une ou plusieurs variables :</p>
-<p><div class="highlight"><pre><span></span><code>ma_chaine_1 = &quot;Bonjour &quot;
-ma_chaine_2 = &quot;le &quot;
-res = ma_chaine_1 + ma_chaine_2 + &quot;monde!&quot;
+<p><div class="highlight"><pre><span></span><code><span class="n">ma_chaine_1</span> <span class="o">=</span> <span class="s2">&quot;Bonjour &quot;</span>
+<span class="n">ma_chaine_2</span> <span class="o">=</span> <span class="s2">&quot;le &quot;</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">ma_chaine_1</span> <span class="o">+</span> <span class="n">ma_chaine_2</span> <span class="o">+</span> <span class="s2">&quot;monde!&quot;</span>
 </code></pre></div>
 Après l'exécution de ce programme, la variable  <em>res</em>  aura pour valeur <em>Bonjour le  monde!</em></p>
 <p>Les 2 noms ma_chaine_1 et ma_chaine_2 sont associés à 2 chaînes de caractères, nous avons donc bien ici une concaténation.</p>
 <p>Que se passe-t-il si nous avons ce cas de figure :</p>
-<p><div class="highlight"><pre><span></span><code>a = &quot;Nombre de pommes : &quot;
-b = 4 
-c = a + b
+<p><div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Nombre de pommes : &quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">4</span> 
+<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </code></pre></div>
 a est de type <em>str</em> alors que b est de type <em>int</em>. Le signe plus représente une addition ou une concaténation ? Ni l'un, ni l'autre, puisque Python vous renverra une erreur : il ne peut pas concaténer un entier et une chaîne de caractère.</p>
 <p>La solution : transformer le nombre 4 en caractère 4 à l'aide du mot clé <em>str</em>:</p>
-<p><div class="highlight"><pre><span></span><code>a = &quot;Nombre de pommes : &quot;
-b = 4 
-c = a + str(b)
+<p><div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Nombre de pommes : &quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">4</span> 
+<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 </code></pre></div>
 nous avons maintenant une concaténation, car <em>str(4)</em> est de type string.</p>
 <p>Autre solution pour faire cohabiter des variables de type <em>int</em> ou <em>float</em> avec des variables de type <em>str</em> : les <em>fstring</em> (attention les <em>fstring</em> sont uniquement disponible à partir de Python 3.5)</p>
 <p>Il est possible d'écrire :</p>
-<p><div class="highlight"><pre><span></span><code>a = &quot;Nombre de pommes :&quot;
-b = 4 
-c = f&quot;{a} {b}&quot;
+<p><div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Nombre de pommes :&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">4</span> 
+<span class="n">c</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span>
 </code></pre></div>
 après l'exécution du programme ci-dessus, la variable <em>c</em> aura pour valeur "Nombre de pommes : 4"</p>
 <p>Dans la chaîne de caractère, <em>{a}</em> sera remplacé par la valeur de la variable <em>a</em>, c'est à dire <em>Nombre de pommes :</em>. Même chose avec <em>{b}</em> qui sera remplacé par la valeur de b, c'est à dire 4.</p>
 <p>autre exemple d'utilisation des fstring :</p>
-<div class="highlight"><pre><span></span><code>num_train = 4232
-dest = &quot;Paris&quot; 
-c = f&quot;Le train n°{num_train} à destination de {dest} entre en gare&quot; 
+<div class="highlight"><pre><span></span><code><span class="n">num_train</span> <span class="o">=</span> <span class="mi">4232</span>
+<span class="n">dest</span> <span class="o">=</span> <span class="s2">&quot;Paris&quot;</span> 
+<span class="n">c</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Le train n°</span><span class="si">{</span><span class="n">num_train</span><span class="si">}</span><span class="s2"> à destination de </span><span class="si">{</span><span class="n">dest</span><span class="si">}</span><span class="s2"> entre en gare&quot;</span> 
 </code></pre></div>
 <p>après l'exécution du programme ci-dessus, la variable <em>c</em> aura pour valeur "Le train n°4232 à destination de Paris entre en gare"</p>
 <p>Notez la présence du "f" juste avant le guillemet et des accolades qui encadrent le nom de la variable. Il est nécessaire d'ajouter ce "f" pour avoir une fstring.</p>
@@ -3455,24 +3455,24 @@ suite programme
 </code></pre></div>
 Pour "utiliser" la fonction ma_fonction, il suffit d'écrire : ma_fonction (4) (dans ce cas précis, notre fonction renverra le nombre 14 : x sera égale à 4 dans la fonction on aura donc le calcul 3 . 4 + 2 = 12  + 2 = 14)</p>
 <p>Si on considère cet exemple  :</p>
-<div class="highlight"><pre><span></span><code>def ma_fonction(x):
-    y = 3 * x + 2
-    return y
-solution = ma_fonction(4)
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">ma_fonction</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">2</span>
+    <span class="k">return</span> <span class="n">y</span>
+<span class="n">solution</span> <span class="o">=</span> <span class="n">ma_fonction</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
 </code></pre></div>
 <p>Après l'exécution de ce programme, la valeur de la variable <em>solution</em> sera 14. En effet, au moment de l'exécution de notre programme le code <em>ma_fonction(4)</em> sera systématiquement remplacé par la valeur renvoyée par la fonction. Dans notre exemple le <em>ma_fonction(4)</em> sera remplacé par le nombre 14, d'où la  valeur 14 pour la variable <em>solution</em>.</p>
 <p>Il est possible de passer plusieurs paramètres à une fonction :</p>
-<p><div class="highlight"><pre><span></span><code>def ma_fonction(x, b):
-    y = 2 * x + b
-    return y
-solution = ma_fonction(4, 3)
+<p><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">ma_fonction</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">b</span>
+    <span class="k">return</span> <span class="n">y</span>
+<span class="n">solution</span> <span class="o">=</span> <span class="n">ma_fonction</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 </code></pre></div>
 Dans  ce cas,  dans  la fonction, le paramètre <em>x</em> sera égal à 4 et le paramètre <em>b</em> à 3 (attention à l'ordre des paramètres). On a aura donc la variable <em>solution</em> qui aura pour valeur  11 (2.4 + 3 = 11) après l'exécution de ce programme.</p>
 <p>Les paramètres peuvent être des chaînes de caractères (ainsi que la valeur retournée)</p>
-<p><div class="highlight"><pre><span></span><code>def dit_bonjour(nom, age):
-    phrase = f&quot;Bonjour {nom}, vous avez {age} ans.&quot;
-    return phrase
-p = dit_bonjour(&quot;toto&quot;, 16) 
+<p><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">dit_bonjour</span><span class="p">(</span><span class="n">nom</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+    <span class="n">phrase</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Bonjour </span><span class="si">{</span><span class="n">nom</span><span class="si">}</span><span class="s2">, vous avez </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2"> ans.&quot;</span>
+    <span class="k">return</span> <span class="n">phrase</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">dit_bonjour</span><span class="p">(</span><span class="s2">&quot;toto&quot;</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span> 
 </code></pre></div>
 Après l'exécution de ce programme, la variable p aura  pour valeur la chaîne de caractères "Bonjour toto, vous avez 14 ans"</p>
 <p><strong>Attention</strong> : remarquez bien les guillemets autour du paramètre "toto" (c'est une chaîne de caractères)</p>
@@ -3489,21 +3489,21 @@ Après l'exécution de ce programme, la variable p aura  pour valeur la chaîne 
 <h3 id="c-les-modules-en-python">c) les modules en Python</h3>
 <p>Il est possible d'utiliser d'autres fonctions "prêtes à l'emploi" en important des modules. Un module est un fichier contenant des fonctions qui pourront être utilisées dans d'autres programmes. Le module <em>math</em> est un module très important puisqu'il comporte toutes les fonctions mathématiques classiques : cosinus, sinus, exposant, racine carrée...</p>
 <p>Pour utiliser les fonctions présentes dans un module, il est nécessaire d'importer le module dans notre programme. Par exemple, pour pouvoir utiliser les fonctions du module <em>math</em> il faudra écrire :</p>
-<p><div class="highlight"><pre><span></span><code>import math
+<p><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">math</span>
 </code></pre></div>
 au début de son programme.</p>
 <p>Pour utiliser une fonction d'un module importé, il faudra préciser le nom du module qui propose cette fonction. Par exemple, pour déterminer le sinus de 3.14, il faudra écrire :
-<div class="highlight"><pre><span></span><code>math.sin(3.14)
+<div class="highlight"><pre><span></span><code><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mf">3.14</span><span class="p">)</span>
 </code></pre></div>
 Voici une série de calculs qui fait appel à des fonctions issues du module maths :</p>
-<p><div class="highlight"><pre><span></span><code>import math
+<p><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">math</span>
 
-a = 5
-b = 16
-c = 3.14
-puis = math.pow(a,3)
-racine = math.sqrt(b)
-s = math.sin(c)
+<span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mf">3.14</span>
+<span class="n">puis</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">racine</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
 </code></pre></div>
 Après l'exécution de ce programme :</p>
 <ul>
@@ -3513,9 +3513,9 @@ Après l'exécution de ce programme :</p>
 </ul>
 <h3 id="d-les-fonctions-et-le-mot-cle-return">d) les fonctions et le mot clé return</h3>
 <p>Il est possible d'écrire une fonction sans utiliser le mot clé <em>return</em>, cette pratique est souvent considérée comme une "mauvaise pratique", mais Python ne renverra pas d'erreur si vous le faites. Le code suivant est tout à fait correct :</p>
-<div class="highlight"><pre><span></span><code>def ma_fonction(i):
-    d = 5
-    z = i + d
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">ma_fonction</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="n">d</span>
 </code></pre></div>
 <p>Pour information, même en l'absence de <em>return</em>, une fonction Python renvoie quand même "quelque chose", puisqu'elle renvoie <em>None</em> qui veut dire rien...
 Dans le cas ci-dessus nous aurons donc :</p>
@@ -3523,10 +3523,10 @@ Dans le cas ci-dessus nous aurons donc :</p>
 <h2 id="7-variables-locales-et-variables-globales">7) Variables locales et variables globales</h2>
 <h3 id="a-variables-et-fonctions">a) variables et fonctions</h3>
 <p>Considérons le programme suivant:</p>
-<p><div class="highlight"><pre><span></span><code>def ma_fonc():
-    i = 5
-ma_fonc()
-print (i)
+<p><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">ma_fonc</span><span class="p">():</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">ma_fonc</span><span class="p">()</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </code></pre></div>
 Nous commençons par définir une fonction <em>ma_fonc</em> qui ne prend aucun paramètre et qui ne renvoie aucune valeur (absence du mot clé <em>return</em>). Cette fonction attribue juste la valeur 5 a la variable ayant pour nom <em>i</em>.</p>
 <p>A la 3e ligne du programme, nous exécutons la fonction <em>ma_fonc</em>. </p>
@@ -3538,46 +3538,46 @@ Nous commençons par définir une fonction <em>ma_fonc</em> qui ne prend aucun p
 <p>Pourquoi cette erreur, la variable i est bien définie dans la fonction <em>ma_fonc</em> et la fonction <em>ma_fonc</em> est bien exécutée, où est donc le problème ?</p>
 <p>En fait, la variable i est une variable dite locale : elle a été définie dans une fonction et elle "restera" dans cette fonction. Une fois que l'exécution de la fonction sera terminée, la variable i sera "détruite" (supprimée de la mémoire). Elle n'est donc pas accessible depuis "l'extérieur" de la fonction (ce qui explique le message d'erreur que nous obtenons, car le <em>print</em> est en dehors la fonction <em>ma_fonc</em>, la variable <em>i</em> n'est donc plus accessible).</p>
 <p>Étudions maintenant un cas un peu plus complexe :</p>
-<p><div class="highlight"><pre><span></span><code>i = 3
-def ma_fonc():
-    i = 5
-ma_fonc()
-print (i)  
+<p><div class="highlight"><pre><span></span><code><span class="n">i</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="k">def</span> <span class="nf">ma_fonc</span><span class="p">():</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">ma_fonc</span><span class="p">()</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">i</span><span class="p">)</span>  
 </code></pre></div>
 On pourrait s'attendre à voir s'afficher la valeur 5 à l'écran. Pas du tout, nous ne rencontrons pas d'erreur cette fois, mais c'est la valeur 3 qui s'affiche à l'écran.</p>
 <p>En fait dans cet exemple nous avons 2 variables i différentes : la variable i "globale" (celle qui a été définie en dehors de toute fonction) et la variable i "locale" (celle qui a été définie dans la fonction). Ces 2 variables portent le même nom, mais sont différentes (elles correspondent à des cases mémoire différentes). Au moment de l'exécution du <em>print</em> à la 5e ligne seule la variable globale existe encore (celle définie à la première ligne du programme), d'où l'affichage du 3.</p>
 <p>Une variable globale peut être "utilisée" à l'intérieur d'une fonction :</p>
-<p><div class="highlight"><pre><span></span><code>i = 3
-def ma_fonc():
-    print (i)
-ma_fonc()
+<p><div class="highlight"><pre><span></span><code><span class="n">i</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="k">def</span> <span class="nf">ma_fonc</span><span class="p">():</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="n">ma_fonc</span><span class="p">()</span>
 </code></pre></div>
 Attention, le <em>print</em> se situe dans la fonction (la ligne du <em>print</em> est bien indentée)</p>
 <p>Ce programme permet d'afficher la valeur 3 à l'écran.</p>
 <p>Quand on cherche à utiliser une variable dans une fonction, le système va d'abord chercher si cette variable se "trouve" dans l'espace local de la fonction, puis, s'il ne la trouve pas dans cet espace local, le système va aller rechercher la variable dans l'espace global. Pour le <em>print(i)</em> situé dans la fonction le système ne trouve pas de variable i dans l'espace local de la fonction <em>ma_fonc</em>, il passe donc à l'espace global et trouve la variable i (nous avons donc 3 qui s'affiche). </p>
 <p>Il est important de bien comprendre que dans la programme ci-dessous le système trouve une variable i dans l'espace local de la fonction, la "recherche" de la variable i se serait arrêtée là :</p>
-<p><div class="highlight"><pre><span></span><code>i = 3
-def ma_fonc():
-    i = 5
-    print (i)
-ma_fonc()
+<p><div class="highlight"><pre><span></span><code><span class="n">i</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="k">def</span> <span class="nf">ma_fonc</span><span class="p">():</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="n">ma_fonc</span><span class="p">()</span>
 </code></pre></div>
 et ce programme affiche la valeur 5 à l'écran. <em>i</em> a été trouvée dans l'espace local de la fonction <em>ma_fonc</em>, la recherche ne va donc pas plus loin (inutile de remonter jusqu'à l'espace global)</p>
 <p>En revanche le programme ci-dessous génère une erreur : "UnboundLocalError: local variable 'i' referenced before assignment"</p>
-<div class="highlight"><pre><span></span><code>i = 3
-def ma_fonc():
-    i = i + 1
-ma_fonc()
-print(i)
+<div class="highlight"><pre><span></span><code><span class="n">i</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="k">def</span> <span class="nf">ma_fonc</span><span class="p">():</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="n">ma_fonc</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </code></pre></div>
 <p>Il n'est à priori pas possible de modifier une variable globale (ici la variable <em>i</em>) dans une fonction.</p>
 <p>Pour pouvoir modifier une variable globale dans une fonction, il faut utiliser le mot clé <em>global</em> :</p>
-<p><div class="highlight"><pre><span></span><code>i = 3
-def ma_fonc():
-    global i
-    i = i + 1
-ma_fonc()
-print(i)
+<p><div class="highlight"><pre><span></span><code><span class="n">i</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="k">def</span> <span class="nf">ma_fonc</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">i</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="n">ma_fonc</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </code></pre></div>
 Ici, aucune erreur la valeur 4 est bien affichée à l'écran.</p>
 <p>Je ne vais pas m'étendre sur l'utilisation du mot clé <em>global</em> car comme  nous allons le voir maintenant, c'est une (très) mauvaise pratique, car cette utilisation peut entraîner des "effets de bord".</p>
@@ -3594,8 +3594,8 @@ Ici, aucune erreur la valeur 4 est bien affichée à l'écran.</p>
 <p>Pour l'instant nous avons vu deux grands types de données : les nombres (entier ou flottant) et les chaînes de caractères, il existe un troisième type tout aussi important que les deux premiers : les booléens. Un booléen est un type de données qui ne peut prendre que deux valeurs : vrai (<em>True</em>) ou faux (<em>False</em>). Une expression est soit <em>True</em>, soit <em>False</em>.</p>
 <p>ATTENTION : notez le double égal "==" qui permet de distinguer une expression et une affectation (association d'une valeur à un nom (variable)). Le fait de confondre le "simple égal" et le "double égal" est une erreur classique qu'il faut éviter.</p>
 <p>Il est possible d'utiliser des variables dans une expression, par exemple avec :</p>
-<p><div class="highlight"><pre><span></span><code>a = 5
-b = 7
+<p><div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">7</span>
 </code></pre></div>
 on aura <em>a == b</em> qui sera <em>False</em></p>
 <p>A la place de l'opérateur "==" il est possible d'utiliser l'opérateur "!=" qui signifie "différent de".</p>
@@ -3707,27 +3707,27 @@ Si "expression" est True alors "suite_instruction1" est exécuté et "suite_inst
 <p>Sinon (sous-entendu que "expression" est False) "suite_instruction2" est exécuté et "suite_instruction1" est ignoré.</p>
 <p>Notez l'indentation "suite_instruction1" et de "suite_instruction2"</p>
 <p>Si on considère le programme suivant :</p>
-<p><div class="highlight"><pre><span></span><code>a = 4
-b = 7
-if a &lt; b:
-    print(&quot;Je suis toto.&quot;);
-    print(&quot;Je n&#39;aime pas titi.&quot;)
-else:
-    print(&quot;Je suis titi.&quot;)
-    print(&quot;Je n&#39;aime pas toto.&quot;)
-print(&quot;En revanche, j&#39;aime le Python.&quot;)
+<p><div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je suis toto.&quot;</span><span class="p">);</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je n&#39;aime pas titi.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je suis titi.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je n&#39;aime pas toto.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;En revanche, j&#39;aime le Python.&quot;</span><span class="p">)</span>
 </code></pre></div>
 nous avons <em>a &lt; b</em> qui est True, nous allons donc exécuter les  2 lignes </p>
-<p><div class="highlight"><pre><span></span><code>print(&quot;Je suis toto.&quot;);
-print(&quot;Je n&#39;aime pas titi.&quot;)
+<p><div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je suis toto.&quot;</span><span class="p">);</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je n&#39;aime pas titi.&quot;</span><span class="p">)</span>
 </code></pre></div>
 les lignes </p>
-<p><div class="highlight"><pre><span></span><code>print(&quot;Je suis titi.&quot;)
-print(&quot;Je n&#39;aime pas toto.&quot;)
+<p><div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je suis titi.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je n&#39;aime pas toto.&quot;</span><span class="p">)</span>
 </code></pre></div>
 seront ignorées.</p>
 <p>En revanche la ligne 
-<div class="highlight"><pre><span></span><code>print(&quot;En revanche, j&#39;aime le Python.&quot;)
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;En revanche, j&#39;aime le Python.&quot;</span><span class="p">)</span>
 </code></pre></div>
 sera systématiquement exécutée.</p>
 <p>L'exécution de ce programme permettra d'afficher à l'écran :</p>
@@ -3736,15 +3736,15 @@ Je n&#39;aime pas titi.
 En revanche, j&#39;aime le Python.
 </code></pre></div>
 <p>Si maintenant on considère ce programme :</p>
-<p><div class="highlight"><pre><span></span><code>a = 8
-b = 7
-if a &lt; b:
-    print(&quot;Je suis toto.&quot;);
-    print(&quot;Je n&#39;aime pas titi.&quot;)
-else:
-    print(&quot;Je suis titi.&quot;)
-    print(&quot;Je n&#39;aime pas toto.&quot;)
-print(&quot;En revanche, j&#39;aime le Python.&quot;)
+<p><div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je suis toto.&quot;</span><span class="p">);</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je n&#39;aime pas titi.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je suis titi.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je n&#39;aime pas toto.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;En revanche, j&#39;aime le Python.&quot;</span><span class="p">)</span>
 </code></pre></div>
 L'exécution de ce programme entraînera l'affichage suivant  :
 <div class="highlight"><pre><span></span><code>Je suis titi.
@@ -3763,11 +3763,11 @@ Tant que <em>expression</em> sera True, on exécutera encore et encore <em>instr
 <p>Quand <em>expression</em> deviendra <em>False</em> on passera directement à <em>suite programme</em> (sans entrer de nouveau dans la boucle),  la  boucle sera terminée.</p>
 <p>Que se passe-t-il si <em>expression</em> ne devient jamais <em>False</em>  ?  On entre alors dans  une boucle "infinie" : c'est une erreur classique en programmation (aucun programme "bien fait" ne tombe dans une boucle infinie, s'il y a une boucle infinie, c'est qu'il y a forcement une erreur dans votre programme).</p>
 <p>Considérons le programme suivant :</p>
-<p><div class="highlight"><pre><span></span><code>i = 0
-while i &lt; 3  :
-    print(i)
-    i = i + 1
-print(&quot;FIN&quot;)
+<p><div class="highlight"><pre><span></span><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span>  <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;FIN&quot;</span><span class="p">)</span>
 </code></pre></div>
 Voici comment analyser ce programme :</p>
 <p>Au début de l'exécution de ce programme nous avons la variable i qui a pour valeur 0. </p>
