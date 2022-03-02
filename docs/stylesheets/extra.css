@@ -1,6 +1,4 @@
 #premiere-nsi {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:green;
+    text-align: center;
+    size : 30px;
   }
