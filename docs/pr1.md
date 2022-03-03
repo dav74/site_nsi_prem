@@ -8,7 +8,7 @@ la fonction *input* va permettre aux utilisateurs de saisir des données au clav
 
 Testez ce programme à l'aide de Spyder :
 
-```
+```python
 age=input("Quel est votre âge ? ")
 ```
 			
@@ -20,7 +20,7 @@ Comme vous avez pu le constater, la valeur saisie par l'utilisateur sera toujour
 
 Testez ce programme à l'aide de Spyder :
 
-```
+```python
 a=input("Entrez un nombre")
 a=a+1
 ```
@@ -33,7 +33,7 @@ Pour éviter ce genre de problème, il peut être nécessaire de "transformer" n
 
 Testez ce programme à l'aide de Spyder :
 
-```
+```python
 a=input("Entrez un nombre")
 a=int(a)
 a=a+1
@@ -45,7 +45,7 @@ Il est possible de lire ou d'écrire des données dans un fichier extérieur.
 
 La première des choses à faire est d'ouvrir notre fichier texte. Pour ce faire nous utiliserons la méthode open.
 
-```
+```python
 with open('nomDuFichier', 'r') as f :
 ```
 
@@ -67,7 +67,7 @@ Une fois le fichier ouvert, il est possible d'écrire dedans (à l'aide de *writ
 
 Étudiez et testez le programme suivant :
 
-```
+```python
 nom=input('Entrez un mot')
 with open('fichier.txt','a') as f :
 	f.write(nom)
@@ -79,7 +79,7 @@ Le répertoire courant devrait maintenant contenir aussi un fichier *fichier.txt
 
 Étudiez et testez le programme suivant :
 
-```
+```python
 with open('fichier.txt','r') as f :
 	ligne=f.read()
 ```
@@ -94,7 +94,7 @@ Vérifiez que votre programme est correct en ouvrant le fichier *fichier.txt* à
 
 Votre fichier texte devrait être illisible (les mots s'enchaînent sans aucun espace ou saut à la ligne). Il est tout à fait possible de "forcer" le saut de ligne en utilisant la suite de caractères suivante: \n (l'enchaînement des caractères \ et n entraîne un "retour chariot"). L'instruction suivante :
 
-```
+```python
 print('hello \n world')
 ```
 n'affiche pas : 
@@ -120,7 +120,7 @@ Modifier votre programme du "1.6" afin d'avoir un nom par ligne dans le fichier 
 
 Voici un programme permettant de lire le fichier texte et de ranger les différents noms entrés par l'utilisateur dans une liste, testez ce programme :
 
-```
+```python
 noms=[]
 with open('fichier.txt','r') as f :
     for ligne in f:
@@ -138,7 +138,7 @@ En Python, toute ligne commençant par le caractère dièse (#) sera considéré
 
 Voici un exemple de programme commenté :
 
-```
+```python
 # la fonction monMessage permet d'afficher un message
 #****************début de la fonction monMessage******************
 def monMessage(nom):

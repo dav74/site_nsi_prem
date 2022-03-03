@@ -10,7 +10,7 @@ Vous avez à votre disposition :
 
 - une fonction Python vous permettant de dessiner le pendu (voir ci-dessous)
 
-```
+```python
 def dessinPendu(nb):
     tab=[
     """

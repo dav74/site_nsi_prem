@@ -18,7 +18,7 @@ Pour illustrer tout cela, voici un exemple très simple qui utilise les liens et
 
 views.py
 
-```
+```python
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -34,7 +34,7 @@ app.run(debug=True)
 
 index.html (répertoire "templates")
 
-```
+```html
 <!doctype html>
 <html lang="fr">
 
@@ -54,7 +54,7 @@ index.html (répertoire "templates")
 
 autre_page.html (répertoire "templates")
 
-```
+```html
 <!doctype html>
 <html lang="fr">
 
@@ -74,7 +74,7 @@ autre_page.html (répertoire "templates")
 
 style.css (répertoire "static")
 
-```
+```css
 h1{
 	text-align: center;
 }
