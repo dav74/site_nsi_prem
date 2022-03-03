@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.4">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.3">
     
     
       
@@ -17,17 +17,20 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.2d9f7617.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.e8d9bf0c.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
         
-      
-    
-    
-    
-      
+          
+          
+          <meta name="theme-color" content="#000000">
         
+      
+    
+    
+    
+      
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
@@ -51,7 +54,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="">
   
     
     
@@ -3118,14 +3121,14 @@ FIN
 <h3 id="3-complexite">3) complexité</h3>
 <p>Pour étudier la complexité, nous allons nous intéresser à la boucle : au niveau de la boucle, combien doit-on effectuer d'itérations pour un tableau de taille n dans le cas le plus défavorable (l'entier x n'est pas dans le tableau t) ?</p>
 <p>Sachant qu'à chaque itération de la boucle on divise le tableau en 2, cela revient donc à se demander combien de fois faut-il diviser le tableau en 2 pour obtenir, à la fin, un tableau comportant un seul entier ? Autrement dit, combien de fois faut-il diviser n par 2 pour obtenir 1 ?</p>
-<p>Mathématiquement cela se traduit par l'équation $\frac{n}{2^a}=1$ avec a le nombre de fois qu'il faut diviser n par 2 pour obtenir 1. Il faut donc trouver a !</p>
-<p>A ce stade il est nécessaire d'introduire une nouvelle notion mathématique : le "logarithme base 2" noté $log_2$. Par définition $log_2(2^x)=x$</p>
+<p>Mathématiquement cela se traduit par l'équation <span class="arithmatex">\(\frac{n}{2^a}=1\)</span> avec a le nombre de fois qu'il faut diviser n par 2 pour obtenir 1. Il faut donc trouver a !</p>
+<p>A ce stade il est nécessaire d'introduire une nouvelle notion mathématique : le "logarithme base 2" noté <span class="arithmatex">\(log_2\)</span>. Par définition <span class="arithmatex">\(log_2(2^x)=x\)</span></p>
 <p>Nous avons donc :</p>
-<p>$\frac{n}{2^a}=1$ =&gt; $n=2^a$ =&gt; $log_2(n)=log_2(2^a)=a$, nous avons donc $a=log_2(n)$</p>
-<p>Nous pouvons donc dire que la complexité en temps dans le pire des cas de l'algorithme de recherche dichotomique est $O(log_2(n))$</p>
-<p>Afin de pouvoir comparer l'efficacité des différents algorithmes, voici une représentation graphique des fonctions $y=x$ (en rouge), $y=x^2$ (en bleu) et $y=log_2(x)$ (en vert)</p>
+<p><span class="arithmatex">\(\frac{n}{2^a}=1\)</span> =&gt; <span class="arithmatex">\(n=2^a\)</span> =&gt; <span class="arithmatex">\(log_2(n)=log_2(2^a)=a\)</span>, nous avons donc <span class="arithmatex">\(a=log_2(n)\)</span></p>
+<p>Nous pouvons donc dire que la complexité en temps dans le pire des cas de l'algorithme de recherche dichotomique est <span class="arithmatex">\(O(log_2(n))\)</span></p>
+<p>Afin de pouvoir comparer l'efficacité des différents algorithmes, voici une représentation graphique des fonctions <span class="arithmatex">\(y=x\)</span> (en rouge), <span class="arithmatex">\(y=x^2\)</span> (en bleu) et <span class="arithmatex">\(y=log_2(x)\)</span> (en vert)</p>
 <p><img alt="" src="../img/c30c_3.png" /></p>
-<p>Comme vous pouvez le constater l'algorithme de recherche dichotomique est plus efficace que l'algorithme de recherche qui consiste à parcourir l'ensemble du tableau, car $x&gt;log_2(x)$ quelque soit $x$.</p>
+<p>Comme vous pouvez le constater l'algorithme de recherche dichotomique est plus efficace que l'algorithme de recherche qui consiste à parcourir l'ensemble du tableau, car <span class="arithmatex">\(x&gt;log_2(x)\)</span> quelque soit <span class="arithmatex">\(x\)</span>.</p>
 <p>Cependant, il ne faut pas perdre de vu que dans le cas de la recherche dichotomique, il est nécessaire d'avoir un tableau trié, si au départ le tableau n'est pas trié, il faut rajouter la durée du tri.</p>
 <h3 id="4-terminaison-de-lalgorithme">4) terminaison de l'algorithme</h3>
 <p>Pour terminer, nous allons démontrer que cet algorithme se termine dans tous les cas (on ne peut pas "tomber dans une boucle infinie") :</p>
@@ -3223,7 +3226,13 @@ FIN
     <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../assets/javascripts/bundle.5413a266.min.js"></script>
+      <script src="../assets/javascripts/bundle.b88e97c5.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

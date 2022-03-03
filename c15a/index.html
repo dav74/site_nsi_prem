@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.4">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.3">
     
     
       
@@ -17,17 +17,20 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.2d9f7617.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.e8d9bf0c.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
         
-      
-    
-    
-    
-      
+          
+          
+          <meta name="theme-color" content="#000000">
         
+      
+    
+    
+    
+      
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
@@ -51,7 +54,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="">
   
     
     
@@ -3055,12 +3058,12 @@
 <h3 id="activite-151">Activité 15.1</h3>
 <p>Nous allons écrire quelques programmes en langage C, mais afin de faciliter cette première approche, nous n'allons pas directement manipuler un compilateur, nous allons utiliser un "service en ligne qui s'occupe de tout" (compilation puis exécution du code machine) : <a href="https://replit.com/languages/c">Online C compiler, Online C IDE</a></p>
 <p>Testez le programme C suivant :</p>
-<div class="highlight"><pre><span></span><code>#include &lt;stdio.h&gt;
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
 
-int main(void) {
-    printf(&quot;Hello C\n&quot;);
-    return 0;
-}
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello C</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <h3 id="activite-152">Activité 15.2</h3>
 <p>Écrivez en C une fonction <em>estMajeur</em> qui prend en paramètre un <em>age</em> et qui renvoie 1 si <em>age</em> est supérieure ou égal à 18 et 0 dans le cas contraire.</p>
@@ -3068,10 +3071,10 @@ int main(void) {
 <p>Vous êtes gérant d'un magasin et vous désirez écrire un programme C qui calculera automatiquement le montant de la facture des clients. Tout client qui achète au moins 5 fois le même article se voit octroyer une remise de 5 % (uniquement sur le montant de l'achat de cet article). Afin de simplifier le problème, on considère qu'un client n'achète qu'un seul type d'article. Écrivez une fonction <em>facture</em> qui prend en paramètre le prix unitaire de l'article et le nombre d'articles achetés. Cette fonction doit renvoyer le montant de la facture.</p>
 <h3 id="activite-154">activité 15.4</h3>
 <p>La fonction <em>distance</em> prend en paramètres 2 points et renvoie la distance entre ces 2 points :</p>
-<div class="highlight"><pre><span></span><code>from math import sqrt
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sqrt</span>
 
-def distance(point1, point2):
-    return sqrt((point1[0]-point2[0])**2 + (point1[1]-point2[1])**2)
+<span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="n">point1</span><span class="p">,</span> <span class="n">point2</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">sqrt</span><span class="p">((</span><span class="n">point1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">point2</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">point1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">point2</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 <p>Proposez une série de tests unitaires pour la fonction <em>distance</em> (on utilisera des assertions)</p>
 
@@ -3142,7 +3145,13 @@ def distance(point1, point2):
     <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../assets/javascripts/bundle.5413a266.min.js"></script>
+      <script src="../assets/javascripts/bundle.b88e97c5.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
