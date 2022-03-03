@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.3">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.4">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.e8d9bf0c.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2d9f7617.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
@@ -27,6 +27,7 @@
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
@@ -3111,22 +3112,22 @@
 <p>Avant d'entrer dans le vif du sujet, un petit rappel historique : JavaScript a été créé en dix jours par Brendan Eich en 1995. Malgré son nom, JavaScript n'a rien à voir avec le langage Java, même si Brendan Eich affirme s'être inspiré de nombreux langage, dont Java, pour mettre au point JavaScript. Après des débuts chaotiques, il est, comme déjà dit plus haut, devenu incontournable dans le développement web.</p>
 <h2 id="2-integrer-le-javascript">2) intégrer le JavaScript</h2>
 <p>Pour être exécuté, le JavaScript doit être intégré à la page HTML. Il existe différentes méthodes pour intégrer le JavaScript, nous allons en étudier une : le code JavaScript est écrit dans un fichier avec l'extension .js (par exemple script.js). Il faut ensuite ajouter une ligne dans le code HTML afin de lier ce dernier au fichier <em>script.js</em> :</p>
-<div class="highlight"><pre><span></span><code>&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;script.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>l'attribut <em>src</em> de la balise <em>script</em> doit être égal au chemin vers le fichier qui contient le JavaScript.</p>
 <p>Voici un exemple de fichier HTML associé avec un fichier <em>script.js</em> :</p>
-<div class="highlight"><pre><span></span><code>&lt;!doctype html&gt;
-&lt;html lang=&quot;fr&quot;&gt;
-    &lt;head&gt;
-        &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;title&gt;Le trio&lt;/title&gt;
-        &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Le trio<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
         ...
-    &lt;/body&gt;
-    &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
-&lt;/html&gt;
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;script.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>Comme vous pouvez le constater ci-dessus la balise <em>script</em> est placée après la balise <em>body</em> fermante (il est aussi possible de placer la balise <em>script</em> dans la partie <em>head</em>, mais ce choix peut entraîner certains problèmes si on ne prend pas certaines précautions, on préférera donc placer la balise <em>script</em> après le <em>body</em>).</p>
 <h2 id="3-le-javascript-pour-repondre-a-des-evenements">3) le JavaScript pour répondre à des événements</h2>
@@ -3142,15 +3143,15 @@
 <p>Dans la plupart des cas rien...si le développeur n'a pas prévu de gérer cet événement, il ne se passera rien.</p>
 <p>Comment gérer un événement ?</p>
 <p>Il suffit d'ajouter un attribut à la balise HTML concernée, prenons un exemple :</p>
-<div class="highlight"><pre><span></span><code>&lt;button onclick=&quot;maFonction()&quot;&gt;Cliquer ici&lt;/button&gt;
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;maFonction()&quot;</span><span class="p">&gt;</span>Cliquer ici<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>Nous avons ici une balise <em>button</em> qui possède un attribut <em>onclick</em>. Cet attribut <em>onclick</em> est égal à <em>maFonction()</em>. <em>maFonction</em> est une fonction défini dans le fichier JavaScript qui est associé à la page HTML (par exemple le fichier <em>script.js</em>). En cas de clic sur le bouton défini ci-dessus, la fonction JavaScript <em>maFonction</em> sera exécutée.</p>
 <h3 id="c-les-fonctions-en-javascript">c) les fonctions en JavaScript</h3>
 <p>Comment écrire une fonction en JavaScript ?</p>
 <p>Il suffit d'utiliser le mot clé <em>function</em> suivi du nom de la fonction :</p>
-<p><div class="highlight"><pre><span></span><code>function Mafonction(){
-    .....
-}
+<p><div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">Mafonction</span><span class="p">(){</span>
+    <span class="p">.....</span>
+<span class="p">}</span>
 </code></pre></div>
 Les limites de la fonction sont définies par l'accolade ouvrante et l'accolade fermante.</p>
 <h2 id="4-modifier-un-element-html-avec-le-javascript">4) Modifier un élément HTML avec le JavaScript</h2>
@@ -3158,71 +3159,71 @@ Les limites de la fonction sont définies par l'accolade ouvrante et l'accolade 
 <p>Aujourd'hui, presque tout : il est possible de coder des applications extrêmement complexes en JavaScript. Nous allons rester modestes, nous allons uniquement modifier un élément HTML.</p>
 <p>Pour modifier un élément HTML il est tout d'abord nécessaire de le sélectionner : c'est le rôle des <em>querySelector</em>.</p>
 <p>Considérons le code HTML suivant :</p>
-<div class="highlight"><pre><span></span><code>&lt;!doctype html&gt;
-&lt;html lang=&quot;fr&quot;&gt;
-    &lt;head&gt;
-        &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;title&gt;Le trio&lt;/title&gt;
-        &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Le trio : HTML, CSS et JavaScript&lt;/h1&gt;
-        &lt;p id=&quot;monPara&quot;&gt;Voici une page web qui ne fait pas grand chose&lt;/p&gt;
-        &lt;button onclick=&quot;maFonction()&quot;&gt;Cliquer ici&lt;/button&gt;
-    &lt;/body&gt;
-    &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
-&lt;/html&gt;
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Le trio<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Le trio : HTML, CSS et JavaScript<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;monPara&quot;</span><span class="p">&gt;</span>Voici une page web qui ne fait pas grand chose<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;maFonction()&quot;</span><span class="p">&gt;</span>Cliquer ici<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;script.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>et le code JavaScript suivant (fichier <em>script.js</em>) :</p>
-<div class="highlight"><pre><span></span><code>function maFonction() {
-    let maBalise = document.querySelector(&quot;#monPara&quot;);
-}
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">maFonction</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">maBalise</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#monPara&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>Le mot clé <em>let</em> permet de définir une variable, dans l'exemple ci-dessus, la variable a pour nom <em>maBalise</em> (on aurait évidemment pu choisir un autre nom). Cette variable <em>maBalise</em> va nous permettre de manipuler l'élément HTML qui a pour <em>id</em> <em>monPara</em> (c'est-à-dire la balise <em>p</em> présente dans le code HTML ci-dessus).</p>
 <p>Maintenant que nous avons "accès" à une balise HTML depuis le code JavaScript, il est possible de modifier le contenu de cette balise ou encore le style associé à cette balise comme bon nous semble :</p>
-<div class="highlight"><pre><span></span><code>function maFonction() {
-    let maBalise = document.querySelector(&quot;#monPara&quot;);
-    maBalise.innerHTML=&quot;coucou&quot;
-}
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">maFonction</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">maBalise</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#monPara&quot;</span><span class="p">);</span>
+    <span class="nx">maBalise</span><span class="p">.</span><span class="nx">innerHTML</span><span class="o">=</span><span class="s2">&quot;coucou&quot;</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>dans le cas ci-dessus nous remplacerons le texte présent dans la balise <em>p</em> ("Voici une page web qui ne fait pas grand chose") par "coucou".</p>
 <p>Autre exemple :</p>
-<p><div class="highlight"><pre><span></span><code>function maFonction() {
-    let maBalise = document.querySelector(&quot;#monPara&quot;);
-    maBalise.style.color=&quot;red&quot;;
-}
+<p><div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">maFonction</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">maBalise</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#monPara&quot;</span><span class="p">);</span>
+    <span class="nx">maBalise</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
 dans le cas ci-dessus, le texte du paragraphe sera écrit en rouge.</p>
 <p>Il est aussi possible de modifier les classes CSS associées à une balise HTML, prenons un exemple :</p>
 <p>soit le code HTML :</p>
-<div class="highlight"><pre><span></span><code>&lt;!doctype html&gt;
-&lt;html lang=&quot;fr&quot;&gt;
-    &lt;head&gt;
-        &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;title&gt;Le trio&lt;/title&gt;
-        &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Le trio : HTML, CSS et JavaScript&lt;/h1&gt;
-        &lt;p id=&quot;monPara&quot;&gt;Voici une page web qui ne fait pas grand-chose&lt;/p&gt;
-        &lt;button onclick=&quot;foncRouge()&quot;&gt;Rouge&lt;/button&gt;
-    &lt;/body&gt;
-    &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
-&lt;/html&gt;
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Le trio<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Le trio : HTML, CSS et JavaScript<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;monPara&quot;</span><span class="p">&gt;</span>Voici une page web qui ne fait pas grand-chose<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;foncRouge()&quot;</span><span class="p">&gt;</span>Rouge<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;script.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>soit le code CSS (fichier "style.css") :</p>
-<div class="highlight"><pre><span></span><code>h1{
-    text-align: center;
-}
-.rou {
-    color: red;
-}
+<div class="highlight"><pre><span></span><code><span class="nt">h1</span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="p">.</span><span class="nc">rou</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <p>soit le code JavaScript (fichier "script.js") :</p>
-<div class="highlight"><pre><span></span><code>function foncRouge() {
-    let maBalise = document.querySelector(&quot;#monPara&quot;);
-    maBalise.classList.add(&quot;rou&quot;);
-}
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">foncRouge</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">maBalise</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#monPara&quot;</span><span class="p">);</span>
+    <span class="nx">maBalise</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;rou&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>Résumons ce qui peut se passer avec la page HTML ci-dessus :</p>
 <ul>
@@ -3304,7 +3305,7 @@ dans le cas ci-dessus, le texte du paragraphe sera écrit en rouge.</p>
     <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../assets/javascripts/bundle.b88e97c5.min.js"></script>
+      <script src="../assets/javascripts/bundle.5413a266.min.js"></script>
       
     
   </body>

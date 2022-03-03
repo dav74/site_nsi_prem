@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.3">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.4">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.e8d9bf0c.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2d9f7617.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
@@ -27,6 +27,7 @@
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
@@ -3153,8 +3154,8 @@
 <p>Grâce au HTML vous allez pouvoir, dans votre navigateur (Firefox, Chrome, Opera,....), afficher du texte, afficher des images, proposer des hyperliens (liens vers d'autres pages web), afficher des formulaires et même maintenant afficher des vidéos (grâce à la dernière version du HTML, l'HTML5).</p>
 <p>HTML n'est pas un langage de programmation (comme le Python par exemple), ici, pas question de conditions, de boucles....c'est un langage de description.</p>
 <p>Voici un exemple de code HTML :</p>
-<div class="highlight"><pre><span></span><code>&lt;h1&gt;Hello World! Ceci est un titre&lt;/h1&gt;
-&lt;p&gt;Ceci est un &lt;strong&gt;paragraphe&lt;/strong&gt;. Avez-vous bien compris ?&lt;/p&gt;
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello World! Ceci est un titre<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ceci est un <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>paragraphe<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>. Avez-vous bien compris ?<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>Comme déjà évoqué ci-dessus, en HTML tout est une histoire de balise que l'on ouvre et que l'on ferme. Une balise ouvrante est de la forme \<nom_de_la_balise>, les balises fermantes sont de la forme \</nom_de_la_balise>.</p>
 <p>En observant attentivement le code, vous devriez forcément remarquer que toute balise ouverte doit être refermée à un moment ou un autre. La balise ouvrante et la balise fermante peuvent être sur la même ligne ou pas, cela n'a aucune espèce d'importance, la seule question à se poser ici est : ai-je bien refermé toutes les balises que j'ai ouvertes ?</p>
@@ -3179,39 +3180,39 @@
 </code></pre></div>
 <p>Il existe beaucoup d'attributs différents, nous allons nous contenter de 2 exemples avec l'attribut id (id pour identifiant) et class. Nous verrons l’intérêt de ces attributs prochainement</p>
 <p>code HTML avec une balise \<p> possédant un attribut id :</p>
-<div class="highlight"><pre><span></span><code>&lt;h1&gt;Ceci est un titre&lt;/h1&gt;
-&lt;h2 class=&quot;titre_1&quot;&gt;Ceci est un sous titre&lt;/h2&gt;
-&lt;p id=&quot;para_1&quot;&gt;Ceci est un &lt;strong&gt;paragraphe&lt;/strong&gt;. Avez-vous bien compris ?&lt;/p&gt;
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Ceci est un titre<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;titre_1&quot;</span><span class="p">&gt;</span>Ceci est un sous titre<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;para_1&quot;</span><span class="p">&gt;</span>Ceci est un <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>paragraphe<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>. Avez-vous bien compris ?<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </code></pre></div>
 <h2 id="3-le-css">3) le CSS</h2>
 <p>Le HTML n'a pas été conçu pour gérer la mise en page (c'est possible, mais c'est une mauvaise pratique). Le HTML s'occupe uniquement du contenu et de la sémantique, pour tout ce qui concerne la mise en page et l'aspect "décoratif" (on parle du « style » de la page), on utilisera le CSS (Cascading Style Sheets).</p>
 <p>Voici un exemple de code CSS :</p>
-<div class="highlight"><pre><span></span><code>h1
-{
-    text-align: center;
-    background-color: red;
-}
-h2
-{
-    font-family: Verdana;
-    font-style: italic;
-    color: green;
-}
+<div class="highlight"><pre><span></span><code><span class="nt">h1</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="nt">h2</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">Verdana</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">font-style</span><span class="p">:</span><span class="w"> </span><span class="kc">italic</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">green</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <p>Dans l'exemple ci-dessus, les propriétés <em>text-align</em> (permet de choisir l'alignement d'un texte) et <em>background-color</em> (permet de modifier la couleur de fond) seront appliquées au contenu de toutes les balises de type h1 (avec respectivement les valeurs <em>center</em> et <em>red</em> : les textes contenus dans les balises <em>h1</em> seront centrés et la couleur de fond sera rouge).</p>
 <p>Le contenu des balises <em>h2</em> sera écrit avec la police de caractère <em>Verdana</em>, en italique et en vert.</p>
 <p>Si on désire cibler seulement certaines balises et pas les autres, il est possible d'utiliser les attributs <em>id</em> et <em>class</em>:</p>
 <p>voici du code HTML :</p>
-<div class="highlight"><pre><span></span><code>&lt;h1&gt;Ceci est un titre&lt;/h1&gt;
-&lt;p&gt;Bonjour&lt;/p&gt;
-&lt;p id=&quot;para_1&quot;&gt;Vous allez bien ?&lt;/p&gt;
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Ceci est un titre<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Bonjour<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;para_1&quot;</span><span class="p">&gt;</span>Vous allez bien ?<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>et le code CSS correspondant :</p>
-<div class="highlight"><pre><span></span><code>#para_1
-{
-    font-style: italic;
-    color: green;
-}
+<div class="highlight"><pre><span></span><code><span class="p">#</span><span class="nn">para_1</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">font-style</span><span class="p">:</span><span class="w"> </span><span class="kc">italic</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">green</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <p>Ici seul le second paragraphe (<em>Vous allez bien ?</em>) sera concerné par le CSS ci-dessus. Le premier paragraphe (<em>Bonjour</em>) et le titre <em>h1</em> ne seront pas concernés</p>
 <p>Il est donc possible de cibler un paragraphe et pas un autre en utilisant l'id du paragraphe (en CSS l'id se traduisant par le signe #).</p>
@@ -3222,12 +3223,12 @@ h2
 <h2 id="5-quelques-balises-a-connaitre">5) quelques balises à connaître</h2>
 <h3 id="a-la-balise-a">a) la balise <em>a</em></h3>
 <p>La balise <em>a</em> permet de créer des liens hypertextes, ce sont ces liens hypertextes qui vous permettent de "voyager" entre les pages d'un site ou entre les sites. Les liens hypertextes sont par défaut soulignés et de couleur bleue (modifiable grâce au CSS). La balise a possède un attribut <em>href</em> qui a pour valeur le chemin du fichier que l'on cherche à atteindre ou l'adresse du site cible : </p>
-<div class="highlight"><pre><span></span><code>&lt;a href=&quot;https://pixees.fr&quot;&gt;Cliquez ici pour vous rendre sur le site pixees&lt;/a&gt;
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://pixees.fr&quot;</span><span class="p">&gt;</span>Cliquez ici pour vous rendre sur le site pixees<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>Entre la balise ouvrante et fermante, on trouve le texte qui s'affichera à l'écran (c'est ce texte qui est souligné et de couleur bleue).La balise peut sans problème se trouver en plein milieu d'un paragraphe.</p>
 <h3 id="b-la-balise-image">b) la balise <em>image</em></h3>
 <p>Comme vous devez déjà vous en douter, la balise image sert à insérer des...images :</p>
-<div class="highlight"><pre><span></span><code>&lt;img src=&quot;mon_image.jpg&quot; alt=&quot;avion&quot;/&gt;
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;mon_image.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;avion&quot;</span><span class="p">/&gt;</span>
 </code></pre></div>
 <p>la balise img est à la fois ouvrante et fermante comme la balise br. Elle possède 2 attributs :</p>
 <p>src qui doit être égal au nom du fichier image (ou au chemin si le fichier image se trouve dans un autre dossier).
@@ -3240,24 +3241,24 @@ alt qui doit être égal à une description de votre image (cet attribut est uti
 </code></pre></div>
 <p>Il existe différentes balises permettant de construire un formulaire, notamment la balise <em>input</em>. Cette balise possède un attribut type qui lui permet de jouer des rôles très différents.</p>
 <p>Les balises <em>button</em> et <em>label</em> nous seront aussi d'une grande utilité  :</p>
-<div class="highlight"><pre><span></span><code>&lt;form&gt;
-    &lt;label&gt;voici un champ de texte : &lt;/label&gt;&lt;input type=&quot;text&quot;/&gt;
-    &lt;button&gt;Cliquez ici !&lt;/button&gt;
-&lt;/form&gt;
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>voici un champ de texte : <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span><span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;</span>Cliquez ici !<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 </code></pre></div>
 <h3 id="d-les-balises-div-et-span">d) les balises <em>div</em> et <em>span</em></h3>
 <p>Ces 2 balises sont très utilisées (surtout la balise div). Pourtant, il faudrait, autant que possible, les éviter, pourquoi ?</p>
 <p>Parce qu'elles n'ont aucune signification particulière, ce sont des balises dites “génériques”.</p>
 <p>À quoi servent-elles alors ?</p>
 <p>À organiser la page, à regrouper plusieurs balises dans une même entité :</p>
-<div class="highlight"><pre><span></span><code>&lt;div&gt;
-    &lt;h2&gt; Mon en-tête &lt;/h2&gt;
-    &lt;p&gt;Hello, comment ça va ?&lt;/p&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;h2&gt;mon &lt;span&gt;bas&lt;/span&gt; de page&lt;/h2&gt;
-    &lt;p&gt;Au  revoir !&lt;/p&gt;
-&lt;/div&gt;
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span> Mon en-tête <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Hello, comment ça va ?<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>mon <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>bas<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> de page<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Au  revoir !<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>Pourquoi 2 balises génériques ?</p>
 <p>Parce que div est une balise de type “block” et que span est une balise de type “inline” !</p>
@@ -3269,17 +3270,17 @@ Les contenus des balises de type "inline" (strong, img, span, a) se placent sur 
 Cela revient à dire qu'une balise de type “block” prend toute la largeur de la page alors qu'une balise de type “inline” prend juste la largeur qui lui est nécessaire.</p>
 <h2 id="7-ecrire-une-page-html">7) écrire une page HTML</h2>
 <p>Pour écriture une page HTML complète, il est nécessaire de rajouter quelques balises :</p>
-<div class="highlight"><pre><span></span><code>&lt;!doctype html&gt;
-&lt;html lang=&quot;fr&quot;&gt;
-    &lt;head&gt;
-        &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;title&gt;Voici mon site&lt;/title&gt;
-        &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Voici mon site<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
 
-    &lt;/body&gt;
-&lt;/html&gt;
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>Nous n'allons pas nous attarder sur ce squelette de page HTML, mais voici ce que vous devez savoir :</p>
 <ul>
@@ -3376,7 +3377,7 @@ Cela revient à dire qu'une balise de type “block” prend toute la largeur de
     <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../assets/javascripts/bundle.b88e97c5.min.js"></script>
+      <script src="../assets/javascripts/bundle.5413a266.min.js"></script>
       
     
   </body>

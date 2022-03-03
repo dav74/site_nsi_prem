@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.3">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.4">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.e8d9bf0c.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2d9f7617.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
@@ -27,6 +27,7 @@
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
@@ -3049,18 +3050,18 @@
 <p>Nous allons chercher à obtenir la représentation graphique suivante (en abscisse la longueur du pétale et en ordonnée la largeur du pétale pour les 3 espèces d'iris)  :</p>
 <p><img alt="" src="../img/c32c_4.png" /></p>
 <p>Créez un  fichier  <em>knn_iris.py</em> dans le répertoire <em>knn_iris</em> et copiez-coller le code suivant dans ce fichier :</p>
-<div class="highlight"><pre><span></span><code>import pandas
-import matplotlib.pyplot as plt
-iris=pandas.read_csv(&quot;iris.csv&quot;)
-x=iris.loc[:,&quot;petal_length&quot;]
-y=iris.loc[:,&quot;petal_width&quot;]
-lab=iris.loc[:,&quot;species&quot;]
-plt.axis(&#39;equal&#39;)
-plt.scatter(x[lab == 0], y[lab == 0], color=&#39;g&#39;, label=&#39;setosa&#39;)
-plt.scatter(x[lab == 1], y[lab == 1], color=&#39;r&#39;, label=&#39;versicolor&#39;)
-plt.scatter(x[lab == 2], y[lab == 2], color=&#39;b&#39;, label=&#39;virginica&#39;)
-plt.legend()
-plt.show()
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">iris</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;iris.csv&quot;</span><span class="p">)</span>
+<span class="n">x</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s2">&quot;petal_length&quot;</span><span class="p">]</span>
+<span class="n">y</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s2">&quot;petal_width&quot;</span><span class="p">]</span>
+<span class="n">lab</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s2">&quot;species&quot;</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">lab</span> <span class="o">==</span> <span class="mi">0</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="n">lab</span> <span class="o">==</span> <span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;setosa&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">lab</span> <span class="o">==</span> <span class="mi">1</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="n">lab</span> <span class="o">==</span> <span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;versicolor&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">lab</span> <span class="o">==</span> <span class="mi">2</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="n">lab</span> <span class="o">==</span> <span class="mi">2</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;virginica&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 <p>Quelques mots sur le programme ci-dessus :</p>
 <ul>
@@ -3073,53 +3074,53 @@ plt.show()
 </ul>
 <h3 id="activite-322">activité 32.2</h3>
 <p>Copiez-collez le code ci-dessous dans le fichier <em>knn_iris.py</em></p>
-<div class="highlight"><pre><span></span><code>import pandas
-import matplotlib.pyplot as plt
-from sklearn.neighbors import KNeighborsClassifier
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
 
-#traitement CSV
-iris=pandas.read_csv(&quot;iris.csv&quot;)
-x=iris.loc[:,&quot;petal_length&quot;]
-y=iris.loc[:,&quot;petal_width&quot;]
-lab=iris.loc[:,&quot;species&quot;]
-#fin traitement CSV
+<span class="c1">#traitement CSV</span>
+<span class="n">iris</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;iris.csv&quot;</span><span class="p">)</span>
+<span class="n">x</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s2">&quot;petal_length&quot;</span><span class="p">]</span>
+<span class="n">y</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s2">&quot;petal_width&quot;</span><span class="p">]</span>
+<span class="n">lab</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s2">&quot;species&quot;</span><span class="p">]</span>
+<span class="c1">#fin traitement CSV</span>
 
-#valeurs
-longueur=2.5
-largeur=0.75
-k=3
-#fin valeurs
+<span class="c1">#valeurs</span>
+<span class="n">longueur</span><span class="o">=</span><span class="mf">2.5</span>
+<span class="n">largeur</span><span class="o">=</span><span class="mf">0.75</span>
+<span class="n">k</span><span class="o">=</span><span class="mi">3</span>
+<span class="c1">#fin valeurs</span>
 
-#graphique
-plt.axis(&#39;equal&#39;)
-plt.scatter(x[lab == 0], y[lab == 0], color=&#39;g&#39;, label=&#39;setosa&#39;)
-plt.scatter(x[lab == 1], y[lab == 1], color=&#39;r&#39;, label=&#39;versicolor&#39;)
-plt.scatter(x[lab == 2], y[lab == 2], color=&#39;b&#39;, label=&#39;virginica&#39;)
-plt.scatter(longueur, largeur, color=&#39;k&#39;)
-plt.legend()
-#fin graphique
+<span class="c1">#graphique</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">lab</span> <span class="o">==</span> <span class="mi">0</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="n">lab</span> <span class="o">==</span> <span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;setosa&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">lab</span> <span class="o">==</span> <span class="mi">1</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="n">lab</span> <span class="o">==</span> <span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;versicolor&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">lab</span> <span class="o">==</span> <span class="mi">2</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="n">lab</span> <span class="o">==</span> <span class="mi">2</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;virginica&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">longueur</span><span class="p">,</span> <span class="n">largeur</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="c1">#fin graphique</span>
 
-#algo knn
-d=list(zip(x,y))
-model = KNeighborsClassifier(n_neighbors=k)
-model.fit(d,lab)
-prediction= model.predict([[longueur,largeur]])
-#fin algo knn
+<span class="c1">#algo knn</span>
+<span class="n">d</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">))</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="n">lab</span><span class="p">)</span>
+<span class="n">prediction</span><span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="n">longueur</span><span class="p">,</span><span class="n">largeur</span><span class="p">]])</span>
+<span class="c1">#fin algo knn</span>
 
-#Affichage résultats
-txt=&quot;Résultat : &quot;
-if prediction[0]==0:
-  txt=txt+&quot;setosa&quot;
-if prediction[0]==1:
-  txt=txt+&quot;versicolor&quot;
-if prediction[0]==2:
-  txt=txt+&quot;virginica&quot;
-plt.text(3,0.5, f&quot;largeur : {largeur} cm longueur : {longueur} cm&quot;, fontsize=12)
-plt.text(3,0.3, f&quot;k : {k}&quot;, fontsize=12)
-plt.text(3,0.1, txt, fontsize=12)
-#fin affichage résultats
+<span class="c1">#Affichage résultats</span>
+<span class="n">txt</span><span class="o">=</span><span class="s2">&quot;Résultat : &quot;</span>
+<span class="k">if</span> <span class="n">prediction</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+  <span class="n">txt</span><span class="o">=</span><span class="n">txt</span><span class="o">+</span><span class="s2">&quot;setosa&quot;</span>
+<span class="k">if</span> <span class="n">prediction</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+  <span class="n">txt</span><span class="o">=</span><span class="n">txt</span><span class="o">+</span><span class="s2">&quot;versicolor&quot;</span>
+<span class="k">if</span> <span class="n">prediction</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">==</span><span class="mi">2</span><span class="p">:</span>
+  <span class="n">txt</span><span class="o">=</span><span class="n">txt</span><span class="o">+</span><span class="s2">&quot;virginica&quot;</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;largeur : </span><span class="si">{</span><span class="n">largeur</span><span class="si">}</span><span class="s2"> cm longueur : </span><span class="si">{</span><span class="n">longueur</span><span class="si">}</span><span class="s2"> cm&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mf">0.3</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;k : </span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">txt</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="c1">#fin affichage résultats</span>
 
-plt.show()
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 <p>Testez le programme ci-dessus</p>
 <p>La bibliothèque Python Scikit Learn propose un grand nombre d'algorithmes lié au machine learning (c'est sans aucun doute la bibliothèque la plus utilisée en machine learning). Parmi tous ces algorithmes, Scikit Learn propose l'algorithme des k plus proches voisins.</p>
@@ -3212,7 +3213,7 @@ y = [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.4,....]
     <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../assets/javascripts/bundle.b88e97c5.min.js"></script>
+      <script src="../assets/javascripts/bundle.5413a266.min.js"></script>
       
     
   </body>
