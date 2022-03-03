@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.3">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.4">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.e8d9bf0c.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2d9f7617.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
@@ -27,6 +27,7 @@
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
@@ -3183,15 +3184,15 @@
 <p>Dans votre répertoire de travail, créez un répertoire nommé "flask".</p>
 <h3 id="activite-282">activité 28.2</h3>
 <p>À l'aide de Spyder, créez un fichier Python "views.py" (ce fichier devra être sauvegardé dans le répertoire "flask" précédemment créé). Saisissez le code suivant dans le fichier "views.py"</p>
-<div class="highlight"><pre><span></span><code>from flask import Flask
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
 
-app = Flask(__name__)
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 
-@app.route(&#39;/&#39;)
-def index():
-  return &quot;&lt;p&gt;Tout fonctionne parfaitement&lt;/p&gt;&quot;
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+  <span class="k">return</span> <span class="s2">&quot;&lt;p&gt;Tout fonctionne parfaitement&lt;/p&gt;&quot;</span>
 
-app.run(debug=True)
+<span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="activite-283">activité 28.3</h3>
 <p>Après avoir exécuté le programme ci-dessus, ouvrez votre navigateur web et tapez dans la barre d'adresse "localhost:5000".</p>
@@ -3201,64 +3202,64 @@ app.run(debug=True)
 <p>Essayons de comprendre en détail ce qui s'est passé :</p>
 <p>En exécutant le programme Python ci-dessus, le framework Flask a lancé un serveur web. Ce serveur web attend des requêtes HTTP sur le port 5000. En ouvrant un navigateur web et en tapant "localhost:5000", nous faisons une requête HTTP, le serveur web fourni avec Flask répond à cette requête HTTP en envoyant une page web contenant uniquement "<p>Tout fonctionne parfaitement</p>".</p>
 <p>Reprenons le programme Python ligne par ligne :</p>
-<div class="highlight"><pre><span></span><code>from flask import Flask
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
 </code></pre></div>
 <p>Nous importons la bibliothèque Flask</p>
-<div class="highlight"><pre><span></span><code>app = Flask(__name__)
+<div class="highlight"><pre><span></span><code><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 </code></pre></div>
 <p>Nous créons un objet app : cette ligne est systématique nécessaire.</p>
-<div class="highlight"><pre><span></span><code>@app.route(&#39;/&#39;)
+<div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
 </code></pre></div>
 <p>Nous utilisons ici un décorateur (cette notion de décorateur ne sera pas traitée en NSI). Vous devez juste comprendre la fonction qui suit ce décorateur ("index"), sera exécutée dans le cas où le serveur web recevra une requête HTTP avec une URL correspondant à la racine du site ('/'), c'est à dire, dans notre exemple, le cas où on saisie dans la barre d'adresse "localhost:5000/" (ou simplement "localhost:5000") Nous verrons ci-dessous un exemple avec une URL autre que '/'.</p>
-<div class="highlight"><pre><span></span><code>def index():
-    return &quot;&lt;p&gt;Tout fonctionne parfaitement&lt;/p&gt;&quot;
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+    <span class="k">return</span> <span class="s2">&quot;&lt;p&gt;Tout fonctionne parfaitement&lt;/p&gt;&quot;</span>
 </code></pre></div>
 <p>En cas de requête HTTP d'un client avec l'URL "/", le serveur renvoie vers le client une page HTML contenant uniquement la ligne "\<p>Tout fonctionne parfaitement\</p>".</p>
-<div class="highlight"><pre><span></span><code>app.run(debug=True)
+<div class="highlight"><pre><span></span><code><span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
 <p>Cette ligne permet de lancer le serveur, elle sera systématiquement présente.</p>
 <h3 id="activite-284">activité 28.4</h3>
 <p>À l'aide de Spyder, modifiez le fichier Python "views.py" :</p>
-<div class="highlight"><pre><span></span><code>from flask import Flask
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
 
-app = Flask(__name__)
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 
-@app.route(&#39;/&#39;)
-def index():
-  return &quot;&lt;p&gt;Tout fonctionne parfaitement&lt;/p&gt;&quot;
-@app.route(&#39;/about&#39;)
-def about():
-  return &quot;&lt;p&gt;Une autre page&lt;/p&gt;&quot;
-app.run(debug=True)
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+  <span class="k">return</span> <span class="s2">&quot;&lt;p&gt;Tout fonctionne parfaitement&lt;/p&gt;&quot;</span>
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/about&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">about</span><span class="p">():</span>
+  <span class="k">return</span> <span class="s2">&quot;&lt;p&gt;Une autre page&lt;/p&gt;&quot;</span>
+<span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
 <p>Après avoir exécuté le programme ci-dessus, saisissez "localhost:5000/about" dans la barre d'adresse de votre navigateur.</p>
 <p>Comme vous pouvez le constater, le serveur nous renvoie dans ce cas une autre page. Évidemment l'URL racine ("/") reste disponible, vous pouvez passer d'une page à l'autre en modifiant l'URL dans la barre d'adresse ("localhost:5000" ou "localhost:5000/about")</p>
 <p>Écrire le code HTML qui devra être renvoyé au client dans le programme Python n'est pas très pratique, Flask propose une autre solution bien plus satisfaisante :</p>
 <h3 id="activite-285">activité 28.5</h3>
 <p>Dans votre répertoire "Flask", créez un répertoire "templates". Dans ce répertoire templates, créez un fichier index.html. Saisissez le code HTML ci-dessous dans ce fichier index.html</p>
-<div class="highlight"><pre><span></span><code>&lt;!doctype html&gt;
-&lt;html lang=&quot;fr&quot;&gt;
-    &lt;head&gt;
-        &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;title&gt;Ma page&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-      &lt;h1&gt;Mon super site&lt;/h1&gt;
-      &lt;p&gt;Tout fonctionne parfaitement&lt;/p&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Ma page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Mon super site<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Tout fonctionne parfaitement<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 <h3 id="activite-286">activité 28.6</h3>
 <p>Modifiez le programme views.py comme suit :</p>
-<div class="highlight"><pre><span></span><code>from flask import Flask, render_template
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">render_template</span>
 
-app = Flask(__name__)
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 
-@app.route(&#39;/&#39;)
-def index():
-    return render_template(&quot;index.html&quot;)
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">&quot;index.html&quot;</span><span class="p">)</span>
 
-app.run(debug=True)
+<span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
 <p>Relancez le programme Python et tapez "localhost:5000" dans la barre d'adresse de votre navigateur</p>
 <p>Le serveur renvoie maintenant au client la page HTML correspondant au fichier "index.html" qui a été créé dans le répertoire "templates". Attention, les fichiers HTML devront systématiquement se trouver dans un répertoire nommé "templates".</p>
@@ -3280,23 +3281,23 @@ app.run(debug=True)
 </ul>
 <h3 id="activite-287">activité 28.7</h3>
 <p>Modifiez le fichier views.py comme suit :</p>
-<div class="highlight"><pre><span></span><code>from flask import Flask, render_template
-import datetime
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">render_template</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
 
-app = Flask(__name__)
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 
-@app.route(&#39;/&#39;)
-def index():
-  date = datetime.datetime.now()
-  h = date.hour
-  m = date.minute
-  s = date.second
-  return render_template(&quot;index.html&quot;, heure = h, minute = m, seconde = s)
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+  <span class="n">date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+  <span class="n">h</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">hour</span>
+  <span class="n">m</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">minute</span>
+  <span class="n">s</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">second</span>
+  <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">&quot;index.html&quot;</span><span class="p">,</span> <span class="n">heure</span> <span class="o">=</span> <span class="n">h</span><span class="p">,</span> <span class="n">minute</span> <span class="o">=</span> <span class="n">m</span><span class="p">,</span> <span class="n">seconde</span> <span class="o">=</span> <span class="n">s</span><span class="p">)</span>
 
-app.run(debug=True)
+<span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
 <p>Dans le programme ci-dessous nous importons le module "datetime" afin de pouvoir déterminer la date et l'heure courante. Le</p>
-<div class="highlight"><pre><span></span><code>date = datetime.datetime.now()
+<div class="highlight"><pre><span></span><code><span class="n">date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
 </code></pre></div>
 <p>nous permet de récupérer la date et l'heure courante</p>
 <div class="highlight"><pre><span></span><code>h = date.hour
@@ -3305,22 +3306,22 @@ s = date.second
 </code></pre></div>
 <p>Après l'exécution des 3 lignes ci-dessus, les variables h, m et s contiennent l'heure courante.</p>
 <p>La fonction "render_template"</p>
-<div class="highlight"><pre><span></span><code>return render_template(&quot;index.html&quot;, heure = h, minute = m, seconde = s)
+<div class="highlight"><pre><span></span><code><span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">&quot;index.html&quot;</span><span class="p">,</span> <span class="n">heure</span> <span class="o">=</span> <span class="n">h</span><span class="p">,</span> <span class="n">minute</span> <span class="o">=</span> <span class="n">m</span><span class="p">,</span> <span class="n">seconde</span> <span class="o">=</span> <span class="n">s</span><span class="p">)</span>
 </code></pre></div>
 <p>contient 3 paramètres de plus par rapport à l'exemple du "À faire vous-même 6" : le paramètre "heure", le paramètre "minute" et le paramètre "seconde", nous allons retrouver ces 3 paramètres dans le fichier HTML.</p>
 <h3 id="activite-288">activité 28.8</h3>
 <p>Modifiez le fichier "index.html" comme suit :</p>
-<div class="highlight"><pre><span></span><code>&lt;!doctype html&gt;
-&lt;html lang=&quot;fr&quot;&gt;
-    &lt;head&gt;
-        &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;title&gt;Utilisation de Flask&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-      &lt;h1&gt;Mon super site&lt;/h1&gt;
-      &lt;p&gt;Le serveur fonctionne parfaitement, il est {{heure}} h {{minute}} minutes et {{seconde}} secondes&lt;/p&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Utilisation de Flask<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Mon super site<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Le serveur fonctionne parfaitement, il est {{heure}} h {{minute}} minutes et {{seconde}} secondes<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>Testez ces modifications en saisissant "localhost:5000" dans la barre de votre navigateur web.</p>
 <p>Nous avons bien une page dynamique, puisqu'à chaque fois que vous actualisez la page dans votre navigateur, l'heure courante s'affiche : à chaque fois que vous actualisez la page, vous effectuez une nouvelle requête et en réponse à cette requête, le serveur envoie une nouvelle page HTML.</p>
@@ -3329,57 +3330,57 @@ s = date.second
 <p>Nous allons maintenant nous intéresser à la gestion des formulaires.</p>
 <h3 id="activite-289">activité 28.9</h3>
 <p>Modifiez le fichier "index.html" comme suit :</p>
-<div class="highlight"><pre><span></span><code>&lt;!doctype html&gt;
-&lt;html lang=&quot;fr&quot;&gt;
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
 
-&lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;Le formulaire&lt;/title&gt;
-&lt;/head&gt;
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Le formulaire<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 
-&lt;body&gt;
-    &lt;form action=&quot;http://localhost:5000/resultat&quot; method=&quot;post&quot;&gt;
-        &lt;label&gt;Nom&lt;/label&gt; : &lt;input type=&quot;text&quot; name=&quot;nom&quot; /&gt;
-        &lt;label&gt;Prénom&lt;/label&gt; : &lt;input type=&quot;text&quot; name=&quot;prenom&quot; /&gt;
-        &lt;input type=&quot;submit&quot; value=&quot;Envoyer&quot; /&gt;
-    &lt;/form&gt;
-&lt;/body&gt;
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;http://localhost:5000/resultat&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>Nom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> : <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;nom&quot;</span> <span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>Prénom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> : <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;prenom&quot;</span> <span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Envoyer&quot;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 
-&lt;/html&gt;
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>et créez un fichier "resultat.html" (dans le répertoire "templates"), ce fichier devra contenir le code suivant :</p>
-<div class="highlight"><pre><span></span><code>&lt;!doctype html&gt;
-&lt;html lang=&quot;fr&quot;&gt;
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
 
-&lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;Résultat&lt;/title&gt;
-&lt;/head&gt;
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Résultat<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 
-&lt;body&gt;
-    &lt;p&gt;Bonjour {{prenom}} {{nom}}, j&#39;espère que vous allez bien.&lt;/p&gt;
-&lt;/body&gt;
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Bonjour {{prenom}} {{nom}}, j&#39;espère que vous allez bien.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 
-&lt;/html&gt;
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 <h3 id="activite-2810">activité 28.10</h3>
 <p>Modifiez le fichier views.py comme suit :</p>
-<div class="highlight"><pre><span></span><code>from flask import Flask, render_template, request
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">render_template</span><span class="p">,</span> <span class="n">request</span>
 
-app = Flask(__name__)
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 
-@app.route(&#39;/&#39;)
-def index():
-  return render_template(&#39;index.html&#39;)
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+  <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s1">&#39;index.html&#39;</span><span class="p">)</span>
 
-@app.route(&#39;/resultat&#39;,methods = [&#39;POST&#39;])
-def resultat():
-  result = request.form
-  n = result[&#39;nom&#39;]
-  p = result[&#39;prenom&#39;]
-  return render_template(&quot;resultat.html&quot;, nom=n, prenom=p)
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/resultat&#39;</span><span class="p">,</span><span class="n">methods</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;POST&#39;</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">resultat</span><span class="p">():</span>
+  <span class="n">result</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">form</span>
+  <span class="n">n</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;nom&#39;</span><span class="p">]</span>
+  <span class="n">p</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;prenom&#39;</span><span class="p">]</span>
+  <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">&quot;resultat.html&quot;</span><span class="p">,</span> <span class="n">nom</span><span class="o">=</span><span class="n">n</span><span class="p">,</span> <span class="n">prenom</span><span class="o">=</span><span class="n">p</span><span class="p">)</span>
 
-app.run(debug=True)
+<span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
 <p>Après avoir relancé "views.py", testez cet exemple en saisissant "localhost:5000" dans la barre d'adresse de votre navigateur web.</p>
 <p>Si vous saisissez, par exemple, "Martin" et "Sophie" dans les champs "Nom" et "Prénom" du formulaire, vous devriez obtenir le résultat suivant après avoir appuyé sur le bouton "Envoyer" :</p>
@@ -3388,11 +3389,11 @@ app.run(debug=True)
 <p>Nous effectuons une requête HTTP avec l'URL "/", le serveur génère une page web à partir du fichier "index.html", cette page, qui contient un formulaire (balise \<form action="http://localhost:5000/resultat" method="post">) est envoyée vers le client. On remarque 2 attributs dans cette balise form : action="http://localhost:5000/resultat" et method="post". Ces 2 attributs indiquent que le client devra effectuer une requête de type POST (la méthode POST a déjà été vue dans la partie consacrée au protocole HTTP) dès que l'utilisateur appuiera sur le bouton "Envoyer". Cette requête POST sera envoyée à l'URL "http://localhost:5000/resultat" (voir l'attribut "action"). Les données saisies dans le formulaire seront envoyées au serveur par l'intermédiaire de cette requête.</p>
 <p>N.B Vous avez sans doute remarqué que la méthode à employer pour effectuer la requête HTTP n'est pas précisée dans le "@app.route('/')". Si rien n'est précisé, par défaut, c'est la méthode GET qui est utilisée.</p>
 <p>Intéressons-nous à la fonction "resultat", puisque c'est cette fonction qui sera exécutée côté serveur pour traiter la requête POST :</p>
-<div class="highlight"><pre><span></span><code>def resultat():
- result = request.form
- n = result[&#39;nom&#39;]
- p = result[&#39;prenom&#39;]
- return render_template(&quot;resultat.html&quot;, nom=n, prenom=p)
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">resultat</span><span class="p">():</span>
+ <span class="n">result</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">form</span>
+ <span class="n">n</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;nom&#39;</span><span class="p">]</span>
+ <span class="n">p</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;prenom&#39;</span><span class="p">]</span>
+ <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">&quot;resultat.html&quot;</span><span class="p">,</span> <span class="n">nom</span><span class="o">=</span><span class="n">n</span><span class="p">,</span> <span class="n">prenom</span><span class="o">=</span><span class="n">p</span><span class="p">)</span>
 </code></pre></div>
 <p>"request.form" est un dictionnaire Python qui a pour clés les attributs "name" des balises "input" du formulaire (dans notre cas les clés sont donc "nom" et "prenom") et comme valeurs ce qui a été saisi par l'utilisateur. Si l'utilisateur saisit "Martin" et "Sophie", le dictionnaire "request.form" sera :</p>
 <div class="highlight"><pre><span></span><code>{&#39;nom&#39;:&#39;Martin&#39;, &#39;prenom&#39;:&#39;Sophie&#39;}
@@ -3404,56 +3405,56 @@ app.run(debug=True)
 <h3 id="activite-2811">activité 28.11</h3>
 <p>Modifiez les fichiers comme suit :</p>
 <p>index.html</p>
-<div class="highlight"><pre><span></span><code>&lt;!doctype html&gt;
-&lt;html lang=&quot;fr&quot;&gt;
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
 
-&lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;Le formulaire&lt;/title&gt;
-&lt;/head&gt;
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Le formulaire<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 
-&lt;body&gt;
-    &lt;form action=&quot;http://localhost:5000/resultat&quot; method=&quot;get&quot;&gt;
-        &lt;label&gt;Nom&lt;/label&gt; : &lt;input type=&quot;text&quot; name=&quot;nom&quot; /&gt;
-        &lt;label&gt;Prénom&lt;/label&gt; : &lt;input type=&quot;text&quot; name=&quot;prenom&quot; /&gt;
-        &lt;input type=&quot;submit&quot; value=&quot;Envoyer&quot; /&gt;
-    &lt;/form&gt;
-&lt;/body&gt;
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;http://localhost:5000/resultat&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;get&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>Nom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> : <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;nom&quot;</span> <span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>Prénom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> : <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;prenom&quot;</span> <span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Envoyer&quot;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 
-&lt;/html&gt;
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>resultat.html (le fichier est inchangé)</p>
-<div class="highlight"><pre><span></span><code>&lt;!doctype html&gt;
-&lt;html lang=&quot;fr&quot;&gt;
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
 
-&lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;Résultat&lt;/title&gt;
-&lt;/head&gt;
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Résultat<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 
-&lt;body&gt;
-    &lt;p&gt;Bonjour {{prenom}} {{nom}}, j&#39;espère que vous allez bien.&lt;/p&gt;
-&lt;/body&gt;
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Bonjour {{prenom}} {{nom}}, j&#39;espère que vous allez bien.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 
-&lt;/html&gt;
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>views.py</p>
-<div class="highlight"><pre><span></span><code>from flask import Flask, render_template, request
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">render_template</span><span class="p">,</span> <span class="n">request</span>
 
-app = Flask(__name__)
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 
-@app.route(&#39;/&#39;)
-def index():
- return render_template(&#39;index.html&#39;)
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+ <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s1">&#39;index.html&#39;</span><span class="p">)</span>
 
-@app.route(&#39;/resultat&#39;,methods = [&#39;GET&#39;])
-def resultat():
-  result=request.args
-  n = result[&#39;nom&#39;]
-  p = result[&#39;prenom&#39;]
-  return render_template(&quot;resultat.html&quot;, nom=n, prenom=p)
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/resultat&#39;</span><span class="p">,</span><span class="n">methods</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;GET&#39;</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">resultat</span><span class="p">():</span>
+  <span class="n">result</span><span class="o">=</span><span class="n">request</span><span class="o">.</span><span class="n">args</span>
+  <span class="n">n</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;nom&#39;</span><span class="p">]</span>
+  <span class="n">p</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;prenom&#39;</span><span class="p">]</span>
+  <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">&quot;resultat.html&quot;</span><span class="p">,</span> <span class="n">nom</span><span class="o">=</span><span class="n">n</span><span class="p">,</span> <span class="n">prenom</span><span class="o">=</span><span class="n">p</span><span class="p">)</span>
 
-app.run(debug=True)
+<span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
 <p>Dans "index.html", la méthode POST a été remplacée par la méthode GET. Dans le fichier "views.py" nous avons aussi remplacé POST par GET, et on utilise "request.args" à la place de "request.form".</p>
 <h3 id="activite-2812">activité 28.12</h3>
@@ -3535,7 +3536,7 @@ app.run(debug=True)
     <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../assets/javascripts/bundle.b88e97c5.min.js"></script>
+      <script src="../assets/javascripts/bundle.5413a266.min.js"></script>
       
     
   </body>

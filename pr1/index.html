@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.3">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.4">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.e8d9bf0c.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2d9f7617.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
@@ -27,6 +27,7 @@
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
@@ -3214,27 +3215,27 @@
 <p>la fonction <em>input</em> va permettre aux utilisateurs de saisir des données au clavier.</p>
 <h3 id="projet-11">projet 1.1</h3>
 <p>Testez ce programme à l'aide de Spyder :</p>
-<div class="highlight"><pre><span></span><code>age=input(&quot;Quel est votre âge ? &quot;)
+<div class="highlight"><pre><span></span><code><span class="n">age</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Quel est votre âge ? &quot;</span><span class="p">)</span>
 </code></pre></div>
 <p>Quel est là valeur de la variable <em>age</em> après avoir exécuté le programme ci-dessus (utilisez la console pour répondre à cette question) ? Quel est le type de la variable <em>age</em> ?</p>
 <p>Comme vous avez pu le constater, la valeur saisie par l'utilisateur sera toujours de type "string".</p>
 <h3 id="projet-12">projet 1.2</h3>
 <p>Testez ce programme à l'aide de Spyder :</p>
-<div class="highlight"><pre><span></span><code>a=input(&quot;Entrez un nombre&quot;)
-a=a+1
+<div class="highlight"><pre><span></span><code><span class="n">a</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Entrez un nombre&quot;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">=</span><span class="n">a</span><span class="o">+</span><span class="mi">1</span>
 </code></pre></div>
 <p>Comme vous l'avez remarqué, nous avons une erreur puisque la valeur référencée par la variable a est de type string, la ligne "a=a+1" puisque nous avons un entier avec 1 et une chaîne de caractères avec la variable a, séparés par un signe +, (le signe + correspond à une concaténation ou à une addition ?) Python n'est pas capable de gérer le problème, nous avons donc une erreur.</p>
 <p>Pour éviter ce genre de problème, il peut être nécessaire de "transformer" notre chaîne de caractères en entier :</p>
 <h3 id="projet-13">projet 1.3</h3>
 <p>Testez ce programme à l'aide de Spyder :</p>
-<div class="highlight"><pre><span></span><code>a=input(&quot;Entrez un nombre&quot;)
-a=int(a)
-a=a+1
+<div class="highlight"><pre><span></span><code><span class="n">a</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Entrez un nombre&quot;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">a</span><span class="o">=</span><span class="n">a</span><span class="o">+</span><span class="mi">1</span>
 </code></pre></div>
 <h2 id="2-ecrire-et-lire-dans-un-fichier-externe">2) Écrire et lire dans un fichier externe</h2>
 <p>Il est possible de lire ou d'écrire des données dans un fichier extérieur.</p>
 <p>La première des choses à faire est d'ouvrir notre fichier texte. Pour ce faire nous utiliserons la méthode open.</p>
-<div class="highlight"><pre><span></span><code>with open(&#39;nomDuFichier&#39;, &#39;r&#39;) as f :
+<div class="highlight"><pre><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;nomDuFichier&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span> <span class="p">:</span>
 </code></pre></div>
 <p>Nous utilisons ici une structure particulière que nous n'avons encore jamais rencontrée : le "with". Ce "with" indique que nous allons utiliser un "context manager". Cette notion de "context manager" n'est pas au programme de NSI, nous n'allons donc pas l'étudier en tant que tel. Vous avez juste besoin de savoir que son utilisation permet de manipuler des fichiers externes "proprement".</p>
 <p>La méthode <em>open</em> prend 2 paramètres : le nom du fichier et le mode d'ouverture du fichier :</p>
@@ -3253,22 +3254,22 @@ a=a+1
 <p>Une fois le fichier ouvert, il est possible d'écrire dedans (à l'aide de <em>write</em>) ou de lire son contenu (à l'aide de <em>read</em>).</p>
 <h3 id="projet-14">projet 1.4</h3>
 <p>Étudiez et testez le programme suivant :</p>
-<div class="highlight"><pre><span></span><code>nom=input(&#39;Entrez un mot&#39;)
-with open(&#39;fichier.txt&#39;,&#39;a&#39;) as f :
-    f.write(nom)
+<div class="highlight"><pre><span></span><code><span class="n">nom</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Entrez un mot&#39;</span><span class="p">)</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;fichier.txt&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span> <span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">nom</span><span class="p">)</span>
 </code></pre></div>
 <p>Le répertoire courant devrait maintenant contenir aussi un fichier <em>fichier.txt</em>. Ouvrez ce fichier (avec un éditeur de texte) et vérifiez qu'il contient bien le mot entré par l'utilisateur.</p>
 <h3 id="projet-15">projet 1.5</h3>
 <p>Étudiez et testez le programme suivant :</p>
-<div class="highlight"><pre><span></span><code>with open(&#39;fichier.txt&#39;,&#39;r&#39;) as f :
-    ligne=f.read()
+<div class="highlight"><pre><span></span><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;fichier.txt&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span> <span class="p">:</span>
+    <span class="n">ligne</span><span class="o">=</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 </code></pre></div>
 <p>Quelle va être la valeur de la variable <em>ligne</em> après l'exécution de ce programme ? Vérifiez votre réponse.</p>
 <h3 id="projet-16">projet 1.6</h3>
 <p>Écrivez un programme permettant à l'utilisateur de sauvegarder 5 noms dans un fichier texte (<em>fichier.txt</em>)</p>
 <p>Vérifiez que votre programme est correct en ouvrant le fichier <em>fichier.txt</em> à l'aide d'un éditeur de texte.</p>
 <p>Votre fichier texte devrait être illisible (les mots s'enchaînent sans aucun espace ou saut à la ligne). Il est tout à fait possible de "forcer" le saut de ligne en utilisant la suite de caractères suivante: \n (l'enchaînement des caractères \ et n entraîne un "retour chariot"). L'instruction suivante :</p>
-<p><div class="highlight"><pre><span></span><code>print(&#39;hello \n world&#39;)
+<p><div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hello </span><span class="se">\n</span><span class="s1"> world&#39;</span><span class="p">)</span>
 </code></pre></div>
 n'affiche pas : </p>
 <div class="highlight"><pre><span></span><code>hello \n world
@@ -3282,26 +3283,26 @@ world
 <p>Modifier votre programme du "1.6" afin d'avoir un nom par ligne dans le fichier texte (<em>fichier.txt</em>)</p>
 <h3 id="projet-18">projet 1.8</h3>
 <p>Voici un programme permettant de lire le fichier texte et de ranger les différents noms entrés par l'utilisateur dans une liste, testez ce programme :</p>
-<div class="highlight"><pre><span></span><code>noms=[]
-with open(&#39;fichier.txt&#39;,&#39;r&#39;) as f :
-    for ligne in f:
-        ligne=ligne.replace(&quot;\n&quot;,&quot;&quot;)
-        noms.append(ligne)
+<div class="highlight"><pre><span></span><code><span class="n">noms</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;fichier.txt&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span> <span class="p">:</span>
+    <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">ligne</span><span class="o">=</span><span class="n">ligne</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="n">noms</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ligne</span><span class="p">)</span>
 </code></pre></div>
 <p>NB : la ligne <em>ligne=ligne.replace("\n","")</em> permet d'enlever la suite de caractères \n, car même si \n n'est pas visible dans le fichier texte, elle est tout de même présente.</p>
 <h2 id="3-commenter-son-code">3) Commenter son code</h2>
 <p>Afin de rendre votre programme plus clair, il est nécessaire, dès que votre code dépasse une dizaine de lignes, d'introduire des commentaires. Bien sûr cela peut permettre à une personne qui n'a pas écrit le programme de comprendre ce que vous avez voulu faire, mais cela peut aussi vous permettre, quelques mois après avoir terminé d'écrire votre code, de vous "rafraîchir la mémoire".</p>
 <p>En Python, toute ligne commençant par le caractère dièse (#) sera considérée comme un commentaire par le système interpréteur/compilateur.</p>
 <p>Voici un exemple de programme commenté :</p>
-<div class="highlight"><pre><span></span><code># la fonction monMessage permet d&#39;afficher un message
-#****************début de la fonction monMessage******************
-def monMessage(nom):
-    return f&quot;Bonjour {nom}&quot;
-#****************fin de la fonction monMessage********************
-# interrogation de l&#39;utilisateur
-monNom=input(&quot;Quel est votre nom ? &quot;)
-# appel de la fonction monMessage
-msg=monMessage(monNom)
+<div class="highlight"><pre><span></span><code><span class="c1"># la fonction monMessage permet d&#39;afficher un message</span>
+<span class="c1">#****************début de la fonction monMessage******************</span>
+<span class="k">def</span> <span class="nf">monMessage</span><span class="p">(</span><span class="n">nom</span><span class="p">):</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Bonjour </span><span class="si">{</span><span class="n">nom</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="c1">#****************fin de la fonction monMessage********************</span>
+<span class="c1"># interrogation de l&#39;utilisateur</span>
+<span class="n">monNom</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Quel est votre nom ? &quot;</span><span class="p">)</span>
+<span class="c1"># appel de la fonction monMessage</span>
+<span class="n">msg</span><span class="o">=</span><span class="n">monMessage</span><span class="p">(</span><span class="n">monNom</span><span class="p">)</span>
 </code></pre></div>
 <p>Attention, dans l'exemple ci-dessus j'ai volontairement alourdi le programme avec des commentaires inutiles vu la simplicité de ce dernier.</p>
 <h2 id="4-projet">4) projet</h2>
@@ -3410,7 +3411,7 @@ Votre choix ?
     <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../assets/javascripts/bundle.b88e97c5.min.js"></script>
+      <script src="../assets/javascripts/bundle.5413a266.min.js"></script>
       
     
   </body>

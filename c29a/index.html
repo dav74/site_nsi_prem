@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.3">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.4">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.e8d9bf0c.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2d9f7617.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
@@ -27,6 +27,7 @@
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
@@ -3333,9 +3334,9 @@ iden=pandas.read_csv(&quot;ident_virgule.csv&quot;)
 <h3 id="activite-292">activité 29.2</h3>
 <p>Il est possible de récupérer certaines données du tableau, par exemple, certaines lignes, certaines colonnes ou bien encore des valeurs uniques. Pour cela, il suffit d'utiliser l'instruction "loc" avec les index des lignes et les index des colonnes. Le principe de fonctionnement de "loc" est relativement simple puisque l'on aura une instruction de la forme <em>loc[index_ligne,index_colonne]</em></p>
 <p>Testez le programme suivant (vous pouvez réutiliser le fichier <em>nsi_p.py</em>) :</p>
-<p><div class="highlight"><pre><span></span><code>import pandas
-iden=pandas.read_csv(&quot;ident_virgule.csv&quot;)
-info=iden.loc[1,&#39;prenom&#39;]
+<p><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">iden</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;ident_virgule.csv&quot;</span><span class="p">)</span>
+<span class="n">info</span><span class="o">=</span><span class="n">iden</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;prenom&#39;</span><span class="p">]</span>
 </code></pre></div>
 Vérifiez que la variable "info" contient bien le prénom "christophe"</p>
 <h3 id="activite-293">activité 29.3</h3>
@@ -3343,25 +3344,25 @@ Vérifiez que la variable "info" contient bien le prénom "christophe"</p>
 <h3 id="activite-294">activité 29.4</h3>
 <p>Il est possible de récupérer toutes les lignes d'une colonne, il suffit de remplacer la partie "index_ligne" de "loc" par ":"</p>
 <p>Testez le programme suivant :</p>
-<div class="highlight"><pre><span></span><code>import pandas
-iden=pandas.read_csv(&quot;ident_virgule.csv&quot;)
-info=iden.loc[:,&#39;nom&#39;]
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">iden</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;ident_virgule.csv&quot;</span><span class="p">)</span>
+<span class="n">info</span><span class="o">=</span><span class="n">iden</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s1">&#39;nom&#39;</span><span class="p">]</span>
 </code></pre></div>
 <p>Vérifiez que la valeur de la variable "info" est égale à une structure de données qui contient toutes les données de la colonne d'index "nom", autrement dit, tous les noms.</p>
 <h3 id="activite-295">activité 29.5</h3>
 <p>Il est possible de récupérer toutes les colonnes d'une ligne particulière, cette fois en remplaçant la partie "index_colonne" de "loc" par ":"</p>
 <p>Testez le programme suivant :</p>
-<div class="highlight"><pre><span></span><code>import pandas
-iden=pandas.read_csv(&quot;ident_virgule.csv&quot;)
-info=iden.loc[2,:]
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">iden</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;ident_virgule.csv&quot;</span><span class="p">)</span>
+<span class="n">info</span><span class="o">=</span><span class="n">iden</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">2</span><span class="p">,:]</span>
 </code></pre></div>
 <p>Vérifiez que la valeur de la variable "info" est égale à une structure de données qui contient toutes les données présentes dans la ligne d'index 2 (la dernière ligne).</p>
 <h3 id="activite-296">activité 29.6</h3>
 <p>Il est aussi possible de récupérer seulement certaines lignes et certaines colonnes.</p>
 <p>Testez le programme suivant :</p>
-<div class="highlight"><pre><span></span><code>import pandas
-iden=pandas.read_csv(&quot;ident_virgule.csv&quot;)
-info=iden.loc[[0,1],[&#39;nom&#39;,&#39;date_naissance&#39;]]
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">iden</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;ident_virgule.csv&quot;</span><span class="p">)</span>
+<span class="n">info</span><span class="o">=</span><span class="n">iden</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="s1">&#39;nom&#39;</span><span class="p">,</span><span class="s1">&#39;date_naissance&#39;</span><span class="p">]]</span>
 </code></pre></div>
 <p>On récupère bien les 2 premières lignes (index 0 et index 1) et les colonnes <em>nom</em> et <em>date_naissance</em>.</p>
 <p>Afin d'avoir des exemples plus complexes à traiter, dans la suite, nous allons travailler sur les données contenues dans le fichier <a href="../asset/villes_virgule.csv">villes_virgule.csv</a>. Ce fichier contient des informations sur plus de 36000 communes françaises.</p>
@@ -3376,8 +3377,8 @@ info=iden.loc[[0,1],[&#39;nom&#39;,&#39;date_naissance&#39;]]
 </ul>
 <h3 id="activite-298">activité 29.8</h3>
 <p>Testez le programme suivant :</p>
-<div class="highlight"><pre><span></span><code>import pandas
-info_villes=pandas.read_csv(&quot;villes_virgule.csv&quot;)
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">info_villes</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;villes_virgule.csv&quot;</span><span class="p">)</span>
 </code></pre></div>
 <p>Vérifiez que la variable "info_villes" contient bien les données contenues dans le fichier ville_virgule.csv.</p>
 <p>Comme vous pouvez le constater, il manque des données dans le tableau qui s'affiche dans la console spyder (les données manquantes sont symbolisées par des ...), en effet, le tableau contient trop données pour qu'il soit entièrement affiché dans la console spyder. Heureusement, il existe une solution :</p>
@@ -3388,9 +3389,9 @@ info_villes=pandas.read_csv(&quot;villes_virgule.csv&quot;)
 <h3 id="activite-299">activité 29.9</h3>
 <p>Nous allons maintenant introduire des conditions dans la sélection des villes. Imaginez par exemple que vous désirez obtenir un tableau ### activité 29.9contenant toutes les villes qui ont une altitude minimum supérieure à 1500 m :</p>
 <p>Analysez et testez le programme suivant :</p>
-<div class="highlight"><pre><span></span><code>import pandas
-info_villes=pandas.read_csv(&quot;villes_virgule.csv&quot;)
-nom_alt=info_villes.loc[info_villes[&quot;alt_min&quot;]&gt;1500,[&quot;nom&quot;,&quot;alt_min&quot;]]
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">info_villes</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;villes_virgule.csv&quot;</span><span class="p">)</span>
+<span class="n">nom_alt</span><span class="o">=</span><span class="n">info_villes</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">info_villes</span><span class="p">[</span><span class="s2">&quot;alt_min&quot;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">1500</span><span class="p">,[</span><span class="s2">&quot;nom&quot;</span><span class="p">,</span><span class="s2">&quot;alt_min&quot;</span><span class="p">]]</span>
 </code></pre></div>
 <p>Dans le "loc", l'expression "info_villes["alt_min"]&gt;1500" est bien avant la virgule, elle concerne donc les index des lignes du tableau. On sélectionnera uniquement les lignes qui auront la valeur du descripteur "alt_min" supérieure à 1500. Nous allons donc bien sélectionner les villes qui ont une altitude minimum supérieure à 1500 m</p>
 <h3 id="activite-2910">activité 29.10</h3>
@@ -3398,17 +3399,17 @@ nom_alt=info_villes.loc[info_villes[&quot;alt_min&quot;]&gt;1500,[&quot;nom&quot
 <h3 id="activite-2911">activité 29.11</h3>
 <p>Il est possible de combiner plusieurs facteurs de sélection en utilisant un "et"("&amp;") ou un "ou"("|").</p>
 <p>Analysez et testez le programme suivant :</p>
-<div class="highlight"><pre><span></span><code>import pandas
-info_villes=pandas.read_csv(&quot;villes_virgule.csv&quot;)
-nom_alt=info_villes.loc[(info_villes[&quot;alt_min&quot;]&gt;1500) &amp; (info_villes[&quot;dens&quot;]&gt;50),[&quot;nom&quot;,&quot;dens&quot;,&quot;alt_min&quot;]]
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">info_villes</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;villes_virgule.csv&quot;</span><span class="p">)</span>
+<span class="n">nom_alt</span><span class="o">=</span><span class="n">info_villes</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">info_villes</span><span class="p">[</span><span class="s2">&quot;alt_min&quot;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">1500</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">info_villes</span><span class="p">[</span><span class="s2">&quot;dens&quot;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">50</span><span class="p">),[</span><span class="s2">&quot;nom&quot;</span><span class="p">,</span><span class="s2">&quot;dens&quot;</span><span class="p">,</span><span class="s2">&quot;alt_min&quot;</span><span class="p">]]</span>
 </code></pre></div>
 <p>Vous devriez constater qu'il y a, en France, une seule ville avec une densité de population supérieure à 50 et une altitude minimum supérieure à 1500 m.</p>
 <h3 id="activite-2912">activité 29.12</h3>
 <p>Il est aussi possible d'effectuer des calculs sur des colonnes, par exemple des moyennes. Il suffit d'utiliser l'instruction "mean" pour effectuer une moyenne :</p>
 <p>Analysez et testez le programme suivant :</p>
-<div class="highlight"><pre><span></span><code>import pandas
-info_villes=pandas.read_csv(&quot;villes_virgule.csv&quot;)
-moyenne_alt_min=info_villes.loc[:,&quot;alt_min&quot;].mean()
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">info_villes</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;villes_virgule.csv&quot;</span><span class="p">)</span>
+<span class="n">moyenne_alt_min</span><span class="o">=</span><span class="n">info_villes</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s2">&quot;alt_min&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </code></pre></div>
 <p>Vous devriez constater que l'altitude minimum moyenne est de 193 m en France. Je rappelle que dans "loc[:,"alt_min"]" le ":" signifie que l'on considère toutes les lignes du tableau. De plus le "alt_min" que le calcul de la moyenne porte bien sur les données du descripteur "alt_min".</p>
 <h3 id="activite-2913">activité 29.13</h3>
@@ -3416,25 +3417,25 @@ moyenne_alt_min=info_villes.loc[:,&quot;alt_min&quot;].mean()
 <h3 id="activite-2914">activité 29.14</h3>
 <p>Pour l'instant nous avons calculé une moyenne sur l'ensemble des lignes, il est aussi possible d'imposer une condition sur les lignes qui seront utilisées pour le calcul.</p>
 <p>Analysez et testez le programme suivant :</p>
-<div class="highlight"><pre><span></span><code>import pandas
-info_villes=pandas.read_csv(&quot;villes_virgule.csv&quot;)
-nbe_hab=info_villes.loc[info_villes[&quot;alt_min&quot;]&gt;1500,&quot;nb_hab_2012&quot;].mean()
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">info_villes</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;villes_virgule.csv&quot;</span><span class="p">)</span>
+<span class="n">nbe_hab</span><span class="o">=</span><span class="n">info_villes</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">info_villes</span><span class="p">[</span><span class="s2">&quot;alt_min&quot;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">1500</span><span class="p">,</span><span class="s2">&quot;nb_hab_2012&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </code></pre></div>
 <p>Vous devriez constater que les villes ayant une altitude minimum supérieure à 1500 m avaient en moyenne 350 habitants en 2012.</p>
 <h3 id="activite-2915">activité 29.15</h3>
 <p>Il est aussi possible de trier le tableau en fonction des valeurs d'un descripteur. Il suffit d'utiliser l'instruction "sort_values"</p>
 <p>Analysez et testez le programme suivant :</p>
-<div class="highlight"><pre><span></span><code>import pandas
-info_villes=pandas.read_csv(&quot;villes_virgule.csv&quot;)
-tri_alt_min=info_villes.sort_values(by=[&quot;alt_min&quot;])
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">info_villes</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;villes_virgule.csv&quot;</span><span class="p">)</span>
+<span class="n">tri_alt_min</span><span class="o">=</span><span class="n">info_villes</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;alt_min&quot;</span><span class="p">])</span>
 </code></pre></div>
 <p>Vous devriez obtenir un nouveau tableau de données "tri_alt_min" trié dans l'ordre croissant des altitudes minimums. Quelle est la ville ayant l'altitude minimum la plus faible de France ?</p>
 <h3 id="activite-2916">activité 29.16</h3>
 <p>Il est aussi possible de trier par ordre décroissant en ajoutant "ascending=False" :</p>
 <p>Analysez et testez le programme suivant :</p>
-<div class="highlight"><pre><span></span><code>import pandas
-info_villes=pandas.read_csv(&quot;villes_virgule.csv&quot;)
-tri_alt_min=info_villes.sort_values(by=[&quot;alt_min&quot;], ascending=False)
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">info_villes</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;villes_virgule.csv&quot;</span><span class="p">)</span>
+<span class="n">tri_alt_min</span><span class="o">=</span><span class="n">info_villes</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;alt_min&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </code></pre></div>
 <p>Quelle est la ville ayant l'altitude minimum la plus importante de France ?</p>
 <h3 id="activite-2917">activité 29.17</h3>
@@ -3443,9 +3444,9 @@ tri_alt_min=info_villes.sort_values(by=[&quot;alt_min&quot;], ascending=False)
 <p>Il est possible de fusionner 2 tableaux de données qui ont une colonne commune :</p>
 <p>Afin de travailler sur cette fusion, nous allons travailler avec 2 fichiers au format CSV : <a href="../asset/fiches_client.csv">fiches_client.csv</a> et <a href="../asset/fiches_com.csv">fiches_com.csv</a></p>
 <p>Après avoir téléchargé les 2 fichiers ci-dessus, testez le code suivant :</p>
-<div class="highlight"><pre><span></span><code>import pandas
-client=pandas.read_csv(&quot;fiches_client.csv&quot;)
-commande=pandas.read_csv(&quot;fiches_com.csv&quot;)
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">client</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;fiches_client.csv&quot;</span><span class="p">)</span>
+<span class="n">commande</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;fiches_com.csv&quot;</span><span class="p">)</span>
 </code></pre></div>
 <p>Utilisez l'explorateur de variables de Spyder afin d'afficher le contenu des variables "client" et "commande"</p>
 <p>Vous devriez normalement obtenir pour "client" :</p>
@@ -3456,10 +3457,10 @@ commande=pandas.read_csv(&quot;fiches_com.csv&quot;)
 <h3 id="activite-2919">activité 29.19</h3>
 <p>Sachant que nous avons deux colonnes contenant les mêmes types d'information (numéros de client), nous allons pouvoir fusionner les deux tableaux en un seul :</p>
 <p>Testez le code suivant :</p>
-<div class="highlight"><pre><span></span><code>import pandas
-client=pandas.read_csv(&quot;fiches_client.csv&quot;)
-commande=pandas.read_csv(&quot;fiches_com.csv&quot;)
-cl_com=pandas.merge(client, commande)
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">client</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;fiches_client.csv&quot;</span><span class="p">)</span>
+<span class="n">commande</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;fiches_com.csv&quot;</span><span class="p">)</span>
+<span class="n">cl_com</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">commande</span><span class="p">)</span>
 </code></pre></div>
 <p>Utilisez l'explorateur de variables de Spyder afin d'afficher la valeur de la variable <em>cl_com</em></p>
 <p>Vous devriez obtenir ceci :</p>
@@ -3469,10 +3470,10 @@ cl_com=pandas.merge(client, commande)
 <h3 id="activite-2920">activité 29.20</h3>
 <p>Il faut prendre garde à l'ordre des arguments de la fonction <em>merge</em> :</p>
 <p>Testez le code suivant :</p>
-<div class="highlight"><pre><span></span><code>import pandas
-client=pandas.read_csv(&quot;fiches_client.csv&quot;)
-commande=pandas.read_csv(&quot;fiches_com.csv&quot;)
-com_cl=pandas.merge(commande, client)
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">client</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;fiches_client.csv&quot;</span><span class="p">)</span>
+<span class="n">commande</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;fiches_com.csv&quot;</span><span class="p">)</span>
+<span class="n">com_cl</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">commande</span><span class="p">,</span> <span class="n">client</span><span class="p">)</span>
 </code></pre></div>
 <p>Utilisez l'explorateur de variables de Spyder afin d'afficher la valeur de la variable *<em>com_cl</em></p>
 <p>Vous devriez obtenir ceci :</p>
@@ -3551,7 +3552,7 @@ com_cl=pandas.merge(commande, client)
     <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../assets/javascripts/bundle.b88e97c5.min.js"></script>
+      <script src="../assets/javascripts/bundle.5413a266.min.js"></script>
       
     
   </body>

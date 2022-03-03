@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.3">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.4">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.e8d9bf0c.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2d9f7617.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
@@ -27,6 +27,7 @@
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
@@ -2956,56 +2957,56 @@
 <p>Pour les liens entre les pages, il faut utiliser les balises <a>, mais l'URL est un peu particulière</p>
 <p>Pour illustrer tout cela, voici un exemple très simple qui utilise les liens et une feuille de style :</p>
 <p>views.py</p>
-<div class="highlight"><pre><span></span><code>from flask import Flask, render_template
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">render_template</span>
 
-app = Flask(__name__)
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 
-@app.route(&#39;/&#39;)
-def index():
-    return render_template(&quot;index.html&quot;)
-@app.route(&#39;/autre_page&#39;)
-def autre_page():
-    return render_template(&quot;autre_page.html&quot;)
-app.run(debug=True)
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">&quot;index.html&quot;</span><span class="p">)</span>
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/autre_page&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">autre_page</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">&quot;autre_page.html&quot;</span><span class="p">)</span>
+<span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
 <p>index.html (répertoire "templates")</p>
-<div class="highlight"><pre><span></span><code>&lt;!doctype html&gt;
-&lt;html lang=&quot;fr&quot;&gt;
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
 
-&lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;Ma page&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;{{url_for(&#39;static&#39;, filename=&#39;style.css&#39;)}}&quot;&gt;
-&lt;/head&gt;
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Ma page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{url_for(&#39;static&#39;, filename=&#39;style.css&#39;)}}&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 
-&lt;body&gt;
-    &lt;h1&gt;Mon super site&lt;/h1&gt;
-    &lt;p&gt;Tout fonctionne parfaitement, voici &lt;a href=&quot;{{ url_for(&#39;autre_page&#39;) }}&quot;&gt;un lien&lt;/a&gt; vers une autre page&lt;/p&gt;
-&lt;/body&gt;
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Mon super site<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Tout fonctionne parfaitement, voici <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{ url_for(&#39;autre_page&#39;) }}&quot;</span><span class="p">&gt;</span>un lien<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> vers une autre page<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 
-&lt;/html&gt;
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>autre_page.html (répertoire "templates")</p>
-<div class="highlight"><pre><span></span><code>&lt;!doctype html&gt;
-&lt;html lang=&quot;fr&quot;&gt;
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
 
-&lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;Ma page&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;{{url_for(&#39;static&#39;, filename=&#39;style.css&#39;)}}&quot;&gt;
-&lt;/head&gt;
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Ma page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{url_for(&#39;static&#39;, filename=&#39;style.css&#39;)}}&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 
-&lt;body&gt;
-    &lt;h1&gt;About&lt;/h1&gt;
-    &lt;p&gt;&lt;a href=&quot;{{ url_for(&#39;index&#39;) }}&quot;&gt;Retour vers la première page&lt;/a&gt;&lt;/p&gt;
-&lt;/body&gt;
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>About<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{ url_for(&#39;index&#39;) }}&quot;</span><span class="p">&gt;</span>Retour vers la première page<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 
-&lt;/html&gt;
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>style.css (répertoire "static")</p>
-<div class="highlight"><pre><span></span><code>h1{
-    text-align: center;
-}
+<div class="highlight"><pre><span></span><code><span class="nt">h1</span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <p>En étudiant attentivement l'exemple ci-dessus, vous devriez être capable d'utiliser les feuilles de style et les liens.</p>
 <p>Le coeur de votre projet devrait pas mal ressembler au projet 1 "répertoire téléphonique", il vous faudra notamment sauvegarder les données dans un fichier texte. À ce propos, nous verrons l'année prochaine un autre système bien plus efficace qu'un simple fichier texte pour sauvegarder des données : les bases de données.</p>
@@ -3077,7 +3078,7 @@ app.run(debug=True)
     <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../assets/javascripts/bundle.b88e97c5.min.js"></script>
+      <script src="../assets/javascripts/bundle.5413a266.min.js"></script>
       
     
   </body>
