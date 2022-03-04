@@ -22,34 +22,34 @@ nav:
       - 'Cours': 'c1c.md'
       - 'Activité' : 'c1a.md'
       - 'Révision' : 'c1r.md'
-    - 'C2 : Python les séquences':
+    - 'C2 : Les séquences':
       - 'Cours': 'c2c.md'
       - 'Activité' : 'c2a.md'
       - 'Révision' : 'c2r.md'
-    - 'C3 : Python les dictionnaires':
+    - 'C3 : Les dictionnaires':
       - 'Cours': 'c3c.md'
       - 'Activité' : 'c3a.md'
       - 'Révision' : 'c3r.md'
   - "Projet 1" : 'pr1.md'
   - 'Partie 2':
-    - "C4 : écriture d'un entier positif":
+    - "C4 : entier positif":
       - 'Cours': 'c4c.md'
       - 'Activité' : 'c4a.md'
       - 'Révision' : 'c4r.md'
-    - "C5 : représentation d'un texte en machine":
+    - "C5 : texte":
       - 'Cours': 'c5c.md'
       - 'Activité' : 'c5a.md'
       - 'Révision' : 'c5r.md'
-    - "C6 : représentation binaire d'un entier relatif":
+    - "C6 : entier relatif":
       - 'Cours': 'c6c.md'
       - 'Activité' : 'c6a.md'
       - 'Révision' : 'c6r.md'
-    - "C7 : notion de nombre flottant":
+    - "C7 : nombre flottant":
       - 'Cours': 'c7c.md'
       - 'Activité' : 'c7a.md'
       - 'Révision' : 'c7r.md'
   - 'Partie 3':
-    - "C8 : modèle d'architecture de von Neumann":
+    - "C8 : archi de von Neumann":
       - 'Cours': 'c8c.md'
       - 'Activité' : 'c8a.md'
       - 'Révision' : 'c8r.md'
@@ -57,24 +57,24 @@ nav:
       - 'Activité' : 'c9a.md'
   - "Projet 2" : 'pr2.md'
   - 'Partie 4':
-    - "C10 : introduction à l'algorithmique":
+    - "C10 : intro à l'algorithmique":
       - 'Cours': 'c10c.md'
       - 'Activité' : 'c10a.md'
       - 'Révision' : 'c10r.md'
-    - 'C11 : tri par insertion, tri par sélection':
+    - 'C11 : tri par insertion et sélection':
       - 'Cours': 'c11c.md'
       - 'Activité' : 'c11a.md'
       - 'Révision' : 'c11r.md'
-    - 'C12 : les invariants de boucle':
+    - 'C12 : invariants de boucle':
       - 'Cours': 'c12c.md'
       - 'Activité' : 'c12a.md'
       - 'Révision' : 'c12r.md'
   - 'Partie 5':
-    - "C13 : introduction aux systèmes d'exploitation" :
+    - "C13 : Systèmes d'exploitation" :
       - 'Cours': 'c13c.md'
       - 'Activité' : 'c13a.md'
       - 'Révision' : 'c13r.md'
-    - 'C14 : lignes de commandes Linux':
+    - 'C14 : Commandes Linux':
       - 'Cours': 'c14c.md'
       - 'Activité' : 'c14a.md'
       - 'Révision' : 'c14r.md'
@@ -88,17 +88,17 @@ nav:
       - 'Cours': 'c16c.md'
       - 'Activité' : 'c16a.md'
       - 'Révision' : 'c16r.md'
-    - "C17 : les protocoles TCP et IP" :
+    - "C17 : TCP et IP" :
       - 'Cours': 'c17c.md'
       - 'Activité' : 'c17a.md'
       - 'Révision' : 'c17r.md'
-    - "C18 : le modèle TCP/IP" :
+    - "C18 : Modèle TCP/IP" :
       - 'Cours': 'c18c.md'
       - 'Activité' : 'c18a.md'
       - 'Révision' : 'c18r.md'
     - 'C19 : simulation réseau (I)':
       - 'Activité' : 'c19a.md'
-    - 'C20 : le protocole du bit alterné':
+    - 'C20 : bit alterné':
       - 'Cours': 'c20c.md'
       - 'Activité' : 'c20a.md'
       - 'Révision' : 'c20r.md'
@@ -111,11 +111,11 @@ nav:
       - 'Cours': 'c22c.md'
       - 'Activité' : 'c22a.md'
       - 'Révision' : 'c22r.md'
-    - "C23 : HTML et CSS : les bases" :
+    - "C23 : HTML et CSS" :
       - 'Cours': 'c23c.md'
       - 'Activité' : 'c23a.md'
       - 'Révision' : 'c23r.md'
-    - "C24 : interaction avec l'utilisateur dans une page web" :
+    - "C24 : interaction avec l'utilisateur" :
       - 'Cours': 'c24c.md'
       - 'Activité' : 'c24a.md'
       - 'Révision' : 'c24r.md'
@@ -133,7 +133,7 @@ nav:
       - 'Activité' : 'c28a.md'
   - "Projet 4" : 'pr4.md'
   - 'Partie 8':
-    - "C29 : traitement de données en tables" :
+    - "C29 : Données en tables" :
       - 'Cours': 'c29c.md'
       - 'Activité' : 'c29a.md'
       - 'Révision' : 'c29r.md'
@@ -142,11 +142,11 @@ nav:
       - 'Cours': 'c30c.md'
       - 'Activité' : 'c30a.md'
       - 'Révision' : 'c30r.md'
-    - "C31 : algorithmes gloutons" :
+    - "C31 : algo gloutons" :
       - 'Cours': 'c31c.md'
       - 'Activité' : 'c31a.md'
       - 'Révision' : 'c31r.md'
-    - "C32 : algorithme des k plus proches voisins" :
+    - "C32 : algo des k plus proches voisins" :
       - 'Cours': 'c32c.md'
       - 'Activité' : 'c32a.md'
       - 'Révision' : 'c32r.md'
