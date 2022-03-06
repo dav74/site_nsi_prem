@@ -2,6 +2,7 @@ site_name: NSI première
 theme:
   name: material
   language: fr
+  favicon: img/favicon.png
   palette:
     primary: black
 markdown_extensions:
