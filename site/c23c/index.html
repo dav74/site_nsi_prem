@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.3">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.4">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.e8d9bf0c.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2d9f7617.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
@@ -31,6 +31,7 @@
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
@@ -3149,6 +3150,8 @@
                 
 
 
+  <h1>Cours</h1>
+
 <h2 id="1-introduction">1) introduction</h2>
 <p>Nous allons nous intéresser à un acteur fondamental du développement web, le couple HTML+CSS (Hyper Text Markup Langage et Cascading Style Sheets).</p>
 <h2 id="2-le-html">2) le HTML</h2>
@@ -3160,7 +3163,7 @@
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello World! Ceci est un titre<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ceci est un <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>paragraphe<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>. Avez-vous bien compris ?<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </code></pre></div>
-<p>Comme déjà évoqué ci-dessus, en HTML tout est une histoire de balise que l'on ouvre et que l'on ferme. Une balise ouvrante est de la forme \<nom_de_la_balise>, les balises fermantes sont de la forme \</nom_de_la_balise>.</p>
+<p>Comme déjà évoqué ci-dessus, en HTML tout est une histoire de balise que l'on ouvre et que l'on ferme. Une balise ouvrante est de la forme <code>&lt;nom_de_la_balise&gt;</code>, les balises fermantes sont de la forme <code>&lt;/nom_de_la_balise&gt;</code>.</p>
 <p>En observant attentivement le code, vous devriez forcément remarquer que toute balise ouverte doit être refermée à un moment ou un autre. La balise ouvrante et la balise fermante peuvent être sur la même ligne ou pas, cela n'a aucune espèce d'importance, la seule question à se poser ici est : ai-je bien refermé toutes les balises que j'ai ouvertes ?</p>
 <p>Enfin pour terminer avec les généralités sur les balises, il est important de savoir qu'une structure du type :</p>
 <div class="highlight"><pre><span></span><code>&lt;balise1&gt;
@@ -3175,14 +3178,14 @@
 &lt;/balise2&gt;
 &lt;/balise1&gt;
 </code></pre></div>
-<p>Notez que dans notre exemple nous respectons bien cette règle « d'imbrication » des balises avec la balise \<p> et la balise \<strong>.</p>
-<p>Il est important de comprendre que chaque balise a une signification qu'il faut bien respecter (on parle de la sémantique des balises). Par exemple le texte situé entre la balise ouvrante et fermante \<h1> est obligatoirement un titre important (il existe des balises \<h2>, \<h3>......qui sont aussi des titres, mais des titres moins importants (sous-titre)). La balise \<p> permet de définir des paragraphes, enfin, la balise \<strong> permet de mettre en évidence un élément important.</p>
-<p>Vous devez aussi savoir qu'il existe des balises qui sont à la fois ouvrantes et fermantes (\<balise/>) : un exemple, la balise permettant de sauter une ligne, la balise \<br/> (balise qu'il faut d'ailleurs éviter d'utiliser par différentes raisons que nous n'aborderons pas ici).</p>
+<p>Notez que dans notre exemple nous respectons bien cette règle « d'imbrication » des balises avec la balise <code>&lt;p&gt;</code> et la balise <code>&lt;strong&gt;</code>.</p>
+<p>Il est important de comprendre que chaque balise a une signification qu'il faut bien respecter (on parle de la sémantique des balises). Par exemple le texte situé entre la balise ouvrante et fermante <code>&lt;h1&gt;</code> est obligatoirement un titre important (il existe des balises <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>......qui sont aussi des titres, mais des titres moins importants (sous-titre)). La balise <code>&lt;p&gt;</code> permet de définir des paragraphes, enfin, la balise <code>&lt;strong&gt;</code> permet de mettre en évidence un élément important.</p>
+<p>Vous devez aussi savoir qu'il existe des balises qui sont à la fois ouvrantes et fermantes (<code>&lt;balise/&gt;</code>) : un exemple, la balise permettant de sauter une ligne, la balise <code>&lt;br/&gt;</code> (balise qu'il faut d'ailleurs éviter d'utiliser par différentes raisons que nous n'aborderons pas ici).</p>
 <p>Il est possible d'ajouter des éléments à une balise ouvrante, on parle d'attribut. Une balise peut contenir plusieurs attributs :</p>
 <div class="highlight"><pre><span></span><code>&lt;ma_balise attribut_1= &quot;valeur_1&quot; attribut_2=&quot;valeur_2&quot;&gt;
 </code></pre></div>
 <p>Il existe beaucoup d'attributs différents, nous allons nous contenter de 2 exemples avec l'attribut id (id pour identifiant) et class. Nous verrons l’intérêt de ces attributs prochainement</p>
-<p>code HTML avec une balise \<p> possédant un attribut id :</p>
+<p>code HTML avec une balise <code>&lt;p&gt;</code> possédant un attribut id :</p>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Ceci est un titre<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;titre_1&quot;</span><span class="p">&gt;</span>Ceci est un sous titre<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;para_1&quot;</span><span class="p">&gt;</span>Ceci est un <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>paragraphe<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>. Avez-vous bien compris ?<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
@@ -3222,7 +3225,7 @@
 <p>Il est aussi possible d'utiliser l'attribut class à la place de l'id. Dans le CSS on utilisera le point . à la place du #.</p>
 <p>La différence entre "id" et "class" n'est pas très importante.</p>
 <p>L'attribut "class" permet de donner le même nom à plusieurs reprises dans une même page, ce qui n'est pas possible avec l'attribut <em>id</em></p>
-<p>Si nous avions eu un 3e paragraphe, nous aurions pu avoir : \<p class="para_1">Voici un 3e paragraphe\</p>, mais nous n'aurions pas pu avoir : \<p id="para_1"> Voici un 3e paragraphe \</p>, car le nom para_1 a déjà été utilisé pour le 1er paragraphe.</p>
+<p>Si nous avions eu un 3e paragraphe, nous aurions pu avoir : <code>&lt;p class="para_1"&gt;Voici un 3e paragraphe&lt;/p&gt;</code>, mais nous n'aurions pas pu avoir : <code>&lt;p id="para_1"&gt; Voici un 3e paragraphe &lt;/p&gt;</code>, car le nom para_1 a déjà été utilisé pour le 1er paragraphe.</p>
 <h2 id="5-quelques-balises-a-connaitre">5) quelques balises à connaître</h2>
 <h3 id="a-la-balise-a">a) la balise <em>a</em></h3>
 <p>La balise <em>a</em> permet de créer des liens hypertextes, ce sont ces liens hypertextes qui vous permettent de "voyager" entre les pages d'un site ou entre les sites. Les liens hypertextes sont par défaut soulignés et de couleur bleue (modifiable grâce au CSS). La balise a possède un attribut <em>href</em> qui a pour valeur le chemin du fichier que l'on cherche à atteindre ou l'adresse du site cible : </p>
@@ -3288,7 +3291,7 @@ Cela revient à dire qu'une balise de type “block” prend toute la largeur de
 <p>Nous n'allons pas nous attarder sur ce squelette de page HTML, mais voici ce que vous devez savoir :</p>
 <ul>
 <li>
-<p>la première ligne (<em>\&lt;!doctype html&gt;</em>) permet d'indiquer au navigateur que nous utiliserons du HTML</p>
+<p>la première ligne (<code>&lt;!doctype html&gt;</code>) permet d'indiquer au navigateur que nous utiliserons du HTML</p>
 </li>
 <li>
 <p>la balise <em>html</em> est obligatoire, l'attribut lang="fr" permet d'indiquer au navigateur que nous utiliserons le français pour écrire notre page.</p>
@@ -3380,7 +3383,7 @@ Cela revient à dire qu'une balise de type “block” prend toute la largeur de
     <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../assets/javascripts/bundle.b88e97c5.min.js"></script>
+      <script src="../assets/javascripts/bundle.5413a266.min.js"></script>
       
         <script src="../javascripts/mathjax.js"></script>
       
