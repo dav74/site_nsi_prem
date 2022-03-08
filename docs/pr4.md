@@ -8,11 +8,11 @@ Pour réaliser ce projet, vous allez utiliser le framework Python flask. Nous al
 
 - Comment utiliser une feuille de style css avec flask
 
-- Comment gérer les liens (balise \<a>) avec flask
+- Comment gérer les liens (balise ```<a>```) avec flask
 
 Pour créer une feuille de style, vous devez commencer par créer un répertoire "static" (au même niveau de l'arborescence que le répertoire "templates") et placer votre fichier "style.css" dans ce répertoire "static"
 
-Pour les liens entre les pages, il faut utiliser les balises <a>, mais l'URL est un peu particulière
+Pour les liens entre les pages, il faut utiliser les balises ```<a>```, mais l'URL est un peu particulière
 
 Pour illustrer tout cela, voici un exemple très simple qui utilise les liens et une feuille de style :
 
