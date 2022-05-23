@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../img/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.4">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.3">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.2d9f7617.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.e8d9bf0c.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
@@ -31,7 +31,6 @@
     
     
       
-        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
@@ -2567,6 +2566,33 @@
     2) le format CSV
   </a>
   
+    <nav class="md-nav" aria-label="2) le format CSV">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-introduction" class="md-nav__link">
+    a) introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-descripteurs" class="md-nav__link">
+    b) descripteurs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-separateur" class="md-nav__link">
+    c) séparateur
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3017,6 +3043,33 @@
     2) le format CSV
   </a>
   
+    <nav class="md-nav" aria-label="2) le format CSV">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-introduction" class="md-nav__link">
+    a) introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-descripteurs" class="md-nav__link">
+    b) descripteurs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-separateur" class="md-nav__link">
+    c) séparateur
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3072,6 +3125,7 @@
 </tbody>
 </table>
 <h2 id="2-le-format-csv">2) le format CSV</h2>
+<h3 id="a-introduction">a) introduction</h3>
 <p>Le format CSV permet de stocker des données sous forme de tableau, d'après Wikipédia :</p>
 <p><em>Un fichier CSV est un fichier texte, par opposition aux formats dits « binaires ». Chaque ligne du texte correspond à une ligne du tableau et les virgules correspondent aux séparations entre les colonnes. Les portions de texte séparées par une virgule correspondent ainsi aux contenus des cellules du tableau.</em></p>
 <p>Voici le tableau ci-dessus au format CSV :</p>
@@ -3080,7 +3134,9 @@ Durand,Jean-Pierre,23/05/1985
 Dupont,Christophe,15/12/1967
 Terta,Henry,12/06/1978
 </code></pre></div>
-<p><em>nom</em>, <em>prenom</em> et <em>date_naissance</em> sont appelés des descripteurs alors que, par exemple, "Durand", "Dupont" et "Terta" sont les valeurs du descripteur <em>nom</em>.</p>
+<h3 id="b-descripteurs">b) descripteurs</h3>
+<p><em>nom</em>, <em>prenom</em> et <em>date_naissance</em> sont appelés des descripteurs. Les descripteurs permettent de décrire un <em>objet</em> et ainsi de pouvoir le distinguer d'un autre <em>objet</em> du même type (<em>nom</em>, <em>prenom</em> et <em>date_naissance</em> sont des caractéristiques qui permettent de distinguer 2 personnes). "Durand", "Dupont" et "Terta" sont les valeurs du descripteur <em>nom</em>.</p>
+<h3 id="c-separateur">c) séparateur</h3>
 <p>La virgule est un standard pour les données anglo-saxonnes, mais pas pour les données aux normes françaises. En effet, en français, la virgule est le séparateur des chiffres décimaux. Il serait impossible de différencier les virgules des décimaux et les virgules de séparation des informations. C’est pourquoi on utilise un autre séparateur : le point-virgule (;). Dans certains cas cela peut engendrer quelques problèmes, vous devrez donc rester vigilants sur le type de séparateur utilisé.</p>
 <p>Les tableurs, tels que "Calc" (Libre Office), sont normalement capables de lire les fichiers au format CSV. J'ai précisé "normalement" car certains tableurs gèrent mal le séparateur CSV "point-virgule" et le séparateur des chiffres décimaux "virgule".</p>
 <h2 id="3-traitement-des-donnees">3) traitement des données</h2>
@@ -3153,7 +3209,7 @@ Terta,Henry,12/06/1978
     <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../assets/javascripts/bundle.5413a266.min.js"></script>
+      <script src="../assets/javascripts/bundle.b88e97c5.min.js"></script>
       
         <script src="../javascripts/mathjax.js"></script>
       
