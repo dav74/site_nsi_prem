@@ -256,7 +256,7 @@ def dit_bonjour(nom, age):
 	return phrase
 p = dit_bonjour("toto", 16) 
 ```
-Après l'exécution de ce programme, la variable p aura  pour valeur la chaîne de caractères "Bonjour toto, vous avez 14 ans"
+Après l'exécution de ce programme, la variable p aura  pour valeur la chaîne de caractères "Bonjour toto, vous avez 16 ans"
 
 **Attention** : remarquez bien les guillemets autour du paramètre "toto" (c'est une chaîne de caractères)
 

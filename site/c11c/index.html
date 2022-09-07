@@ -3136,16 +3136,16 @@ i : nombre entier
 j : nombre entier
 k : nombre entier
 DEBUT
-j←2
-tant que j&lt;=longueur(t):  
-  i←j-1
-  k←t[j]
-  tant que i&gt;0 et que t[i]&gt;k: 
-    t[i+1]←t[i]
-    i←i-1
+i←2
+tant que i&lt;=longueur(t):  
+  j←i-1
+  k←t[i]
+  tant que j&gt;0 et que t[j]&gt;k: 
+    t[j+1]←t[j]
+    j←j-1
   fin tant que
-  t[i+1]←k
-  j←j+1
+  t[j+1]←k
+  i←i+1
 fin tant que
 FIN
 </code></pre></div>
