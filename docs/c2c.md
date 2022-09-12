@@ -189,7 +189,7 @@ Il est aussi possible d'obtenir exactement le même résultat que ci-dessus en u
 mon_tab = [p for p in range(0, 4)]
 ```
 
-nous avons une boucle for entre crochets. p va successivement prendre les valeurs 0, 1, 2, 3, 4. Ces différentes valeurs de p vont permettre de remplir le tableau *mon_tab*.
+nous avons une boucle for entre crochets. p va successivement prendre les valeurs 0, 1, 2, 3. Ces différentes valeurs de p vont permettre de remplir le tableau *mon_tab*.
 
 Les compréhensions de tableau permettent de rajouter une condition (if) :
 
