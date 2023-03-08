@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../img/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.3">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
@@ -17,20 +17,23 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.e8d9bf0c.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.472b142f.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.08040f6c.min.css">
         
           
           
           <meta name="theme-color" content="#000000">
         
       
+      
+
     
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
@@ -40,10 +43,11 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
   </head>
@@ -54,7 +58,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="">
   
     
     
@@ -81,11 +85,11 @@
     <a href=".." title="NSI première" class="md-header__button md-logo" aria-label="NSI première" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -107,7 +111,7 @@
     
     
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -115,13 +119,13 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Effacer" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
       
@@ -167,7 +171,7 @@
     <a href=".." title="NSI première" class="md-nav__button md-logo" aria-label="NSI première" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
     NSI première
@@ -1592,6 +1596,74 @@
     2) les adresses IP
   </a>
   
+    <nav class="md-nav" aria-label="2) les adresses IP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-introduction" class="md-nav__link">
+    a) introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-les-masques-de-sous-reseaux" class="md-nav__link">
+    b) les masques de sous-réseaux
+  </a>
+  
+    <nav class="md-nav" aria-label="b) les masques de sous-réseaux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-principes" class="md-nav__link">
+    i) Principes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-notation-cidr" class="md-nav__link">
+    ii) Notation CIDR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-des-cas-plus-complexes" class="md-nav__link">
+    iii) Des cas plus complexes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-ladresse-de-broadcast" class="md-nav__link">
+    c) L'adresse de broadcast
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-nombre-de-machines-adressables-dans-un-reseau" class="md-nav__link">
+    3) Nombre de machines adressables dans un réseau
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-les-adresses-ipv6" class="md-nav__link">
+    4) Les adresses IPv6
+  </a>
+  
 </li>
       
     </ul>
@@ -3009,6 +3081,74 @@
     2) les adresses IP
   </a>
   
+    <nav class="md-nav" aria-label="2) les adresses IP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-introduction" class="md-nav__link">
+    a) introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-les-masques-de-sous-reseaux" class="md-nav__link">
+    b) les masques de sous-réseaux
+  </a>
+  
+    <nav class="md-nav" aria-label="b) les masques de sous-réseaux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-principes" class="md-nav__link">
+    i) Principes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-notation-cidr" class="md-nav__link">
+    ii) Notation CIDR
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-des-cas-plus-complexes" class="md-nav__link">
+    iii) Des cas plus complexes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-ladresse-de-broadcast" class="md-nav__link">
+    c) L'adresse de broadcast
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-nombre-de-machines-adressables-dans-un-reseau" class="md-nav__link">
+    3) Nombre de machines adressables dans un réseau
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-les-adresses-ipv6" class="md-nav__link">
+    4) Les adresses IPv6
+  </a>
+  
 </li>
       
     </ul>
@@ -3019,10 +3159,11 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
+                  
 
 
   <h1>Cours</h1>
@@ -3051,54 +3192,110 @@
 <p>Dans l'exemple du schéma ci-dessus, les ordinateurs A, B, C, D et E sont en réseau. A, B et C sont reliés à un switch, D et E sont reliés à un autre switch. Les 2 switchs étant reliés ensemble.</p>
 <p>Depuis le début nous avons uniquement parlé de réseaux filaires (les différents composants du réseau sont reliés par des câbles), il est aussi possible de mettre plusieurs machines en réseau grâce à des technologies sans fil (utilisation des ondes radio pour transmettre l'information entre les différents composants du réseau), par exemple, le wifi (il existe d'autres technologies sans fil que le wifi, mais elles ne seront abordées ici). Chaque ordinateur appartenant au réseau sans fil devra posséder une carte réseau wifi (aujourd'hui tous les ordinateurs portables vendus sont par défaut équipés d'une telle carte). Il sera nécessaire d'utiliser un concentrateur wifi (équivalent du switch en filaire) si l'on désire mettre en réseau plus de deux ordinateurs.</p>
 <h2 id="2-les-adresses-ip">2) les adresses IP</h2>
-<p>Maintenant que nos ordinateurs sont reliés par l'intermédiaire d'un switch (ou d'un concentrateur wifi), imaginons que l'ordinateur A "souhaite" entrer en communication avec l'ordinateur C. Quand vous désirez communiquer avec quelqu'un par voie postale, il est nécessaire d'écrire l'adresse de cette personne sur une enveloppe, à chaque habitation correspond donc une adresse postale. Et bien c'est un peu la même chose pour les ordinateurs en réseau, chaque machine possède une adresse. Pendant très longtemps il a existé différentes technologies de réseau et donc différents types d'adresse. Aujourd'hui, on trouve presque exclusivement qu'un seul type d'adresse : les adresses IP (nous étudierons donc uniquement ce type d'adresse).</p>
+<h3 id="a-introduction">a) introduction</h3>
+<p>Maintenant que nos ordinateurs sont reliés par l'intermédiaire d'un switch (ou d'un concentrateur wifi), imaginons que l'ordinateur A "souhaite" entrer en communication avec l'ordinateur C. Quand vous désirez communiquer avec quelqu'un par voie postale, il est nécessaire d'écrire l'adresse de cette personne sur une enveloppe, à chaque habitation correspond donc une adresse postale. Et bien, c'est un peu la même chose pour les ordinateurs en réseau, chaque machine possède une adresse. Pendant très longtemps, différentes technologies de réseau, et donc différents types d'adresse, ont coexisté. Aujourd'hui, on trouve presque exclusivement qu'un seul type d'adresse : les adresses IP.</p>
 <p>Les adresses IP sont de la forme : "a.b.c.d", avec a, b, c et d compris entre 0 et 255 (a, b, c et d sont codés sur 1 octet). Voici un exemple d'adresse IP : 192.168.0.1</p>
 <p>Une partie de l’adresse IP permet d’identifier le réseau auquel appartient la machine et l’autre partie de l’adresse IP permet d’identifier la machine sur ce réseau.</p>
-<p>Exemple : Soit un ordinateur A ayant pour adresse IP 192.168.2.1 Dans cette adresse IP "192.168.2" permet d’identifier le réseau (on dit que la machine A appartient au réseau ayant pour adresse 192.168.2.0, pour trouver l'adresse réseau il suffit de remplacer la partie "machine" de cette adresse IP par un ou des 0) et "1" permet d’identifier la machine sur le réseau.</p>
-<p>Toutes les machines appartenant au même réseau devront posséder la même adresse réseau (sinon elles ne pourront pas communiquer ensemble, même si elles sont bien physiquement reliées).</p>
+<p>Exemple : Soit un ordinateur A ayant pour adresse IP 192.168.2.1 Dans cette adresse IP "192.168.2" permet d’identifier le réseau (on dit que la machine A appartient au réseau ayant pour adresse réseau 192.168.2.0, pour trouver l'adresse réseau, il suffit de remplacer la partie "machine" de cette adresse IP par un ou des 0) et "1" permet d’identifier la machine sur le réseau.</p>
+<p>Toutes les machines appartenant au même réseau devront posséder la même adresse réseau (sinon elles ne pourront pas communiquer, même si elles sont bien physiquement reliées).</p>
 <p>Prenons 2 exemples, soit 2 machines A et B en réseau :</p>
 <ul>
 <li>
-<p>la machine A a pour adresse IP 192.168.2.5 et la machine B a pour adresse IP 192.168.2.8. Les 3 premiers octets sont bien identiques ("192.168.2"), A et B ont donc la même adresse réseau "192.168.2.0". Ces 2 machines pourront donc communiquer ensemble</p>
+<p>la machine A a pour adresse IP 192.168.2.5 et la machine B a pour adresse IP 192.168.2.8. Les 3 premiers octets sont bien identiques ("192.168.2"), A et B ont donc la même adresse réseau "192.168.2.0". Ces 2 machines pourront donc communiquer</p>
 </li>
 <li>
-<p>la machine A a pour adresse IP 192.168.2.5 et la machine B a pour adresse IP 192.168.3.8. Les 3 premiers octets ne sont pas identiques ("192.168.2" pour A et "192.168.3" pour B), A et B n'ont pas la même adresse réseau ("192.168.2.0" pour A et "192.168.3.0" pour B). Ces 2 machines ne pourront donc pas communiquer ensemble</p>
+<p>la machine A a pour adresse IP 192.168.2.5 et la machine B a pour adresse IP 192.168.3.8. Les 3 premiers octets ne sont pas identiques ("192.168.2" pour A et "192.168.3" pour B), A et B n'ont pas la même adresse réseau ("192.168.2.0" pour A et "192.168.3.0" pour B). Ces 2 machines ne pourront donc pas communiquer</p>
 </li>
 </ul>
-<p><strong>Attention</strong>, les adresses IP (a.b.c.d) n’ont forcément pas les parties a, b et c consacrées à l’identification du réseau et la partie d consacrées à l’identification des machines sur le réseau : on rajoute souvent à l'adresse IP un "/" suivit du nombre 8, 16 ou 24</p>
+<p><strong>Attention</strong>, les adresses IP (a.b.c.d) n’ont forcément pas les parties a, b et c consacrées à l’identification du réseau et la partie d consacrées à l’identification des machines sur le réseau. Entrons un peu dans les détails</p>
+<h3 id="b-les-masques-de-sous-reseaux">b) les masques de sous-réseaux</h3>
+<h4 id="i-principes">i) Principes</h4>
+<p>À chaque adresse IP on associe un masque de sous-réseau. Un masque de sous-réseau est, comme les adresses IP, composé de 4 nombres a.b.c.d. Comme pour les adresses IP, chaque nombre est compris entre 0 et 255 (chaque nombre est codé sur un octet). Voici un exemple de masque de sous-réseau : 255.255.255.0. Pour obtenir une adresse réseau à partir de l'adresse IP d'une machine, il est nécessaire de connaitre masque de sous-réseau associé à cette adresse IP.</p>
+<p>Pour aller plus loin, il va être nécessaire de travailler sur les représentations binaires des adresses IP et des masques de sous-réseau, prenons tout de suite un exemple :</p>
+<p>soit l'adresse IP suivante : 192.168.2.1 et le masque de sous-réseau suivant : 255.255.255.0. Ce qui nous donne en binaire 11000000.10101000.00000010.00000001 pour l'adresse IP et 11111111.11111111.11111111.00000000 pour le masque de sous-réseaux (si nécessaire, n'hésitez pas à consulter le chapitre consacré à la conversion base 10 - base 2).</p>
+<p>Pour déterminer l'adresse réseau correspondant à l'adresse IP 192.168.2.1, il suffit de faire un "et logique bit à bit" entre l'adresse IP (en binaire) et le masque de sous-réseau (en binaire) : pour chaque bit, si le bit de l'adresse IP est 1 et si le bit du masque de sous-réseau est 1 alors le bit correspondant de l'adresse réseau sera 1. Dans tous les autres cas, le bit du résultat sera à 0 :</p>
+<p><img alt="" src="../img/c16c_7.png" /></p>
+<p>Comme vous pouvez le constater, une adresse IP 11000000.10101000.00000010.00000001 associée à une masque de sous-réseau 11111111.11111111.11111111.00000000 donne une adresse réseau 11000000.10101000.00000010.00000000. Ce qui traduit en base 10 donne : une adresse IP 192.168.2.1 associée à un masque de sous-réseau 255.255.255.0 donne une adresse réseau 192.168.2.0 (exactement le résultat déjà obtenu ci-dessus dans le 2a).</p>
+<p>Envisageons un autre cas : adresse IP 172.16.28.44 avec un masque de sous-réseau 255.255.0.0. Ce qui nous donne en binaire : adresse IP 10101100.00010000.00011100.00101100 avec un masque de sous-réseau 11111111.11111111.000000000.00000000. En appliquant un "et logique bit à bit", nous obtenons l'adresse réseau suivante : 10101100.00010000.00000000.00000000, soit en base 10 : 172.16.0.0</p>
+<p>Un dernier cas : adresse IP 10.5.23.247 avec un masque de sous-réseau 255.0.0.0. Ce qui nous donne en binaire : adresse IP 00001010.00000101.00010111.11110111 avec un masque de sous-réseau 11111111.000000000.000000000.00000000. En appliquant un "et logique bit à bit", nous obtenons l'adresse réseau suivante : 00001010.00000000.00000000.00000000, soit en base 10 : 10.0.0.0</p>
+<p>Nous pouvons résumer les 3 exemples ci-dessus comme suit :</p>
 <ul>
-<li>
-<p>si ce nombre est 8 (exemple : 192.168.2.1/8), cela signifie que pour une adresse a.b.c.d/8, la partie a est consacrée à l'adresse réseau, le reste (b, c, d) est consacré à la partie machine de l'adresse IP. On aura donc une adresse réseau de la forme a.0.0.0</p>
-</li>
-<li>
-<p>si ce nombre est 16 (exemple : 192.168.2.1/16), cela signifie que pour une adresse a.b.c.d/16, les parties a et b sont consacrées à l'adresse réseau, le reste (c, d) est consacré à la partie machine de l'adresse IP. On aura donc une adresse réseau de la forme a.b.0.0</p>
-</li>
-<li>
-<p>si ce nombre est 24 (exemple : 192.168.2.1/24), cela signifie que pour une adresse a.b.c.d/24, les parties a, b et c sont consacrées à l'adresse réseau, le reste (d) est consacré à la partie machine de l'adresse IP. On aura donc une adresse réseau de la forme a.b.c.0</p>
-</li>
+<li>quand le masque de sous-réseau est 255.255.255.0 pour une adresse IP a.b.c.d, les parties a, b et c sont consacrées à l’identification du réseau et la partie d est consacrée à l’identification des machines sur le réseau (l'adresse réseau sera a.b.c.0)</li>
+<li>quand le masque de sous-réseau est 255.255.0.0 pour une adresse IP a.b.c.d, les parties a, b sont consacrées à l’identification du réseau et les parties c et d sont consacrées à l’identification des machines sur le réseau (l'adresse réseau sera a.b.0.0)</li>
+<li>quand le masque de sous-réseau est 255.0.0.0 pour une adresse IP a.b.c.d, la partie a est consacrée à l’identification du réseau et les parties b, c et d sont consacrées à l’identification des machines sur le réseau (l'adresse réseau sera a.0.0.0)</li>
 </ul>
-<p>Vous avez sans doute déjà compris que le 8 signifie que les 8 premiers bits (le premier octet) sont consacrés à la partie réseau =&gt; a, que le 16 signifie que les 16 premiers bits (les deux premiers octets) sont consacrés à la partie réseau =&gt; a.b et que le 24 signifie que les 24 premiers bits (les 3 premiers octets) sont consacrés à la partie réseau =&gt; a.b.c</p>
-<p>En fait, il est possible d'avoir autre chose que /8, /16 ou /24 (on peut par exemple trouver /10 ou /17...), mais ces cas font intervenir la notion de masque de sous-réseau qui n'est pas au programme de NSI.</p>
-<p>Il est à noter que certaines adresses IP ne sont pas disponibles :</p>
-<p>une adresse réseau ne peut pas être attribuée à une machine, par exemple aucune machine ne pourra avoir l'adresse IP 192.168.1.0/24 ou encore l'adresse IP 25.0.0.0/8. De plus,
-les adresses IP qui ont tous les octets de la partie "machines" de l'adresse IP à 255 ne sont pas utilisables (ce sont des adresses de broadcast qui permettent d'envoyer des données vers toutes les machines d'un réseau), exemples : 192.167.24.255/24, 172.28.255.255/16 ou encore 4.255.255.255/8 sont des adresses de broadcast. Conséquence, dans un réseau où les adresses IP sont de type /24, il sera possible d'adresser seulement 254 machines (256 - 2 = 254, 256 car on utilise un octet et moins deux car on enlève l'adresse réseau et l'adresse de broadcast).</p>
-<p>Les adresses IP que nous avons étudiées ci-dessus sont appelées <em>adresse IPv4</em> (adresse IP version  4). Une nouvelle norme est en train de remplacer progressivement les adresses IPv4 : les adresses IPv6 (adresse IP  version 6). Nous n'étudierons pas cette nouvelle norme ici, mais voici tout de même un exemple d'adresse IPv6 : <em>2001:0db8:0000:85a3:0000:0000:ac1f:8001</em>  </p>
+<h4 id="ii-notation-cidr">ii) Notation CIDR</h4>
+<p>Il peut être parfois un peu long d'écrire les masques de sous-réseau sous forme de 4 octets (même en base 10). La notation CIDR (Classless Inter-Domain Routing) permet de raccourcir cette notation :</p>
+<ul>
+<li>au lieu d'écrire adresse IP 192.168.2.1 associée à un masque de sous-réseau 255.255.255.0, on pourra directement écrire adresse IP 192.168.2.1/24</li>
+<li>au lieu d'écrire adresse IP 172.16.28.44 associée à un masque de sous-réseau 255.255.0.0, on pourra directement écrire adresse IP 172.16.28.44/16</li>
+<li>au lieu d'écrire adresse IP 10.5.23.247 associée à un masque de sous-réseau 255.0.0.0, on pourra directement écrire adresse IP 10.5.23.247/8</li>
+</ul>
+<p>Comme vous l'avez sans doute déjà remarqué, le nombre situé après le / correspond au nombre de bits à 1 dans le masque de sous-réseau :</p>
+<ul>
+<li>pour le masque de sous-réseau 255.255.255.0 qui correspond à 11111111.11111111.11111111.00000000 en binaire, on a 24 bits à 1, d'où le /24</li>
+<li>pour le masque de sous-réseau 255.255.0.0 qui correspond à 11111111.11111111.000000000.00000000 en binaire, on a 16 bits à 1, d'où le /16</li>
+<li>pour le masque de sous-réseau 255.0.0.0 qui correspond à 11111111.000000000.000000000.00000000 en binaire, on a 8 bits à 1, d'où le /8</li>
+</ul>
+<h4 id="iii-des-cas-plus-complexes">iii) Des cas plus complexes</h4>
+<p>Dans la plupart des cas, vous rencontrerez des cas "simples" avec des /8, /16 ou /24, mais vous devez aussi savoir que dans certaines situations il est possible de rencontrer des cas plus complexes.</p>
+<p>Il est, par exemple, possible de voir des /18 ! Comment faire dans ce cas ?</p>
+<p>Imaginons l'adresse IP 172.24.82.47/18 quelle est l'adresse réseau ?</p>
+<p>Nous devons obligatoirement travailler en binaire :</p>
+<ul>
+<li>adresse IP 172.24.82.47 en binaire : 10101100.00011000.01010010.00101111</li>
+<li>masque de sous-réseau /18 : 11111111.11111111.11000000.00000000 (on a bien 18 bits à 1) ce qui donne en base 10 : 255.255.192.0</li>
+</ul>
+<p>Le "et logique bit à bit" donne : </p>
+<p><img alt="" src="../img/c16c_8.png" /></p>
+<p>D'où une adresse réseau : 10101100.00011000.01000000.00000000 soit en base 10 : 172.24.64.0</p>
+<p>Dans le cas d'un masque sous réseau 255.255.192.0 (/18), les 18 bits les plus à gauche permettront d'identifier le réseau, le reste (32-18 = 14 bits) permettra d'identifier la machine. Ici, impossible de raisonner sur les octets (comme en /8, /16 ou /24), pas le choix, il faut raisonner sur les bits.</p>
+<h3 id="c-ladresse-de-broadcast">c) L'adresse de broadcast</h3>
+<p>Il existe une adresse IP un peu particulière dans un réseau puisque cette adresse IP permet de contacter toutes les machines du réseau en même temps : c'est l'adresse de broadcast.</p>
+<p>Obtenir une adresse de broadcast est relativement simple : il suffit de mettre tous les bits de la partie machine à 1.</p>
+<p>Commençons par des exemples simples :</p>
+<ul>
+<li>192.168.22.33/24 ; la partie machine correspond au dernier octet (puisque 32-24 = 8 bits = 1 octet), pour obtenir l'adresse de broadcast, il suffit donc de mettre tous les bits du dernier octet à 1 : 192.168.22.255</li>
+<li>172.43.28.12/16 ; la partie machine correspond aux 2 derniers octets (puisque 32-16 = 16 bits = 2 octets), pour obtenir l'adresse de broadcast, il suffit donc de mettre tous les bits des deux derniers octets à 1 : 172.43.255.255</li>
+<li>19.68.221.23/8 ; la partie machine correspond aux derniers octets (puisque 32-8 = 24 bits = 3 octets), pour obtenir l'adresse de broadcast, il suffit donc de mettre tous les bits des trois derniers octets à 1 : 19.255.255.255</li>
+</ul>
+<p>Évidemment, la situation se complique un peu avec un masque de sous-réseau un peu plus exotique :</p>
+<p>Prenons un exemple avec le masque 255.255.255.240 qui donne en binaire 11111111.11111111.11111111.11110000, soit un /28 (28 bits à 1) et l'adresse IP 195.32.12.22/28. Quelle est dans ce cas l'adresse de broadcast (et pendant que nous y sommes, nous rechercherons aussi l'adresse réseau) ?</p>
+<p>L'adresse IP donne en binaire : 11000011.00100000.00001100.00010110, dans cette adresse, seuls les 4 bits les plus à droite sont consacrés à la partie machine de l'adresse IP. </p>
+<p>Pour avoir l'adresse de broadcast, il faut mettre à 1 les 4 bits les plus à droite : 11000011.00100000.00001100.0001<strong>1111</strong>, soit en décimal : 195.32.12.31. L'adresse de broadcast est donc de 195.32.12.31</p>
+<p>Pour avoir l'adresse réseau, il faut mettre à 0 les 4 bits les plus à droite : 11000011.00100000.00001100.0001<strong>0000</strong>, soit en décimal : 195.32.12.16. L'adresse de réseau est donc de 195.32.12.16</p>
+<p>Conclusion : Si une machine M1 d'adresse IP 195.32.12.22/28 appartient à un réseau R1, le réseau R1 a une adresse réseau 195.32.12.16 et une adresse de broadcast 195.32.12.31</p>
+<h2 id="3-nombre-de-machines-adressables-dans-un-reseau">3) Nombre de machines adressables dans un réseau</h2>
+<p>Selon le masque de sous-réseau, le nombre de machines qui peuvent appartenir à un réseau varie grandement :</p>
+<p>Avec un masque 255.255.255.0, nous avons à notre disposition un octet pour la partie machine. Avec un octet, il est possible de coder 256 valeurs (2<sup>8</sup> = 256). Mais, il ne faut pas oublier que l'adresse réseau (tous les bits de la partie machine à 0) ne peut pas être utilisée par une machine. De la même façon, l'adresse de broadcast (tous les bits de la partie machine à 1) ne peut pas non plus être utilisé par une machine. En conclusion, dans le cas où nous utilisons un masque 255.255.255.0 nous pouvons adresser 256 - 2 = 254 machines</p>
+<p>Avec un masque de 255.255.0.0, nous avons 2 octets (16 bits) à consacrer à la partie machine. Avec 2 octets, il est possible de coder 2<sup>16</sup> = 65536 valeurs. Nous devons ensuite enlever l'adresse réseau et l'adresse de broadcast, d'où 65536 - 2 = 65534 machines</p>
+<p>Avec un masque de 255.0.0.0, nous avons 3 octets (24 bits) à consacrer à la partie machine. Avec 3 octets, il est possible de coder 2<sup>24</sup> = 16777216 valeurs. Nous devons ensuite enlever l'adresse réseau et l'adresse de broadcast, d'où 16777216 - 2 = 16777214 machines</p>
+<p>Un dernier exemple avec un masque de sous-réseau un peu "exotique" : reprenons notre exemple avec le masque 255.255.255.240. En convertissant ce masque en binaire (11111111.11111111.11111111.11110000), nous pouvons constater qu'il y a uniquement 4 bits réservés à la machine. Avec 4 bits, il est possible de coder 2<sup>4</sup> = 16 valeurs. Il nous faut ensuite retrancher l'adresse réseau (195.32.12.16) et l'adresse de broadcast (195.32.12.31), d'où 16 - 2 = 14 machines. Comme dans ce cas il n'y a pas trop d'adresses possibles, nous pouvons toutes les énumérer : 195.32.12.17, 195.32.12.18, 195.32.12.19, 195.32.12.20, 195.32.12.21, 195.32.12.22, 195.32.12.23, 195.32.12.24, 195.32.12.25, 195.32.12.26, 195.32.12.27, 195.32.12.28, 195.32.12.29, 195.32.12.30, comme vous pouvez le constater, nous avons bien 14 adresses IP.</p>
+<h2 id="4-les-adresses-ipv6">4) Les adresses IPv6</h2>
+<p>Les adresses IP que nous avons étudiées ci-dessus sont appelées <em>adresse IPv4</em> (adresse IP version 4). Une nouvelle norme est en train de remplacer progressivement les adresses IPv4 : les adresses IPv6 (adresse IP version 6). Nous n'étudierons pas cette nouvelle norme ici, mais voici tout de même un exemple d'adresse IPv6 : <em>2001:0db8:0000:85a3:0000:0000:ac1f:8001</em>  </p>
 
-              
-            </article>
-          </div>
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
         <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Pied de page">
+    
+    <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
       
         
         <a href="../pr3/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Projet 3" rel="prev">
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
@@ -3122,7 +3319,7 @@ les adresses IP qui ont tous les octets de la partie "machines" de l'adresse IP 
             </div>
           </div>
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
           </div>
         </a>
       
@@ -3148,10 +3345,11 @@ les adresses IP qui ont tous les octets de la partie "machines" de l'adresse IP 
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.b88e97c5.min.js"></script>
+      <script src="../assets/javascripts/bundle.d6c3db9e.min.js"></script>
       
         <script src="../javascripts/mathjax.js"></script>
       
