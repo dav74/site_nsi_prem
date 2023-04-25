@@ -59,7 +59,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="">
   
     
     
@@ -3195,7 +3195,7 @@ y = [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.4,....]
 <p>"KNeighborsClassifier" est une méthode issue de la bibliothèque scikit-learn (voir plus haut le "from sklearn.neighbors import KNeighborsClassifier"), cette méthode prend ici en paramètre le nombre de "plus proches voisins" (model = KNeighborsClassifier(n_neighbors=k))</p>
 <p>"model.fit(d, lab)" permet d'associer les tuples présents dans la liste "d" avec les labels (0 : "iris setosa", 1 : "iris versicolor" ou 2 : "iris virginica"). Par exemple le premier tuple de la liste "d", (1.4, 0.2) est associé au premier label de la liste lab (0), et ainsi de suite...</p>
 <p>La ligne "prediction= model.predict([[longueur,largeur]])" permet d'effectuer une prédiction pour un couple [longueur, largeur] (dans l'exemple ci-dessus "longueur=2.5" et "largeur=0.75"). La variable "prediction" contient alors le label trouvé par l'algorithme knn. </p>
-<p>Attention, "predection" est une liste Python qui contient un seul élément (le label), il est donc nécessaire d'écrire "predection[0]" afin d'obtenir le label.</p>
+<p>Attention, "prediction" est une liste Python qui contient un seul élément (le label), il est donc nécessaire d'écrire "prediction[0]" afin d'obtenir le label.</p>
 <h3 id="activite-323">activité 32.3</h3>
 <p>Modifiez le programme de l'activité 32.2 afin de tester l'algorithme knn avec un nombre "de plus proches voisins" différent (en gardant un iris ayant une longueur de pétale égale à 2,5 cm et une largeur de pétale égale à 0,75 cm).</p>
 <p>Que se passe-t-il pour k = 5 ?</p>

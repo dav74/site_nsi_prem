@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://xq1hvnpykw5b"
+
+[deps]
+
+files=["res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.Survived.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.Pclass.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.Name.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.Sex.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.Age.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.SibSp.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.Parch.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.Ticket.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.Fare.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.Cabin.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.Embarked.translation"]
+
+source_file="res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.csv"
+dest_files=["res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.Survived.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.Pclass.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.Name.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.Sex.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.Age.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.SibSp.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.Parch.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.Ticket.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.Fare.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.Cabin.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/titanic.Embarked.translation"]
+
+[params]
+
+compress=true
+delimiter=0
