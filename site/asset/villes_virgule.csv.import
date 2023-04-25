@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://wtogbwf6cq06"
+
+[deps]
+
+files=["res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.nom.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.cp.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.nb.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.nb.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.nb.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.dens.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.surf.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.long.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.lat.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.alt.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.alt.translation"]
+
+source_file="res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.csv"
+dest_files=["res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.nom.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.cp.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.nb.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.nb.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.nb.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.dens.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.surf.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.long.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.lat.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.alt.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/villes_virgule.alt.translation"]
+
+[params]
+
+compress=true
+delimiter=0

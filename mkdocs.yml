@@ -5,6 +5,7 @@ theme:
   favicon: img/favicon.png
   palette:
     primary: black
+    scheme : slate
 markdown_extensions:
   - pymdownx.highlight:
       use_pygments: true

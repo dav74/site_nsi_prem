@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://d3ykqvm2mvbou"
+
+[deps]
+
+files=["res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/ident_virgule.prenom.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/ident_virgule.date.translation"]
+
+source_file="res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/ident_virgule.csv"
+dest_files=["res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/ident_virgule.prenom.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/ident_virgule.date.translation"]
+
+[params]
+
+compress=true
+delimiter=0

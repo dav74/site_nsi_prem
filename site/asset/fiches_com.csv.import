@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://d4cn50b8fd4p1"
+
+[deps]
+
+files=["res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/fiches_com.date.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/fiches_com.n.translation"]
+
+source_file="res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/fiches_com.csv"
+dest_files=["res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/fiches_com.date.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/fiches_com.n.translation"]
+
+[params]
+
+compress=true
+delimiter=0
