@@ -2,14 +2,14 @@
 
 importer="csv_translation"
 type="Translation"
-uid="uid://sbfoxeprpr1s"
+uid="uid://c4o8a80dvxx2v"
 
 [deps]
 
-files=["res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/iris.petal.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/iris.species.translation"]
+files=["res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/iris.petal.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/iris.species.translation"]
 
-source_file="res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/iris.csv"
-dest_files=["res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/iris.petal.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/site/asset/iris.species.translation"]
+source_file="res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/iris.csv"
+dest_files=["res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/iris.petal.translation", "res://Library/CloudStorage/Dropbox/Education/site pixees/site_nsi_prem/docs/asset/iris.species.translation"]
 
 [params]
 

@@ -285,7 +285,7 @@ def aire_cercle(...):
 	return ...
 ```
 
-Complétez la fonction *aire_cercle* ci-dessus (remplacez les ...).
+Complétez la fonction *aire_cercle* ci-dessus (remplacez les ...), puis écrivez la documentation de cette fonction sous forme de docstring.
 
 ### activité 1.17
 
@@ -301,7 +301,7 @@ def pair_impair(n):
 		return "impair"
 ```
 
-Complétez la fonction *pair_impair* ci-dessus (remplacez les ...).
+Complétez la fonction *pair_impair* ci-dessus (remplacez les ...), puis écrivez la documentation de cette fonction sous forme de docstring.
 
 ### activité 1.18
 

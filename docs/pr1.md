@@ -130,29 +130,7 @@ with open('fichier.txt','r') as f :
 
 NB : la ligne *ligne=ligne.replace("\n","")* permet d'enlever la suite de caractères \n, car même si \n n'est pas visible dans le fichier texte, elle est tout de même présente.
 
-## 3) Commenter son code
-
-Afin de rendre votre programme plus clair, il est nécessaire, dès que votre code dépasse une dizaine de lignes, d'introduire des commentaires. Bien sûr cela peut permettre à une personne qui n'a pas écrit le programme de comprendre ce que vous avez voulu faire, mais cela peut aussi vous permettre, quelques mois après avoir terminé d'écrire votre code, de vous "rafraîchir la mémoire".
-
-En Python, toute ligne commençant par le caractère dièse (#) sera considérée comme un commentaire par le système interpréteur/compilateur.
-
-Voici un exemple de programme commenté :
-
-```python
-# la fonction monMessage permet d'afficher un message
-#****************début de la fonction monMessage******************
-def monMessage(nom):
-	return f"Bonjour {nom}"
-#****************fin de la fonction monMessage********************
-# interrogation de l'utilisateur
-monNom=input("Quel est votre nom ? ")
-# appel de la fonction monMessage
-msg=monMessage(monNom)
-```
-
-Attention, dans l'exemple ci-dessus j'ai volontairement alourdi le programme avec des commentaires inutiles vu la simplicité de ce dernier.
-
-## 4) projet
+## 3) projet
 
 En utilisant les connaissances acquises jusqu'à présent, vous allez écrire un programme de gestion de répertoire téléphonique.
 
@@ -199,5 +177,5 @@ Voici une démonstration en vidéo : [https://www.youtube.com/watch?v=itSlzuGZHe
 
 Les noms et numéros de téléphone devront être stockés dans un fichier texte.
 
-Votre programme devra être composé au minimum de 3 fonctions : une fonction *menu*, une fonction *lecture* et une fonction *ecriture*.
+Votre programme devra être composé au minimum de 3 fonctions : une fonction *menu*, une fonction *lecture* et une fonction *ecriture*. N'oubliez pas de commenter votre programme et de proposer une documentation pour vos fonctions.
 

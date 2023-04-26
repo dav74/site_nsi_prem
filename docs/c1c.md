@@ -618,3 +618,57 @@ FIN
 ```
 
 Il est très important que vous soyez capable d'effectuer l'analyse d'un programme comme nous venons de la faire ci-dessus, cela vous permettra d'éviter beaucoup d'erreurs
+
+## 11) commentaires et documentation
+
+### a) Les commentaires
+
+Afin de rendre votre programme plus clair, il est nécessaire, dès que votre code dépasse une dizaine de lignes, d'introduire des commentaires. Bien sûr, cela peut permettre à une personne qui n'a pas écrit le programme de comprendre ce que vous avez voulu faire, mais cela peut aussi vous permettre, quelques mois après avoir terminé d'écrire votre code, de vous "rafraîchir la mémoire".
+
+En Python, toute ligne commençant par le caractère dièse (#) sera considérée comme un commentaire par le système interpréteur/compilateur.
+
+Voici un exemple de programme commenté :
+
+```python
+def multiplication(a,b):
+	res = 0
+	# on boucle a fois
+	while a>0:
+		#on ajoute b à res
+		res = res + b
+		#on décrémente a
+		a = a - 1
+	return res
+# La variable x est égale à la valeur renvoyée par la fonction multiplication pour a = 5 et b = 3
+x = multiplication(5,3)
+# on affiche la valeur de x
+print(x)
+```
+
+Attention, dans l'exemple ci-dessus j'ai volontairement alourdi le programme avec des commentaires inutiles vu la simplicité de ce dernier.
+
+### b) La documentation d'une fonction
+
+Toujours dans l'idée de rendre vos programmes plus clairs, il est important de proposer une documentation pour vos fonctions.
+Cette documentation doit donner des informations sur le comportement de votre fonction, plus précisément, votre documentation doit :
+
+- décrire votre fonction
+- donner le type des paramètres de votre fonction
+- donner le type de la valeur renvoyée par votre fonction
+
+
+La documentation doit se trouver au tout début de votre fonction, elle commence par 3 guillemets """ et se termine aussi par 3 guillemets. Il est possible d'utiliser plusieurs lignes. Voici un exemple avec la fonction multiplication :
+
+```python
+def multiplication(a,b):
+	"""Cette fonction multiplie 2 nombres a et b sans utiliser l'opérateur *
+	- les paramètres sont a et b, tous les 2 de type number (int ou float)
+	- la valeur renvoyée par la fonction est aussi de type number (int ou float)
+	"""
+	res = 0
+	while a>0:
+		res = res + b
+		a = a - 1
+	return res
+```
+On utilise le terme de docstring pour désigner cette façon de rediger la documentation d'une fonction (on rédige la documentation sous forme de docstring).
