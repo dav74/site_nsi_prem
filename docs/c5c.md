@@ -6,7 +6,7 @@ Nous savons qu'un ordinateur est uniquement capable de traiter des données bina
 
 Avant 1960 de nombreux systèmes de codage de caractères existaient, ils étaient souvent incompatibles entre eux. En 1960, l'organisation internationale de normalisation (ISO) décide de mettre un peu d'ordre dans ce bazar en créant la norme ASCII (American Standard Code for Information Interchange). À chaque caractère est associé un nombre binaire sur 8 bits (1 octet). En faite, seuls 7 bits sont utilisés pour coder un caractère, le 8e bit n'est pas utilisé pour le codage des caractères. Avec 7 bits il est possible de coder jusqu'à 128 caractères ce qui est largement suffisant pour un texte écrit en langue anglaise (pas d'accents et autres lettres particulières).
 
-![](img/c5c_1.svg)
+![](img/c5c_1.jpg)
 
 Comme vous pouvez le constater dans le tableau ci-dessus, au "A" majuscule correspond le code binaire 1000001<sub>2</sub> (65<sub>10</sub> ou 41<sub>16</sub>)
 

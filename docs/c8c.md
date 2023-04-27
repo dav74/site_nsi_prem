@@ -43,13 +43,13 @@ Le plus simple des circuits combinatoires est la porte "NON" ("NOT" en anglais) 
 
 La porte "NON" est symbolisée par le schéma suivant :
 
-![](img/c8c_4.png)
+![](img/c8c_4.jpg)
 
 #### ii) la porte OU (OR)
 
 La porte "OU" a deux entrées (E1 et E2) et une sortie S
 
-![](img/c8c_5.png)
+![](img/c8c_5.jpg)
 
 Table de vérité porte "OU" :
 
@@ -64,7 +64,7 @@ Table de vérité porte "OU" :
 
 La porte "ET" ("AND") a deux entrées (E1 et E2) et une sortie S
 
-![](img/c8c_6.png)
+![](img/c8c_6.jpg)
 
 Table de vérité porte "ET" :
 
@@ -79,7 +79,7 @@ Table de vérité porte "ET" :
 
 La porte "OU EXCLUSIF" ("XOR") a deux entrées (E1 et E2) et une sortie S
 
-![](img/c8c_7.png)
+![](img/c8c_7.jpg)
 
 Table de vérité porte "XOR" :
 
@@ -94,7 +94,7 @@ Table de vérité porte "XOR" :
 
 En combinant les portes logiques, on obtient des circuits plus complexes. Par exemple en combinant 2 portes "OU EXCLUSIF", 2 portes "ET" et une porte "OU" on obtient un additionneur :
 
-![](img/c8c_8.png)
+![](img/c8c_8.jpg)
 
 Comme son nom l'indique, l'additionneur permet d'additionner 2 bits (E1 et E2) en tenant compte de la retenue entrante ("Cin" "carry in" en anglais). En sortie on obtient le résultat de l'addition (S) et la retenue sortante ("Cout").
 
@@ -129,7 +129,7 @@ Pour terminer sur cet aspect technologique, il faut noter que l'on trouve aussi 
 
 circuit de type bascule, permet de stocker 1 bit :
 
-![](img/c8c_9.png)
+![](img/c8c_9.jpg)
 
 Il n'est pas question pour nous d'étudier ce type de circuit, le schéma ci-dessus vous permet juste de vérifier qu'une fois de plus nous avons bien à faire à une combinaison de porte logique.
 
@@ -161,7 +161,7 @@ Les données doivent circuler entre les différentes parties d’un ordinateur, 
 
 bus :
 
-![](img/c8c_11.png)
+![](img/c8c_11.jpg)
 
 ## 2) initiation à l'assembleur
 
@@ -177,7 +177,7 @@ Une instruction machine est une chaîne binaire composée principalement de 2 pa
 
 instruction machine :
 
-![](img/c8c_12.png)
+![](img/c8c_12.jpg)
 
 Les instructions machines sont relativement basiques (on parle d'instructions de bas niveau), voici quelques exemples :
 
@@ -376,7 +376,7 @@ Comme vous avez pu le constater dans les exemples ci-dessus, les données et les
 
 modèle de von Neumann d'après le site https://interstices.info/ :
 
-![](img/c8c_13.gif)
+![](img/c8c_13.jpg)
 
 Sur ce schéma, nous avons :
 

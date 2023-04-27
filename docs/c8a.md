@@ -22,7 +22,7 @@ Complétez le schéma ci-dessous avec les termes suivants :
 
 - additionneur
 
-![](img/c8a_1.png)
+![](img/c8a_1.jpg)
 
 ### activité 8.5
 

@@ -432,6 +432,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#11-commentaires-et-documentation" class="md-nav__link">
+    11) commentaires et documentation
+  </a>
+  
+    <nav class="md-nav" aria-label="11) commentaires et documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-les-commentaires" class="md-nav__link">
+    a) Les commentaires
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-la-documentation-dune-fonction" class="md-nav__link">
+    b) La documentation d'une fonction
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3345,6 +3372,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#11-commentaires-et-documentation" class="md-nav__link">
+    11) commentaires et documentation
+  </a>
+  
+    <nav class="md-nav" aria-label="11) commentaires et documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-les-commentaires" class="md-nav__link">
+    a) Les commentaires
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-la-documentation-dune-fonction" class="md-nav__link">
+    b) La documentation d'une fonction
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3837,6 +3891,47 @@ Voici comment analyser ce programme :</p>
 FIN
 </code></pre></div>
 <p>Il est très important que vous soyez capable d'effectuer l'analyse d'un programme comme nous venons de la faire ci-dessus, cela vous permettra d'éviter beaucoup d'erreurs</p>
+<h2 id="11-commentaires-et-documentation">11) commentaires et documentation</h2>
+<h3 id="a-les-commentaires">a) Les commentaires</h3>
+<p>Afin de rendre votre programme plus clair, il est nécessaire, dès que votre code dépasse une dizaine de lignes, d'introduire des commentaires. Bien sûr, cela peut permettre à une personne qui n'a pas écrit le programme de comprendre ce que vous avez voulu faire, mais cela peut aussi vous permettre, quelques mois après avoir terminé d'écrire votre code, de vous "rafraîchir la mémoire".</p>
+<p>En Python, toute ligne commençant par le caractère dièse (#) sera considérée comme un commentaire par le système interpréteur/compilateur.</p>
+<p>Voici un exemple de programme commenté :</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">multiplication</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="c1"># on boucle a fois</span>
+    <span class="k">while</span> <span class="n">a</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+        <span class="c1">#on ajoute b à res</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="n">res</span> <span class="o">+</span> <span class="n">b</span>
+        <span class="c1">#on décrémente a</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">res</span>
+<span class="c1"># La variable x est égale à la valeur renvoyée par la fonction multiplication pour a = 5 et b = 3</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">multiplication</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="c1"># on affiche la valeur de x</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div>
+<p>Attention, dans l'exemple ci-dessus j'ai volontairement alourdi le programme avec des commentaires inutiles vu la simplicité de ce dernier.</p>
+<h3 id="b-la-documentation-dune-fonction">b) La documentation d'une fonction</h3>
+<p>Toujours dans l'idée de rendre vos programmes plus clairs, il est important de proposer une documentation pour vos fonctions.
+Cette documentation doit donner des informations sur le comportement de votre fonction, plus précisément, votre documentation doit :</p>
+<ul>
+<li>décrire votre fonction</li>
+<li>donner le type des paramètres de votre fonction</li>
+<li>donner le type de la valeur renvoyée par votre fonction</li>
+</ul>
+<p>La documentation doit se trouver au tout début de votre fonction, elle commence par 3 guillemets """ et se termine aussi par 3 guillemets. Il est possible d'utiliser plusieurs lignes. Voici un exemple avec la fonction multiplication :</p>
+<p><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">multiplication</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Cette fonction multiplie 2 nombres a et b sans utiliser l&#39;opérateur *</span>
+<span class="sd">    - les paramètres sont a et b, tous les 2 de type number (int ou float)</span>
+<span class="sd">    - la valeur renvoyée par la fonction est aussi de type number (int ou float)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">a</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="n">res</span> <span class="o">+</span> <span class="n">b</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">res</span>
+</code></pre></div>
+On utilise le terme de docstring pour désigner cette façon de rediger la documentation d'une fonction (on rédige la documentation sous forme de docstring).</p>
 
 
 

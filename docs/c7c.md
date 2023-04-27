@@ -83,7 +83,7 @@ Que cela soit en simple précision ou en double précision, la norme IEEE754 uti
 
 - des bits consacrés à la mantisse (23 bits pour la simple précision et 52 bits pour la double précision)
 
-![](img/c7c_1.png)
+![](img/c7c_1.jpg)
 
 Nous pouvons vérifier que l'on a bien 1 + 8 + 23 = 32 bits pour la simple précision et 1 + 11 + 52 = 64 bits pour la double précision.
 

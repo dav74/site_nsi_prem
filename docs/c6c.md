@@ -22,7 +22,7 @@ Prenons tout de suite un exemple : déterminons la représentation de -12 sur 8 
 
 - Ajoutons 1 au nombre obtenu à l'étape précédente :
 
-![](img/c6c_1.png)
+![](img/c6c_1.jpg)
 
 les retenues sont notées en rouge
 
@@ -32,7 +32,7 @@ Comment peut-on être sûr que 11110100 est bien la représentation de -12 ?
 
 Nous pouvons affirmer sans trop de risque de nous tromper que 12 + (-12) = 0, vérifions que cela est vrai pour notre représentation sur 8 bits.
 
-![](img/c6c_2.png)
+![](img/c6c_2.jpg)
 
 Dans l'opération ci-dessus, nous avons un 1 pour le 9e bit, mais comme notre représentation se limite à 8 bits, il nous reste bien 00000000.
 

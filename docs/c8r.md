@@ -55,7 +55,7 @@ Neumann :
 
 Sur ce schéma, nous avons :
 
-![](img/c8c_13.gif)
+![](img/c8c_13.jpg)
 
 - La mémoire qui correspond à la RAM vue ci-dessus
 

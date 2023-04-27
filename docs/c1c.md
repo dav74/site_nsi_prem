@@ -314,7 +314,7 @@ def ma_fonction(i):
 Pour information, même en l'absence de *return*, une fonction Python renvoie quand même "quelque chose", puisqu'elle renvoie *None* qui veut dire rien...
 Dans le cas ci-dessus nous aurons donc :
 
-![](img/c1c_3.png)
+![](img/c1c_3.jpg)
 
 ## 7) Variables locales et variables globales
 
