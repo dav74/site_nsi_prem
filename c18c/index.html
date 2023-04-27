@@ -3112,20 +3112,20 @@
 <p>Nous avons vu que le paquet IP contient les adresses IP de l'émetteur et du récepteur :</p>
 <p><img alt="" src="../img/c18c_1.jpg" /></p>
 <p>Le paquet IP étant encapsulé par la trame Ethernet, les adresses IP ne sont plus directement disponibles (il faut désencapsuler le paquet IP pour pouvoir lire ces adresses IP), nous allons donc trouver un autre type d'adresse qui permet d'identifier l'émetteur et le récepteur : l'adresse MAC (Media Access Control) aussi appelée adresse physique.</p>
-<p><img alt="" src="../img/c18c_2.png" /></p>
+<p><img alt="" src="../img/c18c_2.jpg" /></p>
 <p>Une adresse MAC est codée sur 6 octets. on écrit traditionnellement les adresses MAC en hexadécimal, chaque octet étant séparés par 2 points (exemple d'adresse MAC : 00:E0:4C:68:02:11)</p>
 <p>L'adresse MAC est liée au matériel, chaque carte réseau (Ethernet ou Wifi) possède sa propre adresse MAC, il n'existe pas dans le monde, 2 cartes réseau (Ethernet ou Wifi) qui possèdent la même adresse MAC. Les 3 premiers octets d'une adresse MAC ("00:E0:4C" dans l'exemple ci-dessus) désignent le constructeur du matériel, par exemple, "00:E0:4C" désigne le constructeur "realtek semiconductor corp".</p>
 <p>Au moment de l'encapsulation d'un paquet IP, l'ordinateur "émetteur" va utiliser un protocole nommé ARP (Address Resolution Protocol) qui va permettre de déterminer l'adresse MAC de l'ordinateur "destination", en effectuant une requête "broadcast" (requête destinée à tous les ordinateurs du réseau) du type : "j'aimerais connaitre l'adresse MAC de l'ordinateur ayant pour IP XXX.XXX.XXX.XXX". Une fois qu'il a obtenu une réponse à cette requête ARP, l'ordinateur "émetteur" encapsule le paquet IP dans une trame Ethernet et envoie cette trame sur le réseau.</p>
 <h2 id="2-la-couche-application">2) La couche application</h2>
 <p>Nous avons vu que le protocole TCP permet de mettre en forme les données à envoyer :</p>
-<p><img alt="" src="../img/c18c_3.png" /></p>
+<p><img alt="" src="../img/c18c_3.jpg" /></p>
 <p>Quelle est la nature de ces données mises en forme par TCP ?</p>
 <p>En faite, TCP effectue lui aussi une encapsulation, les données encapsulées par TCP peuvent être de plusieurs natures :</p>
 <p>Nous allons très prochainement étudier le protocole HTTP. Les requêtes et les réponses HTTP sont encapsulés par TCP, au bout du compte et en résumé, nous avons donc :</p>
-<p><img alt="" src="../img/c18c_4.png" /></p>
+<p><img alt="" src="../img/c18c_4.jpg" /></p>
 <p>TCP encapsule aussi d'autres types de requêtes (et réponses), par exemple FTP (File Transfer Protocol) qui permet d'envoyer sur un réseau des fichiers (texte, son, image...), SMTP (Simple Mail Transfer Protocol) qui permet d'envoyer des emails, DNS (Domain Name Server) qui permet d'avoir la correspondance entre une adresse IP et une URL,...</p>
 <p>Il est donc aussi possible d'avoir :</p>
-<p><img alt="" src="../img/c18c_5.png" /></p>
+<p><img alt="" src="../img/c18c_5.jpg" /></p>
 <p>On dit que tous ces protocoles (HTTP, FTP, SMTP, DNS,...) appartiennent à la couche "Application" du modèle TCP/IP.</p>
 <h2 id="3-le-modele-des-couches-tcpip">3) Le modèle des couches TCP/IP</h2>
 <p>En effet, à chaque phase d'encapsulation on associe ce que l'on appelle une couche :</p>
@@ -3144,12 +3144,12 @@
 </li>
 </ul>
 <p>On présente souvent ces différentes couchent sur ce type de schéma :</p>
-<p><img alt="" src="../img/c18c_6.png" /></p>
+<p><img alt="" src="../img/c18c_6.jpg" /></p>
 <p>La couche du "dessous" encapsule la couche située "au dessus"</p>
 <p>On nomme ce système de couche "modèle de couches TCP/IP" (car ce modèle repose principalement sur TCP et IP)</p>
 <h2 id="4-le-modele-des-couches-osi">4) Le modèle des couches OSI</h2>
 <p>Il existe un autre modèle de couche, le modèle OSI (Open Systems Interconnection), ce système est antérieur au modèle TCP/IP puisqu'il date des années 1970. Ce modèle est principalement théorique et à permis de poser les bases des communications réseau. Ce modèle est composé de 7 couches (alors que le modèle TCP/IP est composé de 4 couches).</p>
-<p><img alt="" src="../img/c18c_7.png" /></p>
+<p><img alt="" src="../img/c18c_7.jpg" /></p>
 <p>Il existe des liens entre le modèle OSI et le modèle TCP/IP (par exemple on retrouve le protocole IP dans la couche 3 du modèle OSI et TCP dans la couche 4), mais parfois comparer les 2 modèles peut être délicat.</p>
 <p>Ce modèle est donné ici à titre d'information (pour le cas où vous le rencontriez pendant vos recherches sur Internet), mais le principal est de retenir ce qui a été vu sur le modèle TCP/IP.</p>
 
