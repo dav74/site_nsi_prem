@@ -3259,7 +3259,7 @@ on multiplie 0,75 par 2 : 0,75 x 2 = 1,5. On obtient 1,5 que l'on écrira 1 + 0,
 <p>des bits consacrés à la mantisse (23 bits pour la simple précision et 52 bits pour la double précision)</p>
 </li>
 </ul>
-<p><img alt="" src="../img/c7c_1.png" /></p>
+<p><img alt="" src="../img/c7c_1.jpg" /></p>
 <p>Nous pouvons vérifier que l'on a bien 1 + 8 + 23 = 32 bits pour la simple précision et 1 + 11 + 52 = 64 bits pour la double précision.</p>
 <p>Pour écrire un nombre flottant en respectant la norme IEEE754, il est nécessaire de commencer par écrire le nombre sous la forme 1,XXXXX.2<sup>e</sup> (avec e l'exposant), il faut obligatoirement qu'il y ait un seul chiffre à gauche de la virgule et il faut que ce chiffre soit un 1. Par exemple le nombre 1010,11001 devra être écrit 1,01011001.2<sup>11</sup>. Autre exemple, 0,00001001 devra être écrit 1,001.2<sup>-101</sup>.</p>
 <p>La partie XXXXXX de 1,XXXXX.2<sup>e</sup> constitue la mantisse (dans notre exemple 1010,11001 la mantisse est 01011001). Comme la mantisse comporte 23 bits en simple précision, il faudra compléter avec le nombre de zéro nécessaire afin d'atteindre les 23 bits (si nous avons 01011001, il faudra ajouter 23 - 8 = 15 zéros à droite, ce qui donnera en fin de compte 01011001000000000000000 )</p>

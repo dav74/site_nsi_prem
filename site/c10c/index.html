@@ -3126,13 +3126,13 @@
 <p>Pour concevoir un algorithme, la 2e définition nous précise qu'il est nécessaire de définir "une suite finie d'opérations élémentaires obéissant à un enchainement déterminé". L'ordre dans lequel nous allons définir nos "opérations élémentaires" va donc avoir son importance. Mais, qu'est-ce qu'une "opération élémentaire" ? Ici aussi, définir "opération élémentaire" n'est pas chose aisée ! On peut tout de même dire qu'une "opération élémentaire" est une action simple, qui doit être facilement compréhensible pour la personne chargée d'effectuer cette action. L'action "Peser 100 g de farine" peut être considérée comme une "opération élémentaire", en effet, tout le monde est capable de comprendre ce que cela signifie et la réalisation de cette opération ne prête ni à interprétation, ni à confusion. En revanche "Prendre de la farine, des oeufs, du sucre et du chocolat afin de faire un gâteau au chocolat" n'est clairement pas une "opération élémentaire", car l'action décrite ici manque de précision, c'est une opération complexe (même si dans la pratique il n'est pas très difficile de faire un gâteau au chocolat, ce n'est pas évident pour quelqu'un qui n'a pas l'habitude). La frontière entre "opération élémentaire" et "opération complexe" n'est pas toujours évidente, en effet, l'opération "Peser 100 g de farine" pourrait être encore plus précise : "mettre la balance à zéro (faire la tare), verser ensuite de la farine sur le plateau de la balance jusqu'à ce que le nombre 100 soit affiché sur l'écran de la balance"</p>
 <p>À noter que "procédure de calcul bien défini" dans la première définition est équivalent à "suite finie d'opérations élémentaires obéissant à un enchainement déterminé" dans la deuxième définition. Personnellement, je trouve la deuxième définition plus explicite.</p>
 <p>On pourrait résumer ce qu'est un algorithme par le schéma suivant :</p>
-<p><img alt="" src="../img/c10c_2.png" /></p>
+<p><img alt="" src="../img/c10c_2.jpg" /></p>
 <p>Prenons un exemple concret :</p>
 <p>Nous allons étudier cette année, ainsi que l'année prochaine, des algorithmes de tri pour les tableaux (un tableau ressemble beaucoup à une liste en Python, même si ce n'est pas exactement la même chose). Nous avons en entrée un tableau non trié et nous obtenons en sortie un tableau trié :</p>
-<p><img alt="" src="../img/c10c_3.png" /></p>
+<p><img alt="" src="../img/c10c_3.jpg" /></p>
 <p>La "valeur de sortie" n'est pas obligatoirement du même type que la "valeur d'entrée". Prenons l'exemple d'un algorithme qui prend en entrée un tableau t d'entiers et un entier x, et qui "répond" par "oui" ou par "non" à la question "x est-il présent dans le tableau t ?". Dans ce cas, la "valeur de sortie" sera "oui" ou "non".</p>
-<p><img alt="" src="../img/c10c_4.png" /></p>
-<p><img alt="" src="../img/c10c_5.png" /></p>
+<p><img alt="" src="../img/c10c_4.jpg" /></p>
+<p><img alt="" src="../img/c10c_5.jpg" /></p>
 <h2 id="2-un-premier-algorithme">2) un premier algorithme</h2>
 <p>Essayons d'écrire l'algorithme décrit ci-dessus :</p>
 <p>Nous devons trouver la suite d'opérations élémentaires qui permettra de répondre à la question : "x est-il présent dans le tableau t ?"</p>
@@ -3167,7 +3167,7 @@ FIN
 </ul>
 <h2 id="3-etudier-un-algorithme">3) Étudier un algorithme</h2>
 <p>La première chose à faire quand on étudie un algorithme, c'est de le "faire tourner à la main" : on "exécute" l'algorithme en utilisant uniquement une feuille et un crayon. Voilà ce que cela pourrait donner avec l'algorithme que nous venons d'écrire :</p>
-<p><img alt="" src="../img/c10c_6.png" /></p>
+<p><img alt="" src="../img/c10c_6.jpg" /></p>
 <h2 id="4-complexite-dun-algorithme">4) complexité d'un algorithme</h2>
 <p>La notion de complexité d'un algorithme va rendre compte de l'efficacité de cet algorithme. Pour un même problème, par exemple trier un tableau, il existe plusieurs algorithmes, certains algorithmes sont plus efficaces que d'autres (par exemple un algorithme A mettra moins de temps qu'un algorithme B pour résoudre exactement le même problème, sur la même machine).</p>
 <p>Il existe 2 types de complexité : une complexité en temps et une complexité en mémoire. Nous nous intéresserons ici uniquement à la complexité en temps. La complexité en temps est directement liée au nombre d'opérations élémentaires qui doivent être exécutées afin de résoudre un problème donné. L'évaluation de ce nombre d'opérations élémentaires n'est pas chose facile, on rencontre souvent des cas litigieux. Prenons tout de suite un exemple avec notre algorithme "x est-il présent dans le tableau t ?".</p>

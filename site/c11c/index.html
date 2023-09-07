@@ -3179,7 +3179,7 @@
 <p>Pour commencer, voici une vidéo qui explique le principe du tri par insertion :</p>
 <p><a href="https://www.youtube.com/watch?v=bRPHvWgc6YM">https://www.youtube.com/watch?v=bRPHvWgc6YM</a></p>
 <p>On peut résumer le principe de fonctionnement de l'algorithme de tri par insertion avec le schéma suivant :</p>
-<p><img alt="" src="../img/c11c_2.png" /></p>
+<p><img alt="" src="../img/c11c_2.jpg" /></p>
 <p>Voici l'algorithme du tri par insertion :</p>
 <div class="highlight"><pre><span></span><code>VARIABLE
 t : tableau d&#39;entiers
@@ -3204,10 +3204,10 @@ FIN
 <p>Essayons maintenant de déterminer la complexité de l'algorithme de tri par insertion :</p>
 <p>Comme précédemment nous nous intéresserons à la complexité en temps dans le pire des cas. À quoi correspond le pire des cas pour un algorithme de tri ? Tout simplement quand le tableau initial est "trié à l'envers" (les entiers sont classés du plus grand au plus petit), comme dans cet exemple : t = [5, 4, 3, 2, 1].</p>
 <p>Pour déterminer la complexité de l'algorithme de tri par insertion nous n'allons pas rechercher le nombre d'opérations élémentaires, mais, pour souci de simplicité, directement nous intéresser au "nombre de décalages effectués" pour trier entièrement un tableau. J'appelle "décalage" ce qui est symbolisé par une flèche noire sur le schéma ci-dessous :</p>
-<p><img alt="" src="../img/c11c_3.png" /></p>
+<p><img alt="" src="../img/c11c_3.jpg" /></p>
 <p>Pour l'étape ci-dessus nous avons 3 décalages (décalages du 10, du 12 et du 27). Nous ne tiendrons pas compte du "placement" du nombre en cours de traitement (8 dans notre exemple) symbolisé par la flèche en pointillé.</p>
 <p>Évaluons le nombre de décalages nécessaires pour trier le tableau t = [5, 4, 3, 2, 1]</p>
-<p><img alt="" src="../img/c11c_4.png" /></p>
+<p><img alt="" src="../img/c11c_4.jpg" /></p>
 <p>Il est, je l'espère, évident pour vous que nous avons : 1 + 2 + 3 + 4 = 10 décalages.</p>
 <p>Dans le cas où nous avons un tableau à trier qui contient n éléments, nous aurons : 1 + 2 + 3 +....+ n-3 + n-2 + n-1 décalages (puisque pour 5 éléments nous avons 1 + 2 + 3 + 4 ). Si vous n'êtes pas convaincu, faites le test avec un tableau de 6 éléments, vous devriez trouver 1 + 2 + 3 + 4 + 5 = 15 décalages.</p>
 <p>Que vaut cette somme S = 1 + 2 + 3 + .... + n-3 + n-2 + n-1 ?</p>
@@ -3224,7 +3224,7 @@ FIN
 <p>Comme pour le tri par insertion, commençons par le visionnage d'une petite vidéo :</p>
 <p><a href="https://www.youtube.com/watch?v=8u3Yq-5DTN8">https://www.youtube.com/watch?v=8u3Yq-5DTN8</a></p>
 <p>On peut résumer le principe de fonctionnement de l'algorithme de tri par sélection avec le schéma suivant :</p>
-<p><img alt="" src="../img/c11c_6.png" /></p>
+<p><img alt="" src="../img/c11c_6.jpg" /></p>
 <p>Voici l'algorithme du tri par sélection :</p>
 <div class="highlight"><pre><span></span><code>VARIABLE
 t : tableau d&#39;entiers

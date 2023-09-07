@@ -264,7 +264,7 @@ Après l'exécution de ce programme, la variable p aura  pour valeur la chaîne 
 
 Python propose des fonction prêtes à être utilisées par le programmeur : les fonctions natives (built-in function en anglais). Nous avons déjà eu l'occasion d'en voir deux avec *type* (qui renvoie le type d'une variable) et *str* qui renvoie la chaîne de caractère obtenue à partir d'un nombre (*str(4)* renvoie le caractère 4). Il existe beaucoup d'autres fonctions natives Python (il en existe plus de 50). Dans l'immédiat, nous allons en étudier deux autres :
 
-- la fonction *len* prend en paramètre une chaîne de caractères et renvoie le nombre de caractères présents dans cette chaîne de caractères (par exemple *len("azerty")* renvoie 5)
+- la fonction *len* prend en paramètre une chaîne de caractères et renvoie le nombre de caractères présents dans cette chaîne de caractères (par exemple *len("azerty")* renvoie 6)
 
 - la fonction *print* permet d'afficher à l'écran la valeur qui lui est passée en paramètre.
 

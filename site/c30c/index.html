@@ -3136,7 +3136,7 @@
 <p>Nous avons déjà eu l'occasion d'étudier un algorithme de recherche d'un entier dans un tableau. Dans le pire des cas (l'entier recherché n'est pas dans le tableau), l'algorithme parcourt l'ensemble du tableau, nous avions donc une complexité O(n). Est-on obligé de parcourir l'ensemble du tableau pour vérifier qu'un entier x ne se trouve pas dans un tableau t ? A priori oui, sauf si le tableau t est trié !</p>
 <h2 id="2-principe">2) Principe</h2>
 <p>Il est aussi possible de représenter le principe de l'algorithme de recherche dichotomique avec le schéma suivant (on recherche la valeur x=35 dans le tableau t =  [5, 7, 12, 14, 23, 27, 35, 40, 41, 45] :</p>
-<p><img alt="" src="../img/c30c_1.png" /></p>
+<p><img alt="" src="../img/c30c_1.jpg" /></p>
 <p>Dans le schéma ci-dessus, à chaque étape, on garde uniquement le tableau désigné par la flèche en trait plein, on abandonne le tableau désigné par la flèche en pointillé. Dans la première étape on part du tableau [5, 7, 12, 14, 23, 27, 35, 40, 41, 45], ce tableau est divisé en 2 tableaux :  [5, 7, 12, 14, 23] et [27, 35, 40, 41, 45]. La valeur recherchée (35) ne peut pas être dans le premier tableau ([5, 7, 12, 14, 23]) puisque 35 &gt; 23 et que les autres valeurs du premier tableau sont forcément plus petite que 23 (le tableau est trié). On garde donc uniquement le second tableau ([27, 35, 40, 41, 45]) et on recommence le processus (on divise ce tableau en deux...) jusqu'au moment où l'on "tombe" sur la valeur recherchée ou que l'on se retrouve avec un tableau contenant un seul élément : si l'élément unique du tableau n'est pas l'élément recherché, cela signifie que l'élément recherché n'est pas dans le tableau.</p>
 <h2 id="2-algorithme">2) algorithme</h2>
 <p>Voici l'algorithme qui permet d'effectuer une recherche dichotomique :</p>
@@ -3167,7 +3167,7 @@ renvoyer la valeur de tr
 FIN
 </code></pre></div>
 <p>On peut résumer le principe de fonctionnement de l'algorithme de recherche dichotomique par le schéma suivant :</p>
-<p><img alt="" src="../img/c30c_2.png" /></p>
+<p><img alt="" src="../img/c30c_2.jpg" /></p>
 <p>Les variables <em>deb</em>, <em>mil</em> et <em>fin</em> du schéma correspondent aux variables <em>deb</em>, <em>mil</em> et <em>fin</em> de l'algorithme.</p>
 <h3 id="3-complexite">3) complexité</h3>
 <p>Pour étudier la complexité, nous allons nous intéresser à la boucle : au niveau de la boucle, combien doit-on effectuer d'itérations pour un tableau de taille n dans le cas le plus défavorable (l'entier x n'est pas dans le tableau t) ?</p>
