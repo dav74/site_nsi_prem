@@ -2724,29 +2724,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-algorithme" class="md-nav__link">
-    2) algorithme
-  </a>
-  
-    <nav class="md-nav" aria-label="2) algorithme">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#3-complexite" class="md-nav__link">
-    3) complexité
+  <a href="#3-algorithme" class="md-nav__link">
+    3) algorithme
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#4-terminaison-de-lalgorithme" class="md-nav__link">
-    4) terminaison de l'algorithme
+      
+        <li class="md-nav__item">
+  <a href="#4-complexite-de-lalgorithme" class="md-nav__link">
+    4) complexité de l'algorithme
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#5-terminaison-de-lalgorithme" class="md-nav__link">
+    5) terminaison de l'algorithme
+  </a>
   
 </li>
       
@@ -3089,29 +3083,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-algorithme" class="md-nav__link">
-    2) algorithme
-  </a>
-  
-    <nav class="md-nav" aria-label="2) algorithme">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#3-complexite" class="md-nav__link">
-    3) complexité
+  <a href="#3-algorithme" class="md-nav__link">
+    3) algorithme
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#4-terminaison-de-lalgorithme" class="md-nav__link">
-    4) terminaison de l'algorithme
+      
+        <li class="md-nav__item">
+  <a href="#4-complexite-de-lalgorithme" class="md-nav__link">
+    4) complexité de l'algorithme
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#5-terminaison-de-lalgorithme" class="md-nav__link">
+    5) terminaison de l'algorithme
+  </a>
   
 </li>
       
@@ -3138,7 +3126,7 @@
 <p>Il est aussi possible de représenter le principe de l'algorithme de recherche dichotomique avec le schéma suivant (on recherche la valeur x=35 dans le tableau t =  [5, 7, 12, 14, 23, 27, 35, 40, 41, 45] :</p>
 <p><img alt="" src="../img/c30c_1.jpg" /></p>
 <p>Dans le schéma ci-dessus, à chaque étape, on garde uniquement le tableau désigné par la flèche en trait plein, on abandonne le tableau désigné par la flèche en pointillé. Dans la première étape on part du tableau [5, 7, 12, 14, 23, 27, 35, 40, 41, 45], ce tableau est divisé en 2 tableaux :  [5, 7, 12, 14, 23] et [27, 35, 40, 41, 45]. La valeur recherchée (35) ne peut pas être dans le premier tableau ([5, 7, 12, 14, 23]) puisque 35 &gt; 23 et que les autres valeurs du premier tableau sont forcément plus petite que 23 (le tableau est trié). On garde donc uniquement le second tableau ([27, 35, 40, 41, 45]) et on recommence le processus (on divise ce tableau en deux...) jusqu'au moment où l'on "tombe" sur la valeur recherchée ou que l'on se retrouve avec un tableau contenant un seul élément : si l'élément unique du tableau n'est pas l'élément recherché, cela signifie que l'élément recherché n'est pas dans le tableau.</p>
-<h2 id="2-algorithme">2) algorithme</h2>
+<h2 id="3-algorithme">3) algorithme</h2>
 <p>Voici l'algorithme qui permet d'effectuer une recherche dichotomique :</p>
 <div class="highlight"><pre><span></span><code>VARIABLE
 t : tableau d&#39;entiers trié
@@ -3169,7 +3157,7 @@ FIN
 <p>On peut résumer le principe de fonctionnement de l'algorithme de recherche dichotomique par le schéma suivant :</p>
 <p><img alt="" src="../img/c30c_2.jpg" /></p>
 <p>Les variables <em>deb</em>, <em>mil</em> et <em>fin</em> du schéma correspondent aux variables <em>deb</em>, <em>mil</em> et <em>fin</em> de l'algorithme.</p>
-<h3 id="3-complexite">3) complexité</h3>
+<h2 id="4-complexite-de-lalgorithme">4) complexité de l'algorithme</h2>
 <p>Pour étudier la complexité, nous allons nous intéresser à la boucle : au niveau de la boucle, combien doit-on effectuer d'itérations pour un tableau de taille n dans le cas le plus défavorable (l'entier x n'est pas dans le tableau t) ?</p>
 <p>Sachant qu'à chaque itération de la boucle on divise le tableau en 2, cela revient donc à se demander combien de fois faut-il diviser le tableau en 2 pour obtenir, à la fin, un tableau comportant un seul entier ? Autrement dit, combien de fois faut-il diviser n par 2 pour obtenir 1 ?</p>
 <p>Mathématiquement cela se traduit par l'équation <span class="arithmatex">\(\frac{n}{2^a}=1\)</span> avec a le nombre de fois qu'il faut diviser n par 2 pour obtenir 1. Il faut donc trouver a !</p>
@@ -3181,7 +3169,7 @@ FIN
 <p><img alt="" src="../img/c30c_3.png" /></p>
 <p>Comme vous pouvez le constater l'algorithme de recherche dichotomique est plus efficace que l'algorithme de recherche qui consiste à parcourir l'ensemble du tableau, car <span class="arithmatex">\(x&gt;log_2(x)\)</span> quelque soit <span class="arithmatex">\(x\)</span>.</p>
 <p>Cependant, il ne faut pas perdre de vu que dans le cas de la recherche dichotomique, il est nécessaire d'avoir un tableau trié, si au départ le tableau n'est pas trié, il faut rajouter la durée du tri.</p>
-<h3 id="4-terminaison-de-lalgorithme">4) terminaison de l'algorithme</h3>
+<h2 id="5-terminaison-de-lalgorithme">5) terminaison de l'algorithme</h2>
 <p>Pour terminer, nous allons démontrer que cet algorithme se termine dans tous les cas (on ne peut pas "tomber dans une boucle infinie") :</p>
 <p>Nous avons les variables <em>fin</em> et <em>deb</em>. Définissons fin<sub>i</sub> et deb<sub>i</sub> avec i qui correspond à la ième itération de la boucle : deb<sub>0</sub> correspond à la valeur de la variable <em>deb</em> avant la première itération de la boucle (nous avons donc deb<sub>0</sub> = 0). Même chose pour fin<sub>i</sub> (nous avons donc fin<sub>0</sub> = n). À la fin de la première itération de la boucle, nous aurons fin<sub>1</sub> et deb<sub>1</sub>...</p>
 <p>On définit aussi m<sub>i</sub> = (deb<sub>i</sub> + fin<sub>i</sub>) / 2.</p>
